@@ -10,6 +10,8 @@ partial class Level : GameObjectList
         quitButton = new Button("Sprites/spr_button_quit", 100);
         quitButton.Position = new Vector2(GameEnvironment.Screen.X - quitButton.Width - 10, 10);
         this.Add(quitButton);
+        SpriteGameObject background = new SpriteGameObject("Backgrounds/Background" + levelIndex, 0, "background");
+        this.Add(background);
     }
 
     public bool Completed

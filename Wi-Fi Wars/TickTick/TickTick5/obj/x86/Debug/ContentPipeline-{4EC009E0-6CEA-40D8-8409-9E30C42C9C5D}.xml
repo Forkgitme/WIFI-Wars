@@ -7,7 +7,7 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Gebruiker\Downloads\Wi-Fi Wars\TickTick\TickTick5\bin\x86\Debug\Content\Fonts\Hud.xnb</Output>
+      <Output>C:\Users\Gebruiker\Desktop\WIFI-Wars\Wi-Fi Wars\TickTick\TickTick5\bin\x86\Debug\Content\Fonts\Hud.xnb</Output>
       <Time>2015-02-24T14:54:23.2944207+01:00</Time>
     </Item>
     <Item>
@@ -16,7 +16,7 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Gebruiker\Downloads\Wi-Fi Wars\TickTick\TickTick5\bin\x86\Debug\Content\Fonts\HintFont.xnb</Output>
+      <Output>C:\Users\Gebruiker\Desktop\WIFI-Wars\Wi-Fi Wars\TickTick\TickTick5\bin\x86\Debug\Content\Fonts\HintFont.xnb</Output>
       <Time>2015-02-24T14:54:23.2854255+01:00</Time>
     </Item>
     <Item>
@@ -25,7 +25,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Gebruiker\Downloads\Wi-Fi Wars\TickTick\TickTick5\bin\x86\Debug\Content\Backgrounds\spr_levelselect.xnb</Output>
+      <Output>C:\Users\Gebruiker\Desktop\WIFI-Wars\Wi-Fi Wars\TickTick\TickTick5\bin\x86\Debug\Content\Backgrounds\spr_levelselect.xnb</Output>
       <Time>2015-02-24T14:54:23.2263842+01:00</Time>
     </Item>
     <Item>
@@ -34,7 +34,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Gebruiker\Downloads\Wi-Fi Wars\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\spr_button_help.xnb</Output>
+      <Output>C:\Users\Gebruiker\Desktop\WIFI-Wars\Wi-Fi Wars\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\spr_button_help.xnb</Output>
       <Time>2015-02-24T14:54:25.370557+01:00</Time>
     </Item>
     <Item>
@@ -43,7 +43,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Gebruiker\Downloads\Wi-Fi Wars\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\spr_button_play.xnb</Output>
+      <Output>C:\Users\Gebruiker\Desktop\WIFI-Wars\Wi-Fi Wars\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\spr_button_play.xnb</Output>
       <Time>2015-02-24T14:54:25.3785515+01:00</Time>
     </Item>
     <Item>
@@ -52,7 +52,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Gebruiker\Downloads\Wi-Fi Wars\TickTick\TickTick5\bin\x86\Debug\Content\Backgrounds\spr_help.xnb</Output>
+      <Output>C:\Users\Gebruiker\Desktop\WIFI-Wars\Wi-Fi Wars\TickTick\TickTick5\bin\x86\Debug\Content\Backgrounds\spr_help.xnb</Output>
       <Time>2015-02-24T14:54:23.2133626+01:00</Time>
     </Item>
     <Item>
@@ -61,7 +61,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Gebruiker\Downloads\Wi-Fi Wars\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\spr_button_back.xnb</Output>
+      <Output>C:\Users\Gebruiker\Desktop\WIFI-Wars\Wi-Fi Wars\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\spr_button_back.xnb</Output>
       <Time>2015-02-24T14:54:25.3635405+01:00</Time>
     </Item>
     <Item>
@@ -70,7 +70,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Gebruiker\Downloads\Wi-Fi Wars\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\spr_level_locked.xnb</Output>
+      <Output>C:\Users\Gebruiker\Desktop\WIFI-Wars\Wi-Fi Wars\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\spr_level_locked.xnb</Output>
       <Time>2015-02-24T14:54:25.3995655+01:00</Time>
     </Item>
     <Item>
@@ -79,7 +79,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Gebruiker\Downloads\Wi-Fi Wars\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\spr_level_solved.xnb</Output>
+      <Output>C:\Users\Gebruiker\Desktop\WIFI-Wars\Wi-Fi Wars\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\spr_level_solved.xnb</Output>
       <Time>2015-02-24T14:54:25.407572+01:00</Time>
     </Item>
     <Item>
@@ -88,7 +88,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Gebruiker\Downloads\Wi-Fi Wars\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\spr_level_unsolved.xnb</Output>
+      <Output>C:\Users\Gebruiker\Desktop\WIFI-Wars\Wi-Fi Wars\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\spr_level_unsolved.xnb</Output>
       <Time>2015-02-24T14:54:25.4145765+01:00</Time>
     </Item>
     <Item>
@@ -97,7 +97,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Gebruiker\Downloads\Wi-Fi Wars\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\spr_button_quit.xnb</Output>
+      <Output>C:\Users\Gebruiker\Desktop\WIFI-Wars\Wi-Fi Wars\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\spr_button_quit.xnb</Output>
       <Time>2015-02-24T14:54:25.385556+01:00</Time>
     </Item>
     <Item>
@@ -106,8 +106,98 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Gebruiker\Downloads\Wi-Fi Wars\TickTick\TickTick5\bin\x86\Debug\Content\Backgrounds\spr_title.xnb</Output>
+      <Output>C:\Users\Gebruiker\Desktop\WIFI-Wars\Wi-Fi Wars\TickTick\TickTick5\bin\x86\Debug\Content\Backgrounds\spr_title.xnb</Output>
       <Time>2015-02-24T14:54:23.2744181+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Backgrounds\Background1.png</Source>
+      <Name>Backgrounds\Background1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Gebruiker\Desktop\WIFI-Wars\Wi-Fi Wars\TickTick\TickTick5\bin\x86\Debug\Content\Backgrounds\Background1.xnb</Output>
+      <Time>2015-02-24T15:24:17.7682539+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Backgrounds\Background10.png</Source>
+      <Name>Backgrounds\Background10</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Gebruiker\Desktop\WIFI-Wars\Wi-Fi Wars\TickTick\TickTick5\bin\x86\Debug\Content\Backgrounds\Background10.xnb</Output>
+      <Time>2015-02-24T15:24:17.7682539+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Backgrounds\Background2.png</Source>
+      <Name>Backgrounds\Background2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Gebruiker\Desktop\WIFI-Wars\Wi-Fi Wars\TickTick\TickTick5\bin\x86\Debug\Content\Backgrounds\Background2.xnb</Output>
+      <Time>2015-02-24T15:24:17.7682539+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Backgrounds\Background3.png</Source>
+      <Name>Backgrounds\Background3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Gebruiker\Desktop\WIFI-Wars\Wi-Fi Wars\TickTick\TickTick5\bin\x86\Debug\Content\Backgrounds\Background3.xnb</Output>
+      <Time>2015-02-24T15:24:17.7682539+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Backgrounds\Background4.png</Source>
+      <Name>Backgrounds\Background4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Gebruiker\Desktop\WIFI-Wars\Wi-Fi Wars\TickTick\TickTick5\bin\x86\Debug\Content\Backgrounds\Background4.xnb</Output>
+      <Time>2015-02-24T15:24:17.7682539+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Backgrounds\Background5.png</Source>
+      <Name>Backgrounds\Background5</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Gebruiker\Desktop\WIFI-Wars\Wi-Fi Wars\TickTick\TickTick5\bin\x86\Debug\Content\Backgrounds\Background5.xnb</Output>
+      <Time>2015-02-24T15:24:17.7682539+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Backgrounds\Background6.png</Source>
+      <Name>Backgrounds\Background6</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Gebruiker\Desktop\WIFI-Wars\Wi-Fi Wars\TickTick\TickTick5\bin\x86\Debug\Content\Backgrounds\Background6.xnb</Output>
+      <Time>2015-02-24T15:24:17.7682539+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Backgrounds\Background7.png</Source>
+      <Name>Backgrounds\Background7</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Gebruiker\Desktop\WIFI-Wars\Wi-Fi Wars\TickTick\TickTick5\bin\x86\Debug\Content\Backgrounds\Background7.xnb</Output>
+      <Time>2015-02-24T15:24:17.7682539+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Backgrounds\Background8.png</Source>
+      <Name>Backgrounds\Background8</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Gebruiker\Desktop\WIFI-Wars\Wi-Fi Wars\TickTick\TickTick5\bin\x86\Debug\Content\Backgrounds\Background8.xnb</Output>
+      <Time>2015-02-24T15:24:17.7682539+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Backgrounds\Background9.png</Source>
+      <Name>Backgrounds\Background9</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Gebruiker\Desktop\WIFI-Wars\Wi-Fi Wars\TickTick\TickTick5\bin\x86\Debug\Content\Backgrounds\Background9.xnb</Output>
+      <Time>2015-02-24T15:24:17.7682539+01:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -116,10 +206,10 @@
       <TargetProfile>Reach</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\Gebruiker\Downloads\Wi-Fi Wars\Content\TickTick\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\Gebruiker\Downloads\Wi-Fi Wars\TickTick\TickTick5\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\Gebruiker\Downloads\Wi-Fi Wars\TickTick\TickTick5\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\Gebruiker\Downloads\Wi-Fi Wars\TickTick\TickTick5\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\Gebruiker\Desktop\WIFI-Wars\Wi-Fi Wars\Content\TickTick\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Gebruiker\Desktop\WIFI-Wars\Wi-Fi Wars\TickTick\TickTick5\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Gebruiker\Desktop\WIFI-Wars\Wi-Fi Wars\TickTick\TickTick5\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Gebruiker\Desktop\WIFI-Wars\Wi-Fi Wars\TickTick\TickTick5\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
