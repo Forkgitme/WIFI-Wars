@@ -10,6 +10,16 @@ Content\Sprites\spr_level_solved.xnb
 Content\Sprites\spr_level_unsolved.xnb
 Content\Sprites\spr_button_quit.xnb
 Content\Backgrounds\spr_title.xnb
+Content\Backgrounds\Background1.xnb
+Content\Backgrounds\Background10.xnb
+Content\Backgrounds\Background2.xnb
+Content\Backgrounds\Background3.xnb
+Content\Backgrounds\Background4.xnb
+Content\Backgrounds\Background5.xnb
+Content\Backgrounds\Background6.xnb
+Content\Backgrounds\Background7.xnb
+Content\Backgrounds\Background8.xnb
+Content\Backgrounds\Background9.xnb
 Content\Levels\1.txt
 Content\Levels\8.txt
 Content\Levels\2.txt
