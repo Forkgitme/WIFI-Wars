@@ -9,6 +9,7 @@ public class SpriteSheet
     protected int sheetColumns;
     protected int sheetRows;
     protected bool mirror;
+    protected Color spriteColor;
 
     public SpriteSheet(string assetname, int sheetIndex = 0)
     {
@@ -16,6 +17,7 @@ public class SpriteSheet
         this.sheetIndex = sheetIndex;
         this.sheetColumns = 1;
         this.sheetRows = 1;
+        spriteColor = Color.White;
 
         // see if we can extract the number of sheet elements from the assetname
         string[] assetSplit = assetname.Split('@');
@@ -37,7 +39,7 @@ public class SpriteSheet
         SpriteEffects spriteEffects = SpriteEffects.None;
         if (mirror)
             spriteEffects = SpriteEffects.FlipHorizontally;
-        spriteBatch.Draw(sprite, position, spritePart, Color.White,
+        spriteBatch.Draw(sprite, position, spritePart, spriteColor,
             0.0f, origin, 1.0f, spriteEffects, 0.0f);
     }
 
@@ -49,6 +51,12 @@ public class SpriteSheet
         Color[] retrievedColor = new Color[1];
         sprite.GetData<Color>(0, sourceRectangle, retrievedColor, 0, 1);
         return retrievedColor[0];
+    }
+
+    public Color SpriteColor
+    {
+        get { return spriteColor; }
+        set { spriteColor = value; }
     }
 
     public Texture2D Sprite

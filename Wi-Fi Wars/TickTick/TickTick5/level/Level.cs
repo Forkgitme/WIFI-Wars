@@ -12,6 +12,7 @@ partial class Level : GameObjectList
         this.Add(quitButton);
         SpriteGameObject background = new SpriteGameObject("Backgrounds/Background" + levelIndex, 0, "background");
         this.Add(background);
+        this.LoadTiles("Content/Levels/" + levelIndex + ".txt");
     }
 
     public bool Completed

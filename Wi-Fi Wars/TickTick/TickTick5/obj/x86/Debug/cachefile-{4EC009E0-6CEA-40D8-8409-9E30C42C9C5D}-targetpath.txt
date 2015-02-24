@@ -20,6 +20,7 @@ Content\Backgrounds\Background6.xnb
 Content\Backgrounds\Background7.xnb
 Content\Backgrounds\Background8.xnb
 Content\Backgrounds\Background9.xnb
+Content\Sprites\tower.xnb
 Content\Levels\1.txt
 Content\Levels\8.txt
 Content\Levels\2.txt

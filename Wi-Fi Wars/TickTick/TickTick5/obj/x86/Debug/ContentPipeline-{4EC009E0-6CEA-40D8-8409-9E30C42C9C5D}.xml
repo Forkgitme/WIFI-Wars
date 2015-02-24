@@ -199,6 +199,15 @@
       <Output>C:\Users\Gebruiker\Desktop\WIFI-Wars\Wi-Fi Wars\TickTick\TickTick5\bin\x86\Debug\Content\Backgrounds\Background9.xnb</Output>
       <Time>2015-02-24T15:24:17.7682539+01:00</Time>
     </Item>
+    <Item>
+      <Source>Sprites\tower.png</Source>
+      <Name>Sprites\tower</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Gebruiker\Desktop\WIFI-Wars\Wi-Fi Wars\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\tower.xnb</Output>
+      <Time>2015-02-24T20:08:19.5345875+01:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID>{4EC009E0-6CEA-40D8-8409-9E30C42C9C5D}</ContentProjectGUID>

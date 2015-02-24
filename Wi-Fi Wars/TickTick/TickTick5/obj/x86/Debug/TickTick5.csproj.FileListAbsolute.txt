@@ -70,3 +70,4 @@ C:\Users\Gebruiker\Desktop\WIFI-Wars\Wi-Fi Wars\TickTick\TickTick5\bin\x86\Debug
 C:\Users\Gebruiker\Desktop\WIFI-Wars\Wi-Fi Wars\TickTick\TickTick5\bin\x86\Debug\Content\Backgrounds\Background7.xnb
 C:\Users\Gebruiker\Desktop\WIFI-Wars\Wi-Fi Wars\TickTick\TickTick5\bin\x86\Debug\Content\Backgrounds\Background8.xnb
 C:\Users\Gebruiker\Desktop\WIFI-Wars\Wi-Fi Wars\TickTick\TickTick5\bin\x86\Debug\Content\Backgrounds\Background9.xnb
+C:\Users\Gebruiker\Desktop\WIFI-Wars\Wi-Fi Wars\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\tower.xnb
