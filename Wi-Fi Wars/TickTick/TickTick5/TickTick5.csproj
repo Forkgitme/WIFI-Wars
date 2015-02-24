@@ -128,25 +128,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="gameobjects\Clouds.cs" />
-    <Compile Include="gameobjects\enemies\PlayerFollowingEnemy.cs" />
-    <Compile Include="gameobjects\enemies\Rocket.cs" />
-    <Compile Include="gameobjects\enemies\Sparky.cs" />
-    <Compile Include="gameobjects\enemies\Turtle.cs" />
-    <Compile Include="gameobjects\enemies\UnpredictableEnemy.cs" />
-    <Compile Include="gameobjects\enemies\PatrollingEnemy.cs" />
-    <Compile Include="gameobjects\VisibilityTimer.cs" />
-    <Compile Include="gameobjects\WaterDrop.cs" />
-    <Compile Include="gameobjects\Player.cs" />
-    <Compile Include="gameobjects\PlayerPhysics.cs" />
-    <Compile Include="gameobjects\Tile.cs" />
-    <Compile Include="gameobjects\TileField.cs" />
-    <Compile Include="gameobjects\TimerGameObject.cs" />
-    <Compile Include="level\Level.cs" />
-    <Compile Include="level\LevelGameLoop.cs" />
-    <Compile Include="level\LevelLoading.cs" />
-    <Compile Include="menu\Button.cs" />
-    <Compile Include="menu\LevelButton.cs" />
     <Compile Include="states\GameOverState.cs" />
     <Compile Include="states\HelpState.cs" />
     <Compile Include="states\LevelFinishedState.cs" />
@@ -196,6 +177,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\app.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="gameobjects\" />
+    <Folder Include="level\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\Microsoft.Xna.GameStudio.targets" />

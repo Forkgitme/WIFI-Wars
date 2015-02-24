@@ -29,7 +29,5 @@ class TickTick : GameEnvironment
         gameStateManager.AddGameState("gameOverState", new GameOverState());
         gameStateManager.AddGameState("levelFinishedState", new LevelFinishedState());
         gameStateManager.SwitchTo("titleMenu");
-
-        AssetManager.PlayMusic("Sounds/snd_music");
     }
 }
