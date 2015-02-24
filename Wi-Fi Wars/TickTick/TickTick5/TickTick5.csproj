@@ -136,6 +136,7 @@
     <Compile Include="menu\LevelButton.cs" />
     <Compile Include="states\HelpState.cs" />
     <Compile Include="states\LevelMenuState.cs" />
+    <Compile Include="Server.cs" />
     <Compile Include="states\TitleMenuState.cs" />
     <Compile Include="WiFiWars.cs" />
     <Compile Include="states\PlayingState.cs" />
