@@ -1,0 +1,29 @@
+Server 
+Color ServerColor
+int timer
+bool ActiveNetwork
+	void SpawnPacket
+		void SpawnVirus
+
+
+Zendmasten
+Circle range
+	
+Packets
+Color RootServer
+float speed
+	void pathfinding
+
+
+	Virussen
+		void FirewallCollision
+		void Delete
+
+
+Firewall
+int cooldown
+bool Active
+	void Collision 
+
+Huis
+
