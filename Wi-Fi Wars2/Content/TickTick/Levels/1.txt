@@ -1,2 +1,3 @@
 server 100 100 1
-money 99999999
+server 800 600 2
+money 1200
