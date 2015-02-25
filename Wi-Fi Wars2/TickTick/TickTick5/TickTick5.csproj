@@ -129,7 +129,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="gameobjects\Packet.cs" />
-    <Compile Include="gameobjects\PoliceBar.cs" />
+    <Compile Include="gameobjects\Bar.cs" />
     <Compile Include="gameobjects\Tower.cs" />
     <Compile Include="gameobjects\UI.cs" />
     <Compile Include="level\Level.cs" />

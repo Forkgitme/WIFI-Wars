@@ -209,21 +209,21 @@
       <Time>2015-02-25T10:56:00.7490201+01:00</Time>
     </Item>
     <Item>
-      <Source>Sprites\policebar.png</Source>
-      <Name>Sprites\policebar</Name>
+      <Source>Sprites\bar.png</Source>
+      <Name>Sprites\bar</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Gebruiker\Desktop\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\policebar.xnb</Output>
+      <Output>C:\Users\Gebruiker\Desktop\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\bar.xnb</Output>
       <Time>2015-02-25T10:56:00.7420173+01:00</Time>
     </Item>
     <Item>
-      <Source>Sprites\policebar2.png</Source>
-      <Name>Sprites\policebar2</Name>
+      <Source>Sprites\bar2.png</Source>
+      <Name>Sprites\bar2</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Gebruiker\Desktop\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\policebar2.xnb</Output>
+      <Output>C:\Users\Gebruiker\Desktop\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\bar2.xnb</Output>
       <Time>2015-02-25T10:56:00.7420173+01:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
