@@ -13,7 +13,7 @@ class PoliceBar : SpriteGameObject
     Texture2D barPart;   
   
     public PoliceBar(string id = "policebar", int layer = 9, int sheetIndex = 1)
-        : base("Sprites/policebar@1x2", layer, id, sheetIndex)
+        : base("Sprites/policebar2", layer, id, sheetIndex)
     {
         this.Position = new Vector2(200, 100);
         barPart = WifiWars.AssetManager.Content.Load<Texture2D>("Sprites/policebar");
