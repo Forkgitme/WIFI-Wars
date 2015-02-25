@@ -1,3 +1,1 @@
-C:\Users\Gebruiker\Downloads\Wi-Fi Wars\Content\TickTick\obj\x86\Debug\TickTick.contentprojResolveAssemblyReference.cache
-C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars\Content\TickTick\obj\x86\Debug\TickTick.contentprojResolveAssemblyReference.cache
 C:\Users\Gebruiker\Desktop\WIFI-Wars\Wi-Fi Wars\Content\TickTick\obj\x86\Debug\TickTick.contentprojResolveAssemblyReference.cache

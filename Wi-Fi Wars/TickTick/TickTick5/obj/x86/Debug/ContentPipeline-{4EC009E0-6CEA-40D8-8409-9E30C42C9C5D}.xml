@@ -208,6 +208,24 @@
       <Output>C:\Users\Gebruiker\Desktop\WIFI-Wars\Wi-Fi Wars\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\tower.xnb</Output>
       <Time>2015-02-24T20:20:57.7526812+01:00</Time>
     </Item>
+    <Item>
+      <Source>Sprites\policebar.png</Source>
+      <Name>Sprites\policebar</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Gebruiker\Desktop\WIFI-Wars\Wi-Fi Wars\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\policebar.xnb</Output>
+      <Time>2014-12-15T16:16:32.6607738+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\policebar2.png</Source>
+      <Name>Sprites\policebar2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Gebruiker\Desktop\WIFI-Wars\Wi-Fi Wars\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\policebar2.xnb</Output>
+      <Time>2015-02-25T10:32:15.104466+01:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID>{4EC009E0-6CEA-40D8-8409-9E30C42C9C5D}</ContentProjectGUID>

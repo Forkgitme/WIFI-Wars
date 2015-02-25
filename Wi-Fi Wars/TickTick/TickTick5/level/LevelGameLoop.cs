@@ -12,11 +12,13 @@ partial class Level : GameObjectList
             this.Reset();
             GameEnvironment.GameStateManager.SwitchTo("levelMenu");
         }
-        if (inputHelper.KeyPressed(Keys.T) && !holdingTower)
+        UI ui = this.Find("ui") as UI;
+        if (inputHelper.KeyPressed(Keys.T) && !holdingTower && ui.Money >= 20)
         {
             Tower tower = new Tower();
             this.Add(tower);
             holdingTower = true;
+            ui.Money -= 20;
         }
     }
 

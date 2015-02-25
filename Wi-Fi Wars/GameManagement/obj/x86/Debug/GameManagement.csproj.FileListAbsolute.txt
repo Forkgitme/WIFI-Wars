@@ -1,15 +1,3 @@
-C:\Users\Gebruiker\Downloads\Wi-Fi Wars\GameManagement\bin\x86\Debug\GameManagement.dll
-C:\Users\Gebruiker\Downloads\Wi-Fi Wars\GameManagement\bin\x86\Debug\GameManagement.pdb
-C:\Users\Gebruiker\Downloads\Wi-Fi Wars\GameManagement\obj\x86\Debug\GameManagement.csprojResolveAssemblyReference.cache
-C:\Users\Gebruiker\Downloads\Wi-Fi Wars\GameManagement\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
-C:\Users\Gebruiker\Downloads\Wi-Fi Wars\GameManagement\obj\x86\Debug\GameManagement.dll
-C:\Users\Gebruiker\Downloads\Wi-Fi Wars\GameManagement\obj\x86\Debug\GameManagement.pdb
-C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars\GameManagement\bin\x86\Debug\GameManagement.dll
-C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars\GameManagement\bin\x86\Debug\GameManagement.pdb
-C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars\GameManagement\obj\x86\Debug\GameManagement.csprojResolveAssemblyReference.cache
-C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars\GameManagement\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
-C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars\GameManagement\obj\x86\Debug\GameManagement.dll
-C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars\GameManagement\obj\x86\Debug\GameManagement.pdb
 C:\Users\Gebruiker\Desktop\WIFI-Wars\Wi-Fi Wars\GameManagement\bin\x86\Debug\GameManagement.dll
 C:\Users\Gebruiker\Desktop\WIFI-Wars\Wi-Fi Wars\GameManagement\bin\x86\Debug\GameManagement.pdb
 C:\Users\Gebruiker\Desktop\WIFI-Wars\Wi-Fi Wars\GameManagement\obj\x86\Debug\GameManagement.csprojResolveAssemblyReference.cache
