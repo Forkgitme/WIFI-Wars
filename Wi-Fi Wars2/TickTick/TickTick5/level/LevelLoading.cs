@@ -13,7 +13,7 @@ partial class Level : GameObjectList
         while (line != null)
         {
             string[] obj = line.Split(' ');
-            if(obj.Length > 3)
+            if(obj.Length >= 3)
                 position = new Vector2(float.Parse(obj[1]), float.Parse(obj[2]));
 
             switch (obj[0])
@@ -27,7 +27,9 @@ partial class Level : GameObjectList
                     }
                     else throw new IOException("Server objects needs 4 values, name, coords and colorcode(1-3)");
                     break;
-                case "home": break;
+                case "home":
+                    this.Add(new Home(position, 1, "home"));
+                    break;
                 case "hideout": break;
                 case "antipirate": break;
                 case "money":

@@ -235,6 +235,15 @@
       <Output>C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\bar2.xnb</Output>
       <Time>2015-02-25T11:22:31.4033801+01:00</Time>
     </Item>
+    <Item>
+      <Source>Sprites\home.png</Source>
+      <Name>Sprites\home</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\home.xnb</Output>
+      <Time>2015-02-25T11:41:35.3344744+01:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID Null="true" />
