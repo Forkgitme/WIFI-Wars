@@ -1,12 +1,14 @@
 ﻿using System;
 using System.IO;
 using Microsoft.Xna.Framework;
+using System.Collections.Generic;
 
 class Server : SpriteGameObject
 {
     Color serverColor;
     double packetTimer;
     bool makePacket;
+    bool connected;
 
     public Server(int color, Vector2 pos, int layer, String id)
         : base("Sprites/Server", layer, id)
@@ -44,10 +46,15 @@ class Server : SpriteGameObject
     {
         base.Update(gameTime);
         packetTimer += gameTime.ElapsedGameTime.TotalSeconds;
-        if (packetTimer > 3)
+        if (packetTimer > 3 && connected)
         {
             packetTimer = 0;
             makePacket = true;
         }
+        GameObjectList towerList = GameWorld.Find("towerlist") as GameObjectList;
+        List<GameObject> towers = towerList.Objects;
+        foreach (Tower tower in towers)
+            if (this.CollidesWith(tower) && tower.Connected)
+                this.connected = true;
     }
 }

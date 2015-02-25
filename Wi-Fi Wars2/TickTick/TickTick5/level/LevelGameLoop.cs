@@ -16,7 +16,7 @@ partial class Level : GameObjectList
         if (inputHelper.KeyPressed(Keys.T) && !holdingTower && ui.Money >= 20)
         {
             Tower tower = new Tower();
-            this.Add(tower);
+            towerList.Add(tower);
             holdingTower = true;
             ui.Money -= 20;
         }
