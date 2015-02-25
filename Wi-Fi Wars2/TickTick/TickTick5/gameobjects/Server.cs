@@ -9,12 +9,13 @@ class Server : SpriteGameObject
     double packetTimer;
     bool makePacket;
     bool connected;
+    int type;
 
     public Server(int color, Vector2 pos, int layer, String id)
         : base("Sprites/Server", layer, id)
     {
         position = pos;
-        
+        type = color;
         switch(color)
         {
             case 1:
@@ -37,7 +38,7 @@ class Server : SpriteGameObject
         if (makePacket)
         {
             GameObjectList level = this.parent as GameObjectList;
-            Packet packet = new Packet(this.position + this.Center, serverColor);
+            Packet packet = new Packet(this.position + this.Center, serverColor, type);
             level.Add(packet);
             makePacket = false;
         }

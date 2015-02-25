@@ -12,7 +12,8 @@ class Bar : SpriteGameObject
     int totalResource;      
     Texture2D barPart;
     int type;
-  
+    bool active;
+
     public Bar(int t, string id, int layer = 9, int sheetIndex = 1)
         : base("Sprites/bar2", layer, id, sheetIndex)
     {
@@ -45,7 +46,7 @@ class Bar : SpriteGameObject
     public override void Update(GameTime gameTime)
     {
         base.Update(gameTime);
-        if (resource<totalResource && type == 4)
+        if (resource<totalResource && type == 4 && active)
         resource += 0.2f;
     }
 
@@ -53,6 +54,12 @@ class Bar : SpriteGameObject
     {
         get { return resource; }
         set { resource = value; }
+    }
+
+    public bool Active
+    {
+        get { return active; }
+        set { active = value; }
     }
 
     public int TotalResource

@@ -8,16 +8,32 @@ using System.Text;
 
     class Packet : SpriteGameObject
     {
-        public Packet(Vector2 spawnposition, Color c) : base("Sprites/Packet", 100, "packet", 0)
+        int type;
+        public Packet(Vector2 spawnposition, Color c, int t) : base("Sprites/Packet", 100, "packet", 0)
         {
             sprite.SpriteColor = c;
             velocity = new Vector2(50, 50);
             position = spawnposition;
+            type = t;
         }
-
+        public override void HandleInput(InputHelper inputHelper)
+        {
+            base.HandleInput(inputHelper);
+            SpriteGameObject home = GameWorld.Find("home") as SpriteGameObject;
+            if (this.CollidesWith(home))
+            {
+                Bar serverBar = GameWorld.Find("serverbar" + type) as Bar;
+                serverBar.Resource += 50;
+                Level level = this.Parent as Level;
+                Bar bar = GameWorld.Find("police") as Bar;
+                bar.Active = true;
+                level.Remove(this);
+            }
+        }
         public override void Update(GameTime gameTime) //de locatie van het packet blijven updaten
         {
-            base.Update(gameTime);          
+            base.Update(gameTime);    
+
         }
 
         public override void Draw(GameTime gameTime, SpriteBatch spriteBatch) //draw het packet op de nieuwe locatie

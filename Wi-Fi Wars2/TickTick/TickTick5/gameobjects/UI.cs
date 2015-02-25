@@ -15,7 +15,7 @@ class UI : GameObjectList
         moneyText = new TextGameObject("Fonts/Hud");
         moneyText.Position = new Vector2(50, 50);
         this.Add(moneyText);
-        Bar policeBar = new Bar(4, "policebar");
+        Bar policeBar = new Bar(4, "police");
         this.Add(policeBar);
     }
     public override void Update(GameTime gameTime)
