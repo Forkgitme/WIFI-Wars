@@ -65,8 +65,6 @@ C:\Users\Gebruiker\Desktop\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debu
 C:\Users\Gebruiker\Desktop\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Backgrounds\Background8.xnb
 C:\Users\Gebruiker\Desktop\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Backgrounds\Background9.xnb
 C:\Users\Gebruiker\Desktop\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\tower.xnb
-C:\Users\Gebruiker\Desktop\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\policebar.xnb
-C:\Users\Gebruiker\Desktop\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\policebar2.xnb
 C:\Users\Gebruiker\Desktop\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Levels\1.txt
 C:\Users\Gebruiker\Desktop\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Levels\8.txt
 C:\Users\Gebruiker\Desktop\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Levels\2.txt
@@ -86,3 +84,5 @@ C:\Users\Gebruiker\Desktop\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\obj\x86\Debu
 C:\Users\Gebruiker\Desktop\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\Gebruiker\Desktop\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\obj\x86\Debug\TickTick.exe
 C:\Users\Gebruiker\Desktop\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\obj\x86\Debug\TickTick.pdb
+C:\Users\Gebruiker\Desktop\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\bar.xnb
+C:\Users\Gebruiker\Desktop\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\bar2.xnb

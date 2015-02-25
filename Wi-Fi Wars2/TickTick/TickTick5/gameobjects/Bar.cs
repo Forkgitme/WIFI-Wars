@@ -6,36 +6,46 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
 
-class PoliceBar : SpriteGameObject
+class Bar : SpriteGameObject
 {
     float resource;         
     int totalResource;      
-    Texture2D barPart;   
+    Texture2D barPart;
+    int type;
   
-    public PoliceBar(string id = "policebar", int layer = 9, int sheetIndex = 1)
-        : base("Sprites/policebar2", layer, id, sheetIndex)
+    public Bar(int t, string id, int layer = 9, int sheetIndex = 1)
+        : base("Sprites/bar2", layer, id, sheetIndex)
     {
+        type = t;
         this.Position = new Vector2(300, 60);
-        barPart = WifiWars.AssetManager.Content.Load<Texture2D>("Sprites/policebar");
+        barPart = WifiWars.AssetManager.Content.Load<Texture2D>("Sprites/bar");
         resource = 0;
         totalResource = 1000;
     }
 
     public override void Draw(GameTime gameTime, Microsoft.Xna.Framework.Graphics.SpriteBatch spriteBatch)
     {
+        Color barColor = Color.White;
+        if (type == 1)
+            barColor = Color.Red;
+        else if (type == 2)
+            barColor = Color.Purple;
+        else if (type == 3)
+            barColor = Color.Yellow;
+        else if (type == 4)
+            barColor = Color.Blue;       
             base.Draw(gameTime, spriteBatch);
             spriteBatch.Draw(barPart,
                              new Rectangle((int)Position.X,
                                           (int)Position.Y,
                                           (int)(sprite.Width * ((double)resource / totalResource)),
-                                          sprite.Height),
-                             Color.Blue);
+                                          sprite.Height), barColor);
     }
 
     public override void Update(GameTime gameTime)
     {
         base.Update(gameTime);
-        if (resource<totalResource)
+        if (resource<totalResource && type == 4)
         resource += 0.2f;
     }
 

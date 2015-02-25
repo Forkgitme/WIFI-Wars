@@ -231,15 +231,15 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Sprites\policebar.png">
-      <Name>policebar</Name>
+    <Compile Include="Sprites\bar.png">
+      <Name>bar</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Sprites\policebar2.png">
-      <Name>policebar2</Name>
+    <Compile Include="Sprites\bar2.png">
+      <Name>bar2</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
