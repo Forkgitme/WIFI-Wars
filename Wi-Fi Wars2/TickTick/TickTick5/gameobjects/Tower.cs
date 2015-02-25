@@ -14,12 +14,12 @@ using Microsoft.Xna.Framework;
         }
         public override void HandleInput(InputHelper inputHelper)
         {
-            GameObjectList towerList = this.parent as GameObjectList;
-            Level level = towerList.Parent as Level;
-            SpriteGameObject background = level.Find("background") as SpriteGameObject;
             if (!placed && inputHelper.MousePosition.X > 0 && inputHelper.MousePosition.Y > 0 && inputHelper.MousePosition.Y < 825 && inputHelper.MousePosition.X < 1440)
             {
                 this.position = inputHelper.MousePosition - this.Center;
+                GameObjectList towerList = this.parent as GameObjectList;
+                Level level = towerList.Parent as Level;
+                SpriteGameObject background = level.Find("background") as SpriteGameObject;
                 if (background.Sprite.GetPixelColor((int)position.X + (int)Center.X, (int)position.Y + (int)Center.Y).G == 255)
                 {
                     this.Sprite.SpriteColor = Color.White;
@@ -27,18 +27,29 @@ using Microsoft.Xna.Framework;
                     {
                         this.placed = true;
                         level.HoldingTower = false;
+                        List<GameObject> towers = towerList.Objects;
+                        foreach (Tower tower in towers)
+                            CheckConnection();
+                        Server server1 = GameWorld.Find("server1") as Server;
+                        if (server1 != null)
+                            server1.CheckConnection();
+                        Server server2 = GameWorld.Find("server2") as Server;
+                        if (server2 != null)
+                            server2.CheckConnection();
+                        Server server3 = GameWorld.Find("server3") as Server;
+                        if (server3 != null)
+                            server3.CheckConnection();
                     }
                 }
                 else
                     this.Sprite.SpriteColor = Color.Red;
             }
         }
-        public override void Update(GameTime gameTime)
+        public void CheckConnection()
         {
-            base.Update(gameTime);
-            SpriteGameObject home = GameWorld.Find("home") as SpriteGameObject;
             if (placed && !connected)
-            { 
+            {
+            SpriteGameObject home = GameWorld.Find("home") as SpriteGameObject;
             if (this.CollidesWith(home))
                 connected = true;
             GameObjectList towerList = GameWorld.Find("towerlist") as GameObjectList;
@@ -46,6 +57,13 @@ using Microsoft.Xna.Framework;
             foreach (Tower tower in towers)
                 if (this.CollidesWith(tower) && tower.Connected)
                     this.connected = true;
+            if (connected)
+            { 
+                GameObjectList towerList2 = GameWorld.Find("towerlist") as GameObjectList;
+                    List<GameObject> towers2 = towerList2.Objects;
+                    foreach (Tower tower2 in towers2)
+                            tower2.CheckConnection();
+            }
             }
         }
         public bool Connected
