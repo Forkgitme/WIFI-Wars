@@ -8,15 +8,26 @@ using Microsoft.Xna.Framework;
     {
         bool placed;
         bool connected;
-        public Tower(int layer = 2, string id = "tower") : base("Sprites/tower", layer, id) 
+        bool based;
+        SpriteGameObject towerBase;
+        public Tower(int layer = 2, string id = "tower") : base("Sprites/Range", layer, id) 
         {
             this.Position = new Vector2(-1000, -1000);
         }
         public override void HandleInput(InputHelper inputHelper)
         {
+            if (!based)
+            {
+                towerBase = new SpriteGameObject("Sprites/tower", 10);
+                GameObjectList towerList = this.parent as GameObjectList;
+                Level level = towerList.Parent as Level;
+                level.Add(towerBase);
+                based = true;
+            }
             if (!placed && inputHelper.MousePosition.X > 0 && inputHelper.MousePosition.Y > 0 && inputHelper.MousePosition.Y < 825 && inputHelper.MousePosition.X < 1440)
             {
                 this.position = inputHelper.MousePosition - this.Center;
+                towerBase.Position = inputHelper.MousePosition - towerBase.Center;
                 GameObjectList towerList = this.parent as GameObjectList;
                 Level level = towerList.Parent as Level;
                 SpriteGameObject background = level.Find("background") as SpriteGameObject;
