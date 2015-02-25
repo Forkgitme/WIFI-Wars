@@ -37,7 +37,7 @@ using Microsoft.Xna.Framework;
         {
             base.Update(gameTime);
             SpriteGameObject home = GameWorld.Find("home") as SpriteGameObject;
-            if (placed)
+            if (placed && !connected)
             { 
             if (this.CollidesWith(home))
                 connected = true;

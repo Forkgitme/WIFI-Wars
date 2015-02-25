@@ -51,10 +51,13 @@ class Server : SpriteGameObject
             packetTimer = 0;
             makePacket = true;
         }
+        if (!connected)
+        { 
         GameObjectList towerList = GameWorld.Find("towerlist") as GameObjectList;
         List<GameObject> towers = towerList.Objects;
         foreach (Tower tower in towers)
             if (this.CollidesWith(tower) && tower.Connected)
                 this.connected = true;
+        }
     }
 }
