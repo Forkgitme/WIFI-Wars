@@ -17,7 +17,7 @@ class Bar : SpriteGameObject
         : base("Sprites/bar2", layer, id, sheetIndex)
     {
         type = t;
-        this.Position = new Vector2(300, 60);
+        this.Position = new Vector2(300, 30 + 30*t);
         barPart = WifiWars.AssetManager.Content.Load<Texture2D>("Sprites/bar");
         resource = 0;
         totalResource = 1000;

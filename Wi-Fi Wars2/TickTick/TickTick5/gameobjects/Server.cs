@@ -16,7 +16,7 @@ class Server : SpriteGameObject
         switch(color)
         {
             case 1:
-                serverColor = Color.Red;
+                serverColor = Color.Red;         
                 break;
             case 2:
                 serverColor = Color.Purple;
@@ -26,6 +26,7 @@ class Server : SpriteGameObject
                 break;
             default: throw new IOException("Invalid colour code: " + color);
         }
+        sprite.SpriteColor = serverColor;
     }
 
     public override void HandleInput(InputHelper inputHelper)
