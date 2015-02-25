@@ -6,19 +6,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-    class Packet:SpriteGameObject
+    class Packet : SpriteGameObject
     {
-        new Vector2 position;
-        new Texture2D sprite;
-
-        public Packet(Vector2 spawnposition) : base("packet", 100, "packet", 0)
+        public Packet(Vector2 spawnposition, Color c) : base("Sprites/Packet", 100, "packet", 0)
         {
-
+            sprite.SpriteColor = c;
+            velocity = new Vector2(50, 50);
+            position = spawnposition;
         }
 
         public override void Update(GameTime gameTime) //de locatie van het packet blijven updaten
         {
-            base.Update(gameTime);
+            base.Update(gameTime);          
         }
 
         public override void Draw(GameTime gameTime, SpriteBatch spriteBatch) //draw het packet op de nieuwe locatie

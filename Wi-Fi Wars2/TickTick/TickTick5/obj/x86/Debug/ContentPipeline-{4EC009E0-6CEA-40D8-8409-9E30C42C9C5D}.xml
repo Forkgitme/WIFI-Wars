@@ -226,6 +226,24 @@
       <Output>C:\Users\Gebruiker\Desktop\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\bar2.xnb</Output>
       <Time>2015-02-25T10:56:00.7420173+01:00</Time>
     </Item>
+    <Item>
+      <Source>Sprites\Server.png</Source>
+      <Name>Sprites\Server</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Gebruiker\Desktop\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\Server.xnb</Output>
+      <Time>2015-02-25T10:56:00.7280057+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Packet.png</Source>
+      <Name>Sprites\Packet</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Gebruiker\Desktop\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\Packet.xnb</Output>
+      <Time>2015-02-25T11:45:30.1841122+01:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID>{4EC009E0-6CEA-40D8-8409-9E30C42C9C5D}</ContentProjectGUID>

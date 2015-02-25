@@ -5,9 +5,11 @@ using Microsoft.Xna.Framework;
 class Server : SpriteGameObject
 {
     Color serverColor;
+    double packetTimer;
+    bool makePacket;
 
     public Server(int color, Vector2 pos, int layer, String id)
-        : base("server", layer, id)
+        : base("Sprites/Server", layer, id)
     {
         position = pos;
         
@@ -23,6 +25,28 @@ class Server : SpriteGameObject
                 serverColor = Color.Yellow;
                 break;
             default: throw new IOException("Invalid colour code: " + color);
+        }
+    }
+
+    public override void HandleInput(InputHelper inputHelper)
+    {
+        base.HandleInput(inputHelper);
+        if (makePacket)
+        {
+            GameObjectList level = this.parent as GameObjectList;
+            Packet packet = new Packet(this.position + this.Center, serverColor);
+            level.Add(packet);
+            makePacket = false;
+        }
+    }
+    public override void Update(GameTime gameTime)
+    {
+        base.Update(gameTime);
+        packetTimer += gameTime.ElapsedGameTime.TotalSeconds;
+        if (packetTimer > 3)
+        {
+            packetTimer = 0;
+            makePacket = true;
         }
     }
 }
