@@ -4,6 +4,7 @@ partial class Level : GameObjectList
 {
     protected bool locked, solved;
     protected Button quitButton;
+    protected UI ui;
 
     public Level(int levelIndex)
     {
@@ -12,9 +13,10 @@ partial class Level : GameObjectList
         this.Add(quitButton);
         SpriteGameObject background = new SpriteGameObject("Backgrounds/Background" + levelIndex, 0, "background");
         this.Add(background);
-        //this.LoadLevel("Content/Levels/" + levelIndex + ".txt");
-        UI ui = new UI(100);
+        ui = new UI(100);
         this.Add(ui);
+        this.LoadLevel("Content/Levels/" + levelIndex + ".txt");
+
     }
 
     public bool Completed

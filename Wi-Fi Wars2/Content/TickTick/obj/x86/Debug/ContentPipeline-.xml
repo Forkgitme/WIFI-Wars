@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <Item>
+      <Source>Fonts\Hud.spritefont</Source>
+      <Name>Fonts\Hud</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Fonts\Hud.xnb</Output>
+      <Time>2015-02-25T10:57:45.9262856+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Fonts\HintFont.spritefont</Source>
+      <Name>Fonts\HintFont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Fonts\HintFont.xnb</Output>
+      <Time>2015-02-25T10:57:45.9252861+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Backgrounds\spr_levelselect.jpg</Source>
+      <Name>Backgrounds\spr_levelselect</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Backgrounds\spr_levelselect.xnb</Output>
+      <Time>2015-02-25T10:57:45.9182989+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\spr_button_help.png</Source>
+      <Name>Sprites\spr_button_help</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\spr_button_help.xnb</Output>
+      <Time>2015-02-25T10:57:45.954748+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\spr_button_play.png</Source>
+      <Name>Sprites\spr_button_play</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\spr_button_play.xnb</Output>
+      <Time>2015-02-25T10:57:45.9557483+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Backgrounds\spr_help.jpg</Source>
+      <Name>Backgrounds\spr_help</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Backgrounds\spr_help.xnb</Output>
+      <Time>2015-02-25T10:57:45.9142771+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\spr_button_back.png</Source>
+      <Name>Sprites\spr_button_back</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\spr_button_back.xnb</Output>
+      <Time>2015-02-25T10:57:45.9527454+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\spr_level_locked.png</Source>
+      <Name>Sprites\spr_level_locked</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\spr_level_locked.xnb</Output>
+      <Time>2015-02-25T10:57:45.9577494+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\spr_level_solved.png</Source>
+      <Name>Sprites\spr_level_solved</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\spr_level_solved.xnb</Output>
+      <Time>2015-02-25T10:57:45.9577494+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\spr_level_unsolved.png</Source>
+      <Name>Sprites\spr_level_unsolved</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\spr_level_unsolved.xnb</Output>
+      <Time>2015-02-25T10:57:45.9587501+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\spr_button_quit.png</Source>
+      <Name>Sprites\spr_button_quit</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\spr_button_quit.xnb</Output>
+      <Time>2015-02-25T10:57:45.9567487+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Backgrounds\spr_title.jpg</Source>
+      <Name>Backgrounds\spr_title</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Backgrounds\spr_title.xnb</Output>
+      <Time>2015-02-25T10:57:45.9232863+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Backgrounds\Background1.png</Source>
+      <Name>Backgrounds\Background1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Backgrounds\Background1.xnb</Output>
+      <Time>2015-02-25T10:57:45.8522331+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Backgrounds\Background10.png</Source>
+      <Name>Backgrounds\Background10</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Backgrounds\Background10.xnb</Output>
+      <Time>2015-02-25T10:57:45.8572367+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Backgrounds\Background2.png</Source>
+      <Name>Backgrounds\Background2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Backgrounds\Background2.xnb</Output>
+      <Time>2015-02-25T10:57:45.8622406+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Backgrounds\Background3.png</Source>
+      <Name>Backgrounds\Background3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Backgrounds\Background3.xnb</Output>
+      <Time>2015-02-25T10:57:45.8662431+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Backgrounds\Background4.png</Source>
+      <Name>Backgrounds\Background4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Backgrounds\Background4.xnb</Output>
+      <Time>2015-02-25T10:57:45.8712486+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Backgrounds\Background5.png</Source>
+      <Name>Backgrounds\Background5</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Backgrounds\Background5.xnb</Output>
+      <Time>2015-02-25T10:57:45.8752506+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Backgrounds\Background6.png</Source>
+      <Name>Backgrounds\Background6</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Backgrounds\Background6.xnb</Output>
+      <Time>2015-02-25T10:57:45.8792527+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Backgrounds\Background7.png</Source>
+      <Name>Backgrounds\Background7</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Backgrounds\Background7.xnb</Output>
+      <Time>2015-02-25T10:57:45.8822544+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Backgrounds\Background8.png</Source>
+      <Name>Backgrounds\Background8</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Backgrounds\Background8.xnb</Output>
+      <Time>2015-02-25T10:57:45.8862577+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Backgrounds\Background9.png</Source>
+      <Name>Backgrounds\Background9</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Backgrounds\Background9.xnb</Output>
+      <Time>2015-02-25T10:57:45.8912608+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\tower.png</Source>
+      <Name>Sprites\tower</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\tower.xnb</Output>
+      <Time>2015-02-25T10:57:45.9597512+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\policebar.png</Source>
+      <Name>Sprites\policebar</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\policebar.xnb</Output>
+      <Time>2015-02-25T10:57:45.9507444+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\policebar2.png</Source>
+      <Name>Sprites\policebar2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\policebar2.xnb</Output>
+      <Time>2015-02-25T10:57:45.9517451+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Server.png</Source>
+      <Name>Sprites\Server</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\Server.xnb</Output>
+      <Time>2015-02-25T10:57:45.9347342+01:00</Time>
+    </Item>
+    <BuildSuccessful>true</BuildSuccessful>
+    <Settings>
+      <ContentProjectGUID Null="true" />
+      <TargetPlatform>Windows</TargetPlatform>
+      <TargetProfile>Reach</TargetProfile>
+      <BuildConfiguration>Debug</BuildConfiguration>
+      <CompressContent>false</CompressContent>
+      <RootDirectory>C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\Content\TickTick\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\Content\TickTick\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Value>2011-09-01T17:22:30+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Value>2011-09-01T17:22:30+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Value>2011-09-01T17:22:30+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Value>2011-09-01T17:22:30+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Value>2011-09-01T17:22:30+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Value>2011-09-01T17:22:30+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2014-09-10T18:50:02.1961628+02:00</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>

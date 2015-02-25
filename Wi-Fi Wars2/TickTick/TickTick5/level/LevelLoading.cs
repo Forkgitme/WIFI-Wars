@@ -6,13 +6,15 @@ partial class Level : GameObjectList
 {
     public void LoadLevel(string path)
     {
+        Vector2 position = Vector2.Zero;
         List<string> textlines = new List<string>();
         StreamReader fileReader = new StreamReader(path);
         string line = fileReader.ReadLine();
         while (line != null)
         {
             string[] obj = line.Split(' ');
-            Vector2 position = new Vector2(float.Parse(obj[1]), float.Parse(obj[2]));
+            if(obj.Length > 3)
+                position = new Vector2(float.Parse(obj[1]), float.Parse(obj[2]));
 
             switch (obj[0])
             {
@@ -26,6 +28,9 @@ partial class Level : GameObjectList
                 case "home": break;
                 case "hideout": break;
                 case "antipirate": break;
+                case "money":
+                    ui.Money = int.Parse(obj[1]);
+                    break;
                 default: throw new IOException("Unknown object type: " + obj[0]);
             }
 

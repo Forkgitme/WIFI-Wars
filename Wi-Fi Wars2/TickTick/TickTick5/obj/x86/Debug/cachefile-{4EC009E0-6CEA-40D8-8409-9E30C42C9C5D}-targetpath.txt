@@ -23,6 +23,7 @@ Content\Backgrounds\Background9.xnb
 Content\Sprites\tower.xnb
 Content\Sprites\policebar.xnb
 Content\Sprites\policebar2.xnb
+Content\Sprites\Server.xnb
 Content\Levels\1.txt
 Content\Levels\8.txt
 Content\Levels\2.txt

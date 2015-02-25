@@ -7,7 +7,7 @@ using Microsoft.Xna.Framework;
     class Tower : SpriteGameObject
     {
         bool placed;
-        public Tower(int layer = 0, string id = "tower") : base("Sprites/tower", layer, id) 
+        public Tower(int layer = 2, string id = "tower") : base("Sprites/tower", layer, id) 
         {
             this.Position = new Vector2(-1000, -1000);
         }

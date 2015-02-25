@@ -7,14 +7,14 @@ class Server : SpriteGameObject
     Color serverColor;
 
     public Server(int color, Vector2 pos, int layer, String id)
-        : base("server", layer, id)
+        : base("Sprites/Server", layer, id)
     {
         position = pos;
         
         switch(color)
         {
             case 1:
-                serverColor = Color.Red;
+                serverColor = Color.Red;         
                 break;
             case 2:
                 serverColor = Color.Purple;
@@ -24,5 +24,6 @@ class Server : SpriteGameObject
                 break;
             default: throw new IOException("Invalid colour code: " + color);
         }
+        sprite.SpriteColor = serverColor;
     }
 }
