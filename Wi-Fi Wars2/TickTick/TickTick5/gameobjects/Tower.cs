@@ -37,7 +37,7 @@ using Microsoft.Xna.Framework;
                     if (inputHelper.MouseLeftButtonPressed())
                     {
                         this.placed = true;
-                        level.HoldingTower = false;
+                        level.Holding = false;
                         List<GameObject> towers = towerList.Objects;
                         foreach (Tower tower in towers)
                             CheckConnection();
@@ -52,8 +52,6 @@ using Microsoft.Xna.Framework;
                             server3.CheckConnection();
                     }
                 }
-                else
-                    this.Sprite.SpriteColor = Color.Red;
             }
         }
         public void CheckConnection()

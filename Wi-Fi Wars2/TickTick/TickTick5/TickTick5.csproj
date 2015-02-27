@@ -128,6 +128,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="gameobjects\Firewall.cs" />
     <Compile Include="gameobjects\Home.cs" />
     <Compile Include="gameobjects\Packet.cs" />
     <Compile Include="gameobjects\Bar.cs" />
