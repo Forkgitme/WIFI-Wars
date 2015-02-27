@@ -13,7 +13,7 @@ using Microsoft.Xna.Framework.Input;
         {
             this.LoadAnimation("Sprites/firewall@5", "burning", true, 0.1f);
             this.LoadAnimation("Sprites/firewall", "idle", true, 0.2f);
-            this.PlayAnimation("idle");
+            this.PlayAnimation("burning");
         }
         public override void HandleInput(InputHelper inputHelper)
         {
