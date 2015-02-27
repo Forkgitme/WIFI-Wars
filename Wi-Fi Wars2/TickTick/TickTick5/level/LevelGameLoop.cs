@@ -3,7 +3,7 @@ using Microsoft.Xna.Framework.Input;
 
 partial class Level : GameObjectList
 {
-    bool holdingTower;
+    bool holding;
     public override void HandleInput(InputHelper inputHelper)
     {
         base.HandleInput(inputHelper);
@@ -13,11 +13,18 @@ partial class Level : GameObjectList
             GameEnvironment.GameStateManager.SwitchTo("levelMenu");
         }
         UI ui = this.Find("ui") as UI;
-        if (inputHelper.KeyPressed(Keys.T) && !holdingTower && ui.Money >= 20)
+        if (inputHelper.KeyPressed(Keys.T) && !holding && ui.Money >= 20)
         {
             Tower tower = new Tower();
             towerList.Add(tower);
-            holdingTower = true;
+            holding = true;
+            ui.Money -= 20;
+        }
+        if (inputHelper.KeyPressed(Keys.F) && !holding && ui.Money >= 20)
+        {
+            Firewall firewall = new Firewall();
+            this.Add(firewall);
+            holding = true;
             ui.Money -= 20;
         }
     }
@@ -32,15 +39,15 @@ partial class Level : GameObjectList
         base.Reset();
     }
 
-    public bool HoldingTower
+    public bool Holding
     {
         get
         {
-            return holdingTower;
+            return holding;
         }
         set
         {
-            holdingTower = value;
+            holding = value;
         }
     }
 }

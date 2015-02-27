@@ -37,7 +37,7 @@ using Microsoft.Xna.Framework;
                     if (inputHelper.MouseLeftButtonPressed())
                     {
                         this.placed = true;
-                        level.HoldingTower = false;
+                        level.Holding = false;
                         List<GameObject> towers = towerList.Objects;
                         foreach (Tower tower in towers)
                             CheckConnection();
