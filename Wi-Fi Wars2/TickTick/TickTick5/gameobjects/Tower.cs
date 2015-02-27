@@ -52,8 +52,6 @@ using Microsoft.Xna.Framework;
                             server3.CheckConnection();
                     }
                 }
-                else
-                    this.Sprite.SpriteColor = Color.Red;
             }
         }
         public void CheckConnection()

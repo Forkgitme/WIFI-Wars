@@ -253,6 +253,24 @@
       <Output>C:\Users\Gebruiker\Desktop\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\Range.xnb</Output>
       <Time>2015-02-25T13:12:06.0063062+01:00</Time>
     </Item>
+    <Item>
+      <Source>Sprites\firewall@5.png</Source>
+      <Name>Sprites\firewall@5</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Gebruiker\Desktop\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\firewall@5.xnb</Output>
+      <Time>2015-02-27T13:59:06.7982112+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\firewall.png</Source>
+      <Name>Sprites\firewall</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Gebruiker\Desktop\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\firewall.xnb</Output>
+      <Time>2015-02-27T13:59:06.8082192+01:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID>{4EC009E0-6CEA-40D8-8409-9E30C42C9C5D}</ContentProjectGUID>
