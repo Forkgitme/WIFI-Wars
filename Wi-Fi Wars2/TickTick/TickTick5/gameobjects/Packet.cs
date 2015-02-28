@@ -61,10 +61,8 @@ using System.Text;
         }
 
         //Used to find a shortest path from server to home 
-        public void FindPadPlease()
-        {
-
-           SpriteGameObject server1 = GameWorld.Find("server1") as SpriteGameObject;
+        public void FindPadPlease(SpriteGameObject server)
+        {         
            GameObjectList TowerList = GameWorld.Find("towerlist") as GameObjectList;
            SpriteGameObject home = GameWorld.Find("home") as SpriteGameObject;
 
@@ -73,7 +71,7 @@ using System.Text;
             foreach (Tower tower in Towers)
                 OpenList.Add(tower);
 
-            ClosedList.Add(server1);
+            ClosedList.Add(server);
 
             int n = 0;
            
@@ -103,6 +101,8 @@ using System.Text;
 
                     n++;
                 }  
+
+
         }
 
   
