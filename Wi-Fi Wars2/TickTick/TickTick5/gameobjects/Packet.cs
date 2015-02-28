@@ -64,8 +64,8 @@ using System.Text;
             List<GameObject> OpenList = new List<GameObject>();
             List<GameObject> ClosedList = new List<GameObject>();
 
-           GameObjectList TowerList = GameWorld.Find("towerlist") as GameObjectList;
-           SpriteGameObject home = GameWorld.Find("home") as SpriteGameObject;
+            GameObjectList TowerList = GameWorld.Find("towerlist") as GameObjectList;
+            SpriteGameObject home = GameWorld.Find("home") as SpriteGameObject;
 
             OpenList.Add(home);
             List<GameObject> Towers = TowerList.Objects;
@@ -95,9 +95,12 @@ using System.Text;
                     foreach (SpriteGameObject obj in OpenList)
                     {
                         if (obj.CollidesWith(Node) && CalculateFvalue(obj.Position, Node.Position, home.Position) == lowest)
+                        {
                             ClosedList.Add(obj);
-                        OpenList.Remove(obj);
-                        TowersFvalues.Clear();
+                            OpenList.Remove(obj);
+                            TowersFvalues.Clear();
+                            break;
+                        }
                     }
 
                     n++;
