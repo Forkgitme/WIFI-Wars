@@ -8,9 +8,7 @@ using System.Text;
 
     class Packet : SpriteGameObject
     {
-        List<GameObject> OpenList;
-        List<GameObject> ClosedList;
-        List<float> TowersFvalues;
+  
     
    
 
@@ -23,9 +21,7 @@ using System.Text;
             position = spawnposition;
             type = t;
 
-            TowersFvalues = new List<float>();
-            OpenList = new List<GameObject>();
-            ClosedList = new List<GameObject>();
+         
             
 
 
@@ -60,9 +56,14 @@ using System.Text;
             return Fvalue;
         }
 
+
         //Used to find a shortest path from server to home 
         public void FindPadPlease(SpriteGameObject server)
-        {         
+        {
+            List<float> TowersFvalues = new List<float>();
+            List<GameObject> OpenList = new List<GameObject>();
+            List<GameObject> ClosedList = new List<GameObject>();
+
            GameObjectList TowerList = GameWorld.Find("towerlist") as GameObjectList;
            SpriteGameObject home = GameWorld.Find("home") as SpriteGameObject;
 
