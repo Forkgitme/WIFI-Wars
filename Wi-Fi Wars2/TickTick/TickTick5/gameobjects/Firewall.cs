@@ -15,6 +15,8 @@ using Microsoft.Xna.Framework.Input;
             this.LoadAnimation("Sprites/firewall", "idle", true, 0.2f);
             this.PlayAnimation("burning");
         }
+
+      
         public override void HandleInput(InputHelper inputHelper)
         {
             base.HandleInput(inputHelper);

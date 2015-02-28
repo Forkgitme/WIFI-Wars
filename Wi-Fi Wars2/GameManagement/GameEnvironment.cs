@@ -28,6 +28,8 @@ public class GameEnvironment : Game
         gameSettingsManager = new GameSettingsManager();
     }
 
+
+
     public static Point Screen
     {
         get { return GameEnvironment.screen; }
@@ -80,13 +82,14 @@ public class GameEnvironment : Game
                                         (float)GraphicsDevice.Viewport.Height / screen.Y);
         spriteScale = Matrix.CreateScale(inputHelper.Scale.X, inputHelper.Scale.Y, 1);
     }
-
+  
     protected override void LoadContent()
     {
         DrawingHelper.Initialize(this.GraphicsDevice);
         spriteBatch = new SpriteBatch(GraphicsDevice);
     }
 
+    
     protected void HandleInput()
     {
         inputHelper.Update();
