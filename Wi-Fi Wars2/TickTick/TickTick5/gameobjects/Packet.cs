@@ -8,6 +8,10 @@ using System.Text;
 
     class Packet : SpriteGameObject
     {
+  
+    
+   
+
         int type;
 
         public Packet(Vector2 spawnposition, Color c, int t) : base("Sprites/Packet", 100, "packet", 0)
@@ -16,6 +20,12 @@ using System.Text;
             velocity = new Vector2(50, 50);
             position = spawnposition;
             type = t;
+
+         
+            
+
+
+
         }
 
         public override void HandleInput(InputHelper inputHelper)
