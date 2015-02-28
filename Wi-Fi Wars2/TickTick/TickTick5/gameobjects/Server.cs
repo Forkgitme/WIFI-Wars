@@ -10,6 +10,7 @@ class Server : SpriteGameObject
     bool makePacket;
     bool connected;
     int type;
+    
 
     public Server(int color, Vector2 pos, int layer, String id)
         : base("Sprites/Server", layer, id)

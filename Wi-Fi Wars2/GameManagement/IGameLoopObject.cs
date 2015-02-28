@@ -3,6 +3,7 @@ using Microsoft.Xna.Framework.Graphics;
 
 public interface IGameLoopObject
 {
+    
     void HandleInput(InputHelper inputHelper);
 
     void Update(GameTime gameTime);
