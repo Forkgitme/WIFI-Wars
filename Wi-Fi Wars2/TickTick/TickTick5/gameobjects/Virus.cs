@@ -6,8 +6,8 @@ using Microsoft.Xna.Framework;
 
 class Virus : Packet
 {
-    public Virus(Vector2 spawnPosition)
-        : base(spawnPosition, Color.White, 4)
+    public Virus(Vector2 spawnPosition, Server server, GameObjectList list, SpriteGameObject obj)
+        : base(spawnPosition, Color.White, 4, server, list ,obj)
     {
     }
 }
