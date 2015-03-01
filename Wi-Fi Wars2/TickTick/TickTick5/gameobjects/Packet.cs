@@ -213,20 +213,7 @@ using System.Text;
         {
             base.Update(gameTime);
 
-            if(StageIndex != Path.Count-1)
-            {
-                velocity = Directions[StageIndex]*Speed;
-                StagePos += (float)gameTime.ElapsedGameTime.TotalSeconds * Speed;
-
-                if(StagePos > Lengths[StageIndex])
-                {
-                    StageIndex++;
-                    StagePos = 0;
-                }
-                
-             
-
-            }
+            
 
             
 
@@ -237,6 +224,17 @@ using System.Text;
             if (this.CollidesWith(buffer))
                 this.Velocity = -this.Velocity;               
             }     
+            else if(StageIndex != Path.Count-1)
+            {
+                velocity = Directions[StageIndex]*Speed;
+                StagePos += (float)gameTime.ElapsedGameTime.TotalSeconds * Speed;
+
+                if(StagePos > Lengths[StageIndex])
+                {
+                    StageIndex++;
+                    StagePos = 0;
+                }                           
+            }
         }
 
         public override void Draw(GameTime gameTime, SpriteBatch spriteBatch) //draw het packet op de nieuwe locatie
