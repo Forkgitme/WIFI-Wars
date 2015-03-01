@@ -8,8 +8,10 @@ using System.Text;
 
     class Packet : SpriteGameObject
     {
-
-
+        Vector2 PacketPosition;
+        float StagePos;
+        int StageIndex;
+        float Speed = 500;
 
         static int bufferAmount;
         static bool holdingPacket;
@@ -18,14 +20,9 @@ using System.Text;
         public Packet(Vector2 spawnposition, Color c, int t) : base("Sprites/Packet", 100, "packet", 0)
         {
             sprite.SpriteColor = c;
-            velocity = new Vector2(50, 50);
+
             position = spawnposition;
             type = t;
-
-         
-            
-
-
 
         }
 
@@ -200,13 +197,28 @@ using System.Text;
         }
 
 
-        public void MovePackets(SpriteGameObject server)
+        public void MovePackets(SpriteGameObject server, GameTime gameTime)
         {
             List<Vector2> Path = FindPad(server);
             Array[] ArrayofArrays = ArrayWithDirectionsAndLengthofPath(Path);
             Vector2[] Directions = ArrayofArrays[0] as Vector2[];
             float[] Lengths = ArrayofArrays[1] as float[];
 
+            if (StageIndex != Path.Count - 1)
+            {
+                StagePos += Speed * (float)gameTime.ElapsedGameTime.Seconds;
+                while (StagePos > Lengths[StageIndex])
+                {
+                    StagePos -= Lengths[StageIndex];
+                    StageIndex++;
+                    if (StageIndex == Path.Count - 1)
+                    {
+                        PacketPosition = Path[StageIndex];
+                        return;
+                    }
+                }
+                PacketPosition = Path[StageIndex] + Directions[StageIndex] * StagePos;
+            }
 
         }
     
@@ -215,8 +227,8 @@ using System.Text;
         {
             base.Update(gameTime);
 
-            //NOG NIET WERKENDE
-            // MovePackets(GameWorld.Find("server1") as SpriteGameObject);
+            
+            MovePackets(GameWorld.Find("server1") as SpriteGameObject,gameTime);
 
             if (inBuffer)
             {      
