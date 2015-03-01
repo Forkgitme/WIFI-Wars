@@ -13,7 +13,6 @@ using System.Text;
 
         static int bufferAmount;
         static bool holdingPacket;
-        double velocityTimer;
         int type;
         bool inBuffer, held;
         public Packet(Vector2 spawnposition, Color c, int t) : base("Sprites/Packet", 100, "packet", 0)
