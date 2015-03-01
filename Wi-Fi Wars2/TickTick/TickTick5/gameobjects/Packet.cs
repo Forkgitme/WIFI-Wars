@@ -12,8 +12,11 @@ using System.Text;
         List<Vector2> Path;
         Array[] ArrayofArrays;
         Vector2[] Directions;
+        float[] Lengths;
 
         int StageIndex;
+        float StagePos;
+        float Speed = 100;
 
         static int bufferAmount;
         static bool holdingPacket;
@@ -34,7 +37,7 @@ using System.Text;
 
             Directions= ArrayofArrays[0] as Vector2[];
 
-            float[] Lengths = ArrayofArrays[1] as float[];
+            Lengths = ArrayofArrays[1] as float[];
 
         }
 
@@ -212,8 +215,15 @@ using System.Text;
 
             if(StageIndex != Path.Count-1)
             {
-                velocity = Directions[StageIndex]*200;
+                velocity = Directions[StageIndex]*Speed;
+                StagePos += (float)gameTime.ElapsedGameTime.TotalSeconds * Speed;
 
+                if(StagePos > Lengths[StageIndex])
+                {
+                    StageIndex++;
+                    StagePos = 0;
+                }
+                
              
 
             }
