@@ -8,12 +8,14 @@ using System.Text;
 
     class Packet : SpriteGameObject
     {
-  
-    
-   
 
+
+
+        static int bufferAmount;
+        static bool holdingPacket;
+        double velocityTimer;
         int type;
-
+        bool inBuffer, held;
         public Packet(Vector2 spawnposition, Color c, int t) : base("Sprites/Packet", 100, "packet", 0)
         {
             sprite.SpriteColor = c;
@@ -35,14 +37,78 @@ using System.Text;
 
             SpriteGameObject home = GameWorld.Find("home") as SpriteGameObject;
 
+            if (inBuffer)
+            {            
+                if (!holdingPacket)
+                { 
+                if (inputHelper.MousePosition.X < this.Position.X + Center.X + 10 && inputHelper.MousePosition.X > this.Position.X + Center.X - 10 && inputHelper.MousePosition.Y < this.Position.Y + Center.Y + 10 && inputHelper.MousePosition.Y > this.Position.Y + Center.Y - 10)
+                    if (inputHelper.MouseLeftButtonPressed())
+                    { 
+                        this.Velocity = Vector2.Zero;
+                        holdingPacket = true;
+                        held = true;
+                    }     
+                }
+                Bar serverBar = GameWorld.Find("serverbar" + type) as Bar;
+                Bar serverBar2 = null;
+                Bar serverBar3 = null;
+                if (type == 1)
+                {
+                    serverBar2 = GameWorld.Find("serverbar" + 2) as Bar;
+                    serverBar3 = GameWorld.Find("serverbar" + 3) as Bar;
+                }
+                else if (type == 2)
+                {
+                    serverBar2 = GameWorld.Find("serverbar" + 1) as Bar;
+                    serverBar3 = GameWorld.Find("serverbar" + 3) as Bar;
+                }
+                else if (type == 3)
+                {
+                    serverBar2 = GameWorld.Find("serverbar" + 1) as Bar;
+                    serverBar3 = GameWorld.Find("serverbar" + 2) as Bar;
+                }
+                if (this.CollidesWith(serverBar))
+                { 
+                    serverBar.Resource += 50;
+                    bufferAmount -= 1;
+                    holdingPacket = false;
+                    Level level = this.Parent as Level;
+                    level.Remove(this);
+                }
+                if (serverBar2 != null)
+                    if (this.CollidesWith(serverBar2))
+                    {
+                        Level level = this.Parent as Level;
+                        level.Remove(this);
+                        bufferAmount -= 1;
+                        holdingPacket = false;
+                    }
+                if (serverBar3 != null)
+                    if (this.CollidesWith(serverBar3))
+                    {
+                        Level level = this.Parent as Level;
+                        level.Remove(this);
+                        bufferAmount -= 1;
+                        holdingPacket = false;
+                    }           
+                if (held)
+                    this.Position = inputHelper.MousePosition - Center;
+            }
+                                
             if (this.CollidesWith(home))
             {
-                Bar serverBar = GameWorld.Find("serverbar" + type) as Bar;
-                serverBar.Resource += 50;
                 Level level = this.Parent as Level;
                 Bar bar = GameWorld.Find("police") as Bar;
                 bar.Active = true;
-                level.Remove(this);
+                if (bufferAmount <5)
+                { 
+                this.Position = new Vector2(670, 100);
+                this.Velocity = new Vector2(WifiWars.Random.Next(-50, 51), WifiWars.Random.Next(-50, 51));
+                inBuffer = true;
+                bufferAmount += 1;
+                }
+                else
+                    level.Remove(this);
             }
         }
 
@@ -112,8 +178,13 @@ using System.Text;
   
         public override void Update(GameTime gameTime) //de locatie van het packet blijven updaten
         {
-            base.Update(gameTime);    
-
+            base.Update(gameTime);
+            if (inBuffer)
+            {      
+            SpriteGameObject buffer = GameWorld.Find("buffer") as SpriteGameObject;
+            if (this.CollidesWith(buffer))
+                this.Velocity = -this.Velocity;               
+            }     
         }
 
         public override void Draw(GameTime gameTime, SpriteBatch spriteBatch) //draw het packet op de nieuwe locatie

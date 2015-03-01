@@ -187,3 +187,4 @@ C:\Users\jaswir\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\obj\x8
 C:\Users\jaswir\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\jaswir\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\obj\x86\Debug\TickTick.exe
 C:\Users\jaswir\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\obj\x86\Debug\TickTick.pdb
+C:\Users\Gebruiker\Desktop\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\Buffer.xnb
