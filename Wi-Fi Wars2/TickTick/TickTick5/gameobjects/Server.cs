@@ -8,7 +8,7 @@ class Server : SpriteGameObject
     Color serverColor;
     double packetTimer;
     bool makePacket;
-    bool connected;
+    public bool connected;
     int type;
     
 
@@ -39,7 +39,9 @@ class Server : SpriteGameObject
         if (makePacket)
         {
             GameObjectList level = this.parent as GameObjectList;
-            Packet packet = new Packet(this.position + this.Center, serverColor, type);
+            SpriteGameObject home = GameWorld.Find("home") as SpriteGameObject;
+            GameObjectList TowerList = GameWorld.Find("towerlist") as GameObjectList;
+            Packet packet = new Packet(this.position + this.Center, serverColor, type, this,  TowerList , home);
             level.Add(packet);
             makePacket = false;
         }

@@ -8,21 +8,33 @@ using System.Text;
 
     class Packet : SpriteGameObject
     {
-        Vector2 PacketPosition;
-        float StagePos;
+
+        List<Vector2> Path;
+        Array[] ArrayofArrays;
+        Vector2[] Directions;
+
         int StageIndex;
-        float Speed = 500;
 
         static int bufferAmount;
         static bool holdingPacket;
         int type;
         bool inBuffer, held;
-        public Packet(Vector2 spawnposition, Color c, int t) : base("Sprites/Packet", 100, "packet", 0)
+        public Packet(Vector2 spawnposition, Color c, int t, Server server, GameObjectList TowerList, SpriteGameObject Home)
+            : base("Sprites/Packet", 100, "packet", 0)
         {
             sprite.SpriteColor = c;
-
             position = spawnposition;
             type = t;
+            
+            
+            Path = FindPad(server as SpriteGameObject, TowerList, Home);
+
+          
+            ArrayofArrays = ArrayWithDirectionsAndLengthofPath(Path);
+
+            Directions= ArrayofArrays[0] as Vector2[];
+
+            float[] Lengths = ArrayofArrays[1] as float[];
 
         }
 
@@ -119,17 +131,15 @@ using System.Text;
         }
 
 
+      
         //Used to find a shortest path from server to home 
-        //Used to find a shortest path from server to home 
-        public List<Vector2> FindPad(SpriteGameObject server)
+        public List<Vector2> FindPad(SpriteGameObject server, GameObjectList TowerList, SpriteGameObject home)
         {
             List<Vector2> Path = new List<Vector2>();
             List<float> TowersFvalues = new List<float>();
             List<GameObject> OpenList = new List<GameObject>();
             List<GameObject> ClosedList = new List<GameObject>();
 
-            GameObjectList TowerList = GameWorld.Find("towerlist") as GameObjectList;
-            SpriteGameObject home = GameWorld.Find("home") as SpriteGameObject;
 
             OpenList.Add(home);
             List<GameObject> Towers = TowerList.Objects;
@@ -167,7 +177,7 @@ using System.Text;
                     }
                 }
 
-                Path.Add(Node.Position);
+                Path.Add(Node.Position + Node.Center);
 
                 n++;
             }
@@ -195,41 +205,22 @@ using System.Text;
 
             return DirectionsAndLength;
         }
-
-
-        public void MovePackets(SpriteGameObject server, GameTime gameTime)
-        {
-            List<Vector2> Path = FindPad(server);
-            Array[] ArrayofArrays = ArrayWithDirectionsAndLengthofPath(Path);
-            Vector2[] Directions = ArrayofArrays[0] as Vector2[];
-            float[] Lengths = ArrayofArrays[1] as float[];
-
-            if (StageIndex != Path.Count - 1)
-            {
-                StagePos += Speed * (float)gameTime.ElapsedGameTime.Seconds;
-                while (StagePos > Lengths[StageIndex])
-                {
-                    StagePos -= Lengths[StageIndex];
-                    StageIndex++;
-                    if (StageIndex == Path.Count - 1)
-                    {
-                        PacketPosition = Path[StageIndex];
-                        return;
-                    }
-                }
-                PacketPosition = Path[StageIndex] + Directions[StageIndex] * StagePos;
-            }
-
-        }
-    
   
         public override void Update(GameTime gameTime) //de locatie van het packet blijven updaten
         {
             base.Update(gameTime);
 
-            
-            MovePackets(GameWorld.Find("server1") as SpriteGameObject,gameTime);
+            if(StageIndex != Path.Count-1)
+            {
+                velocity = Directions[StageIndex]*200;
 
+             
+
+            }
+
+            
+
+         
             if (inBuffer)
             {      
             SpriteGameObject buffer = GameWorld.Find("buffer") as SpriteGameObject;
