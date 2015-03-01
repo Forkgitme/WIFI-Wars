@@ -123,8 +123,10 @@ using System.Text;
 
 
         //Used to find a shortest path from server to home 
-        public void FindPadPlease(SpriteGameObject server)
+        //Used to find a shortest path from server to home 
+        public List<Vector2> FindPad(SpriteGameObject server)
         {
+            List<Vector2> Path = new List<Vector2>();
             List<float> TowersFvalues = new List<float>();
             List<GameObject> OpenList = new List<GameObject>();
             List<GameObject> ClosedList = new List<GameObject>();
@@ -140,44 +142,82 @@ using System.Text;
             ClosedList.Add(server);
 
             int n = 0;
-           
+
             //Make shortest path add it to the closedlist
             while (!ClosedList.Contains(home))
+            {
+                SpriteGameObject Node = ClosedList.ElementAt(n) as SpriteGameObject;
+
+                foreach (SpriteGameObject obj in OpenList)
                 {
-                 SpriteGameObject Node = ClosedList.ElementAt(n) as SpriteGameObject;
-
-                    foreach (SpriteGameObject obj in OpenList)
+                    if (obj.CollidesWith(Node) && !(ClosedList.Contains(obj)))
                     {
-                        if (obj.CollidesWith(Node) && !(ClosedList.Contains(obj)))
-                        {
-                            float Fvalue = CalculateFvalue(obj.Position, Node.Position , home.Position);
-                            TowersFvalues.Add(Fvalue);
-                        }
+                        float Fvalue = CalculateFvalue(obj.Position, Node.Position, home.Position);
+                        TowersFvalues.Add(Fvalue);
                     }
+                }
 
-                    float lowest = TowersFvalues.Min();
+                float lowest = TowersFvalues.Min();
 
-                    foreach (SpriteGameObject obj in OpenList)
+                foreach (SpriteGameObject obj in OpenList)
+                {
+                    if (obj.CollidesWith(Node) && CalculateFvalue(obj.Position, Node.Position, home.Position) == lowest)
                     {
-                        if (obj.CollidesWith(Node) && CalculateFvalue(obj.Position, Node.Position, home.Position) == lowest)
-                        {
-                            ClosedList.Add(obj);
-                            OpenList.Remove(obj);
-                            TowersFvalues.Clear();
-                            break;
-                        }
+                        ClosedList.Add(obj);
+                        OpenList.Remove(obj);
+                        TowersFvalues.Clear();
+                        break;
                     }
+                }
 
-                    n++;
-                }  
+                Path.Add(Node.Position);
 
+                n++;
+            }
+
+            Path.Add(home.Position);
+
+            return Path;
 
         }
 
+        public Array[] ArrayWithDirectionsAndLengthofPath(List<Vector2> Path)
+        {
+            Array[] DirectionsAndLength = new Array[2];
+            float[] Lengths = new float[Path.Count - 1];
+            Vector2[] Directions = new Vector2[Path.Count - 1];
+            for (int i = 0; i < Path.Count - 1; i++)
+            {
+                Directions[i] = Path[i + 1] - Path[i];
+                Lengths[i] = Directions[i].Length();
+                Directions[i].Normalize();
+            }
+
+            DirectionsAndLength[0] = Directions;
+            DirectionsAndLength[1] = Lengths;
+
+            return DirectionsAndLength;
+        }
+
+
+        public void MovePackets(SpriteGameObject server)
+        {
+            List<Vector2> Path = FindPad(server);
+            Array[] ArrayofArrays = ArrayWithDirectionsAndLengthofPath(Path);
+            Vector2[] Directions = ArrayofArrays[0] as Vector2[];
+            float[] Lengths = ArrayofArrays[1] as float[];
+
+
+        }
+    
   
         public override void Update(GameTime gameTime) //de locatie van het packet blijven updaten
         {
             base.Update(gameTime);
+
+            //NOG NIET WERKENDE
+            // MovePackets(GameWorld.Find("server1") as SpriteGameObject);
+
             if (inBuffer)
             {      
             SpriteGameObject buffer = GameWorld.Find("buffer") as SpriteGameObject;
