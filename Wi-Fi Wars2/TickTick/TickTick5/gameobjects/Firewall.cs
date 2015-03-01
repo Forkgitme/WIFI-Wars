@@ -7,7 +7,9 @@ using Microsoft.Xna.Framework.Input;
 
     class Firewall : AnimatedGameObject
     {
-        bool placed;
+        bool placed, inCooldown = false;
+        int timer = 300;
+
         public Firewall()
             : base(1, "firewall")
         {
@@ -42,8 +44,36 @@ using Microsoft.Xna.Framework.Input;
                     this.Sprite.Rotation -= 0.01f;
             }
         }
+
         public override void Update(Microsoft.Xna.Framework.GameTime gameTime)
         {
             base.Update(gameTime);
+
+            if (inCooldown)
+            {
+                timer -= gameTime.ElapsedGameTime.Milliseconds;
+                if (timer < 0)
+                {
+                    this.InCooldown = false;
+                    timer = 300;
+                }
+            }
+        }
+
+        public bool InCooldown
+        {
+            get { return inCooldown; }
+            set {
+                    if (value == true)
+                    {
+                        inCooldown = true;
+                        this.PlayAnimation("idle");
+                    }
+                    else
+                    {
+                        inCooldown = false;
+                        this.PlayAnimation("burning");
+                    }
+                }
         }
     }

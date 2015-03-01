@@ -11,7 +11,8 @@ using System.Text;
   
         int type;
 
-        public Packet(Vector2 spawnposition, Color c, int t) : base("Sprites/Packet", 100, "packet", 0)
+        public Packet(Vector2 spawnposition, Color c, int t, string spritename = "Sprites/Packet")
+            : base(spritename, 100, "packet", 0)
         {
             sprite.SpriteColor = c;
             velocity = new Vector2(50, 50);
