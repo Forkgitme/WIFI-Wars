@@ -107,23 +107,11 @@ using System.Text;
 
         }
 
-        public Vector2 [] DirectionsOfPad(List <Vector2> Path)
+        public Array[] ArrayWithDirectionsAndLengthofPath(List<Vector2> Path)
         {
-            Vector2 [] Directions = new Vector2[Path.Count - 1];
-
-            for (int i = 0; i < Path.Count - 1; i++)
-            {
-                Directions[i] = Path[i + 1] - Path[i];
-                Directions[i].Normalize();
-            }
-
-            return Directions;
-        }
-
-        public float [] LengthsOfPad(List <Vector2> Path)
-        {
-            float [] Lengths = new float[Path.Count - 1];
-            Vector2 [] Directions = new Vector2[Path.Count - 1];
+            Array[] DirectionsAndLength = new Array[2];
+            float[] Lengths = new float[Path.Count - 1];
+            Vector2[] Directions = new Vector2[Path.Count - 1];
             for (int i = 0; i < Path.Count - 1; i++)
             {
                 Directions[i] = Path[i + 1] - Path[i];
@@ -131,19 +119,31 @@ using System.Text;
                 Directions[i].Normalize();
             }
 
-            return Lengths;
+            DirectionsAndLength[0] = Directions;
+            DirectionsAndLength[1] = Lengths;
+
+            return DirectionsAndLength;
         }
-  
+
+
+        public void MovePackets(SpriteGameObject server)
+        {
+            List<Vector2> Path = FindPad(server);
+            Array[] ArrayofArrays = ArrayWithDirectionsAndLengthofPath(Path);
+            Vector2[] Directions = ArrayofArrays[0] as Vector2[];
+            float[] Lengths = ArrayofArrays[1] as float[];
+
+
+        }
         public override void Update(GameTime gameTime) //de locatie van het packet blijven updaten
         {
-            List<Vector2> Path = FindPad(GameWorld.Find("server1") as SpriteGameObject);
-            Vector2 [] Directions = DirectionsOfPad(Path);
-            float[] Lengths = LengthsOfPad(Path);
+            MovePackets(GameWorld.Find("server1") as SpriteGameObject);
+            MovePackets(GameWorld.Find("server2") as SpriteGameObject);
+            MovePackets(GameWorld.Find("server3") as SpriteGameObject);
 
-            base.Update(gameTime);    
-            
-
+            base.Update(gameTime);
         }
+
 
         public override void Draw(GameTime gameTime, SpriteBatch spriteBatch) //draw het packet op de nieuwe locatie
         {
