@@ -9,9 +9,6 @@ using System.Text;
     class Packet : SpriteGameObject
     {
   
-    
-   
-
         int type;
 
         public Packet(Vector2 spawnposition, Color c, int t) : base("Sprites/Packet", 100, "packet", 0)
@@ -20,12 +17,6 @@ using System.Text;
             velocity = new Vector2(50, 50);
             position = spawnposition;
             type = t;
-
-         
-            
-
-
-
         }
 
         public override void HandleInput(InputHelper inputHelper)
@@ -58,8 +49,9 @@ using System.Text;
 
 
         //Used to find a shortest path from server to home 
-        public void FindPadPlease(SpriteGameObject server)
+        public List<Vector2> FindPad(SpriteGameObject server)
         {
+            List<Vector2> Path = new List <Vector2>();
             List<float> TowersFvalues = new List<float>();
             List<GameObject> OpenList = new List<GameObject>();
             List<GameObject> ClosedList = new List<GameObject>();
@@ -75,11 +67,11 @@ using System.Text;
             ClosedList.Add(server);
 
             int n = 0;
-           
+
             //Make shortest path add it to the closedlist
             while (!ClosedList.Contains(home))
                 {
-                 SpriteGameObject Node = ClosedList.ElementAt(n) as SpriteGameObject;
+                    SpriteGameObject Node = ClosedList.ElementAt(n) as SpriteGameObject;
 
                     foreach (SpriteGameObject obj in OpenList)
                     {
@@ -103,16 +95,52 @@ using System.Text;
                         }
                     }
 
-                    n++;
-                }  
+                    Path.Add(Node.Position);
 
+                    n++;
+                }
+
+            Path.Add(home.Position);
+
+            return Path;
 
         }
 
+        public Vector2 [] DirectionsOfPad(List <Vector2> Path)
+        {
+            Vector2 [] Directions = new Vector2[Path.Count - 1];
+
+            for (int i = 0; i < Path.Count - 1; i++)
+            {
+                Directions[i] = Path[i + 1] - Path[i];
+                Directions[i].Normalize();
+            }
+
+            return Directions;
+        }
+
+        public float [] LengthsOfPad(List <Vector2> Path)
+        {
+            float [] Lengths = new float[Path.Count - 1];
+            Vector2 [] Directions = new Vector2[Path.Count - 1];
+            for (int i = 0; i < Path.Count - 1; i++)
+            {
+                Directions[i] = Path[i + 1] - Path[i];
+                Lengths[i] = Directions[i].Length();
+                Directions[i].Normalize();
+            }
+
+            return Lengths;
+        }
   
         public override void Update(GameTime gameTime) //de locatie van het packet blijven updaten
         {
+            List<Vector2> Path = FindPad(GameWorld.Find("server1") as SpriteGameObject);
+            Vector2 [] Directions = DirectionsOfPad(Path);
+            float[] Lengths = LengthsOfPad(Path);
+
             base.Update(gameTime);    
+            
 
         }
 
