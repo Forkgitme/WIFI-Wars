@@ -11,7 +11,7 @@ class PirateShip : SpriteGameObject
     bool inNetwork;
     double randomTimer;
     public PirateShip(Vector2 pos, int layer, String id)
-        : base("Sprites/spr_button_quit", layer, id)
+        : base("Sprites/Pirateship", layer, id)
     {
         position = pos;
         Vector2 randomVector = new Vector2(WifiWars.Random.Next(-100, 51), WifiWars.Random.Next(-100, 101));
