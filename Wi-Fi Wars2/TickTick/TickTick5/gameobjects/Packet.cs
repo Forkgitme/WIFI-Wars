@@ -156,6 +156,7 @@ using System.Text;
             OpenList.Add(home);
             List<GameObject> Towers = TowerList.Objects;
             foreach (Tower tower in Towers)
+                if(tower.connected)
                 OpenList.Add(tower);
 
             ClosedList.Add(server);
@@ -169,7 +170,7 @@ using System.Text;
 
                 foreach (SpriteGameObject obj in OpenList)
                 {
-                    if (obj.CollidesWith(Node) && !(ClosedList.Contains(obj)))
+                    if (obj.CollidesWith(Node) && !(ClosedList.Contains(obj)) && obj.CollidesWith(obj))
                     {
                         float Fvalue = CalculateFvalue(obj.Position, Node.Position, home.Position);
                         TowersFvalues.Add(Fvalue);

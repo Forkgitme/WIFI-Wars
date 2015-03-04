@@ -7,7 +7,7 @@ partial class Level : GameObjectList
     protected GameObjectList hideoutList;
     public void LoadLevel(string path)
     {
-        hideoutList = new GameObjectList(0, "hideoutlist");
+        hideoutList = new GameObjectList(11, "hideoutlist");
         this.Add(hideoutList);
         Vector2 position = Vector2.Zero;
         List<string> textlines = new List<string>();

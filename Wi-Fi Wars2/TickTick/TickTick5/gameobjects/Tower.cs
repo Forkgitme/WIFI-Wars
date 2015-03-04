@@ -7,7 +7,7 @@ using Microsoft.Xna.Framework;
     class Tower : SpriteGameObject
     {
         bool placed;
-        bool connected;
+        public bool connected;
         bool based;
         SpriteGameObject towerBase;
         public Tower(int layer = 2, string id = "tower") : base("Sprites/Range", layer, id) 
