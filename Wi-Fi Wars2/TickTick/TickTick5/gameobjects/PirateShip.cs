@@ -11,10 +11,12 @@ class PirateShip : SpriteGameObject
     bool inNetwork;
     double randomTimer;
     public PirateShip(Vector2 pos, int layer, String id)
-        : base("Sprites/home", layer, id)
+        : base("Sprites/spr_button_quit", layer, id)
     {
         position = pos;
-        this.Velocity = new Vector2(WifiWars.Random.Next(-50, 51), WifiWars.Random.Next(-50, 51));
+        Vector2 randomVector = new Vector2(WifiWars.Random.Next(-100, 51), WifiWars.Random.Next(-100, 101));
+        randomVector.Normalize();
+        this.velocity = randomVector * 50;
     }
     public override void Update(GameTime gameTime)
     {
@@ -26,7 +28,8 @@ class PirateShip : SpriteGameObject
             randomTimer = 0;
             this.Velocity = new Vector2(WifiWars.Random.Next(-50, 51), WifiWars.Random.Next(-50, 51));
         }   
-        GameObjectList TowerList = GameWorld.Find("towerlist") as GameObjectList;
+        GameObjectList level = this.parent as GameObjectList;
+        GameObjectList TowerList = level.Find("towerlist") as GameObjectList;
         List<GameObject> Towers = TowerList.Objects;
             foreach (Tower tower in Towers)
             {
@@ -36,5 +39,18 @@ class PirateShip : SpriteGameObject
             }
             if (!inNetwork)
                 velocity = -velocity;
+            GameObjectList packetList = level.Find("packetList") as GameObjectList;
+            List<GameObject> packets = packetList.Objects;
+        foreach (Packet packet in packets)
+        {
+            if (Math.Sqrt(Math.Pow((this.position.X - packet.Position.X - packet.Center.X), 2) + Math.Pow((this.position.Y - packet.Position.Y - packet.Center.Y), 2)) < 100)
+            {
+                Vector2 direction = new Vector2(packet.Position.X - this.position.X, packet.Position.Y - this.position.Y);
+                direction.Normalize();
+                this.Velocity = direction * 50;
+            }
+            if this.CollidesWith(packet)
+                packet
+        }
     }
 }

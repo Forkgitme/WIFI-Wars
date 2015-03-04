@@ -280,6 +280,24 @@
       <Output>C:\Users\Gebruiker\Desktop\Studie\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\Buffer.xnb</Output>
       <Time>2015-03-01T20:18:01.1672183+01:00</Time>
     </Item>
+    <Item>
+      <Source>Sprites\home.png</Source>
+      <Name>Sprites\home</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Gebruiker\Desktop\Studie\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\home.xnb</Output>
+      <Time>2015-03-04T11:50:49.0488912+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Hideout.png</Source>
+      <Name>Sprites\Hideout</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Gebruiker\Desktop\Studie\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\Hideout.xnb</Output>
+      <Time>2015-03-04T11:50:49.0438889+01:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID>{4EC009E0-6CEA-40D8-8409-9E30C42C9C5D}</ContentProjectGUID>

@@ -83,13 +83,13 @@ using System.Text;
                     serverBar.Resource += 50;
                     bufferAmount -= 1;
                     holdingPacket = false;
-                    Level level = this.Parent as Level;
+                    Level level = this.Parent.Parent as Level;
                     level.Remove(this);
                 }
                 if (serverBar2 != null)
                     if (this.CollidesWith(serverBar2))
                     {
-                        Level level = this.Parent as Level;
+                        Level level = this.Parent.Parent as Level;
                         level.Remove(this);
                         bufferAmount -= 1;
                         holdingPacket = false;
@@ -97,7 +97,7 @@ using System.Text;
                 if (serverBar3 != null)
                     if (this.CollidesWith(serverBar3))
                     {
-                        Level level = this.Parent as Level;
+                        Level level = this.Parent.Parent as Level;
                         level.Remove(this);
                         bufferAmount -= 1;
                         holdingPacket = false;
@@ -108,7 +108,7 @@ using System.Text;
                                 
             if (this.CollidesWith(home))
             {
-                Level level = this.Parent as Level;
+                Level level = this.Parent.Parent as Level;
                 Bar bar = GameWorld.Find("police") as Bar;
                 bar.Active = true;
                 if (bufferAmount <5)

@@ -13,7 +13,7 @@ class Hideout : SpriteGameObject
     bool makePirate;
     int pirateCount;
     public Hideout(Vector2 pos, int layer, String id)
-        : base("Sprites/home", layer, id)
+        : base("Sprites/Hideout", layer, id)
     {
         position = pos;
     }
@@ -22,7 +22,7 @@ class Hideout : SpriteGameObject
         base.HandleInput(inputHelper);
         if (makePirate)
         {
-            GameObjectList level = this.parent as GameObjectList;
+            GameObjectList level = this.parent.Parent as GameObjectList;
             PirateShip pirate = new PirateShip(position, 10, "pirate");
             level.Add(pirate);
             makePirate = false;

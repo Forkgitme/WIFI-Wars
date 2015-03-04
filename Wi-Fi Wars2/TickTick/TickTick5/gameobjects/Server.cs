@@ -42,7 +42,7 @@ class Server : SpriteGameObject
             GameObjectList level = this.parent as GameObjectList;
             SpriteGameObject home = GameWorld.Find("home") as SpriteGameObject;
             GameObjectList TowerList = GameWorld.Find("towerlist") as GameObjectList;
-            if (rand < 2)
+            if (rand == 1)
             {
                 Virus virus = new Virus(this.position + this.Center, this, TowerList, home);
                 level.Add(virus);
@@ -50,7 +50,8 @@ class Server : SpriteGameObject
             else
             {
                 Packet packet = new Packet(this.position + this.Center, serverColor, type, this, TowerList, home);
-                level.Add(packet);
+                GameObjectList packetList = level.Find("packetList") as GameObjectList;
+                packetList.Add(packet);
             }
             makePacket = false;
         }
