@@ -13,7 +13,7 @@ using System.Text;
         Array[] ArrayofArrays;
         Vector2[] Directions;
         float[] Lengths;
-        public bool remove;
+
         int StageIndex;
         float StagePos;
         float Speed = 100;
@@ -43,90 +43,85 @@ using System.Text;
 
         public override void HandleInput(InputHelper inputHelper)
         {
-                Level level = this.Parent.Parent as Level;
-                if (remove)
-                {
-                    GameObjectList parent = this.parent as GameObjectList;
-                    parent.Remove(this);
+            
+            base.HandleInput(inputHelper);
+
+            SpriteGameObject home = GameWorld.Find("home") as SpriteGameObject;
+
+            if (inBuffer)
+            {            
+                if (!holdingPacket)
+                { 
+                if (inputHelper.MousePosition.X < this.Position.X + Center.X + 10 && inputHelper.MousePosition.X > this.Position.X + Center.X - 10 && inputHelper.MousePosition.Y < this.Position.Y + Center.Y + 10 && inputHelper.MousePosition.Y > this.Position.Y + Center.Y - 10)
+                    if (inputHelper.MouseLeftButtonPressed())
+                    { 
+                        this.Velocity = Vector2.Zero;
+                        holdingPacket = true;
+                        held = true;
+                    }     
                 }
-
-                base.HandleInput(inputHelper);
-
-                if (inBuffer)
+                Bar serverBar = GameWorld.Find("serverbar" + type) as Bar;
+                Bar serverBar2 = null;
+                Bar serverBar3 = null;
+                if (type == 1)
                 {
-                    if (!holdingPacket)
+                    serverBar2 = GameWorld.Find("serverbar" + 2) as Bar;
+                    serverBar3 = GameWorld.Find("serverbar" + 3) as Bar;
+                }
+                else if (type == 2)
+                {
+                    serverBar2 = GameWorld.Find("serverbar" + 1) as Bar;
+                    serverBar3 = GameWorld.Find("serverbar" + 3) as Bar;
+                }
+                else if (type == 3)
+                {
+                    serverBar2 = GameWorld.Find("serverbar" + 1) as Bar;
+                    serverBar3 = GameWorld.Find("serverbar" + 2) as Bar;
+                }
+                if (this.CollidesWith(serverBar))
+                { 
+                    serverBar.Resource += 50;
+                    bufferAmount -= 1;
+                    holdingPacket = false;
+                    Level level = this.Parent.Parent as Level;
+                    level.Remove(this);
+                }
+                if (serverBar2 != null)
+                    if (this.CollidesWith(serverBar2))
                     {
-                        if (inputHelper.MousePosition.X < this.Position.X + Center.X + 10 && inputHelper.MousePosition.X > this.Position.X + Center.X - 10 && inputHelper.MousePosition.Y < this.Position.Y + Center.Y + 10 && inputHelper.MousePosition.Y > this.Position.Y + Center.Y - 10)
-                            if (inputHelper.MouseLeftButtonPressed())
-                            {
-                                this.Velocity = Vector2.Zero;
-                                holdingPacket = true;
-                                held = true;
-                            }
-                    }
-                    Bar serverBar = GameWorld.Find("serverbar" + type) as Bar;
-                    Bar serverBar2 = null;
-                    Bar serverBar3 = null;
-                    if (type == 1)
-                    {
-                        serverBar2 = GameWorld.Find("serverbar" + 2) as Bar;
-                        serverBar3 = GameWorld.Find("serverbar" + 3) as Bar;
-                    }
-                    else if (type == 2)
-                    {
-                        serverBar2 = GameWorld.Find("serverbar" + 1) as Bar;
-                        serverBar3 = GameWorld.Find("serverbar" + 3) as Bar;
-                    }
-                    else if (type == 3)
-                    {
-                        serverBar2 = GameWorld.Find("serverbar" + 1) as Bar;
-                        serverBar3 = GameWorld.Find("serverbar" + 2) as Bar;
-                    }
-                    if (this.CollidesWith(serverBar))
-                    {
-                        serverBar.Resource += 50;
+                        Level level = this.Parent.Parent as Level;
+                        level.Remove(this);
                         bufferAmount -= 1;
                         holdingPacket = false;
+                    }
+                if (serverBar3 != null)
+                    if (this.CollidesWith(serverBar3))
+                    {
+                        Level level = this.Parent.Parent as Level;
                         level.Remove(this);
-                    }
-                    if (serverBar2 != null)
-                        if (this.CollidesWith(serverBar2))
-                        {
-                            level.Remove(this);
-                            bufferAmount -= 1;
-                            holdingPacket = false;
-                        }
-                    if (serverBar3 != null)
-                        if (this.CollidesWith(serverBar3))
-                        {
-                            level.Remove(this);
-                            bufferAmount -= 1;
-                            holdingPacket = false;
-                        }
-                    if (held)
-                        this.Position = inputHelper.MousePosition - Center;
-                }
-
-                SpriteGameObject home = level.Find("home") as SpriteGameObject;
-                if (this.CollidesWith(home))
-                {
-                    Bar bar = GameWorld.Find("police") as Bar;
-                    bar.Active = true;
-                    if (bufferAmount < 5)
-                    {
-                        this.Position = new Vector2(670, 100);
-                        this.Velocity = new Vector2(WifiWars.Random.Next(-50, 51), WifiWars.Random.Next(-50, 51));
-                        inBuffer = true;
-                        bufferAmount += 1;
-                    }
-                    else
-                    {
-                        GameObjectList parent = this.parent as GameObjectList;
-                        parent.Remove(this);
-                    }
-                }
+                        bufferAmount -= 1;
+                        holdingPacket = false;
+                    }           
+                if (held)
+                    this.Position = inputHelper.MousePosition - Center;
             }
-        
+                                
+            if (this.CollidesWith(home))
+            {
+                Level level = this.Parent.Parent as Level;
+                Bar bar = GameWorld.Find("police") as Bar;
+                bar.Active = true;
+                if (bufferAmount <5)
+                { 
+                this.Position = new Vector2(670, 100);
+                this.Velocity = new Vector2(WifiWars.Random.Next(-50, 51), WifiWars.Random.Next(-50, 51));
+                inBuffer = true;
+                bufferAmount += 1;
+                }
+                else
+                    level.Remove(this);
+            }
+        }
 
        //Used to determine the next node on the graph 
         public float CalculateFvalue(Vector2 a, Vector2 b, Vector2 c)
@@ -137,6 +132,7 @@ using System.Text;
 
             return Fvalue;
         }
+
 
       
         //Used to find a shortest path from server to home 
@@ -212,39 +208,38 @@ using System.Text;
 
             return DirectionsAndLength;
         }
-
+  
         public override void Update(GameTime gameTime) //de locatie van het packet blijven updaten
         {
-                base.Update(gameTime);
+            base.Update(gameTime);
 
-                Level level = this.Parent.Parent as Level;
+            
 
+            
 
+         
+            if (inBuffer)
+            {      
+            SpriteGameObject buffer = GameWorld.Find("buffer") as SpriteGameObject;
+            if (this.CollidesWith(buffer))
+                this.Velocity = -this.Velocity;               
+            }     
+            else if(StageIndex != Path.Count-1)
+            {
+                velocity = Directions[StageIndex]*Speed;
+                StagePos += (float)gameTime.ElapsedGameTime.TotalSeconds * Speed;
 
-
-                if (inBuffer)
+                if(StagePos > Lengths[StageIndex])
                 {
-                    SpriteGameObject buffer = level.Find("buffer") as SpriteGameObject;
-                    if (this.CollidesWith(buffer))
-                        this.Velocity = -this.Velocity;
-                }
-                else if (StageIndex != Path.Count - 1)
-                {
-                    velocity = Directions[StageIndex] * Speed;
-                    StagePos += (float)gameTime.ElapsedGameTime.TotalSeconds * Speed;
-
-                    if (StagePos > Lengths[StageIndex])
-                    {
-                        StageIndex++;
-                        StagePos = 0;
-                    }
-                }
+                    StageIndex++;
+                    StagePos = 0;
+                }                           
             }
-        
+        }
 
         public override void Draw(GameTime gameTime, SpriteBatch spriteBatch) //draw het packet op de nieuwe locatie
         {
-                base.Draw(gameTime, spriteBatch);
+            base.Draw(gameTime, spriteBatch);
         }
 
     }

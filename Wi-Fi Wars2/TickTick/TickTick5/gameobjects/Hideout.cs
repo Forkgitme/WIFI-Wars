@@ -11,7 +11,7 @@ class Hideout : SpriteGameObject
     public bool connected;
     double pirateTimer;
     bool makePirate;
-
+    int pirateCount;
     public Hideout(Vector2 pos, int layer, String id)
         : base("Sprites/Hideout", layer, id)
     {
@@ -26,20 +26,22 @@ class Hideout : SpriteGameObject
             PirateShip pirate = new PirateShip(position, 10, "pirate");
             level.Add(pirate);
             makePirate = false;
+            pirateCount += 1;
         }
     }
     public override void Update(GameTime gameTime)
     {
         base.Update(gameTime);
-        if(connected)
-            pirateTimer += gameTime.ElapsedGameTime.TotalSeconds;
-        if (pirateTimer > 5)
+        if (pirateCount < 2)
+        { 
+        pirateTimer += gameTime.ElapsedGameTime.TotalSeconds;
+        if (pirateTimer > 10 && connected)
         {
             pirateTimer = 0;
             makePirate = true;
-        }       
+        }
+        }
     }
-
     public void CheckConnection()
     {
         if (!connected)
