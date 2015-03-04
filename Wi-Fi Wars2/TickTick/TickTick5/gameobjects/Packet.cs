@@ -22,6 +22,7 @@ using System.Text;
         static bool holdingPacket;
         int type;
         bool inBuffer, held;
+        public bool remove;
         public Packet(Vector2 spawnposition, Color c, int t, Server server, GameObjectList TowerList, SpriteGameObject Home, string assetname = "Sprites/Packet")
             : base(assetname, 100, "packet", 0)
         {
@@ -45,9 +46,13 @@ using System.Text;
         {
             
             base.HandleInput(inputHelper);
-
+            Level level = this.Parent.Parent as Level;
             SpriteGameObject home = GameWorld.Find("home") as SpriteGameObject;
-
+            if (remove)
+            {
+                GameObjectList parent = this.parent as GameObjectList;
+                parent.Remove(this);
+            }
             if (inBuffer)
             {            
                 if (!holdingPacket)
@@ -83,24 +88,26 @@ using System.Text;
                     serverBar.Resource += 50;
                     bufferAmount -= 1;
                     holdingPacket = false;
-                    Level level = this.Parent.Parent as Level;
-                    level.Remove(this);
+                    GameObjectList parent = this.parent as GameObjectList;
+                    parent.Remove(this);
                 }
                 if (serverBar2 != null)
                     if (this.CollidesWith(serverBar2))
                     {
-                        Level level = this.Parent.Parent as Level;
                         level.Remove(this);
                         bufferAmount -= 1;
                         holdingPacket = false;
+                        GameObjectList parent = this.parent as GameObjectList;
+                        parent.Remove(this);
                     }
                 if (serverBar3 != null)
                     if (this.CollidesWith(serverBar3))
                     {
-                        Level level = this.Parent.Parent as Level;
                         level.Remove(this);
                         bufferAmount -= 1;
                         holdingPacket = false;
+                        GameObjectList parent = this.parent as GameObjectList;
+                        parent.Remove(this);
                     }           
                 if (held)
                     this.Position = inputHelper.MousePosition - Center;
@@ -108,18 +115,20 @@ using System.Text;
                                 
             if (this.CollidesWith(home))
             {
-                Level level = this.Parent.Parent as Level;
                 Bar bar = GameWorld.Find("police") as Bar;
                 bar.Active = true;
-                if (bufferAmount <5)
-                { 
-                this.Position = new Vector2(670, 100);
-                this.Velocity = new Vector2(WifiWars.Random.Next(-50, 51), WifiWars.Random.Next(-50, 51));
-                inBuffer = true;
-                bufferAmount += 1;
+                if (bufferAmount < 5)
+                {
+                    this.Position = new Vector2(670, 100);
+                    this.Velocity = new Vector2(WifiWars.Random.Next(-50, 51), WifiWars.Random.Next(-50, 51));
+                    inBuffer = true;
+                    bufferAmount += 1;
                 }
                 else
-                    level.Remove(this);
+                {
+                    GameObjectList parent = this.parent as GameObjectList;
+                    parent.Remove(this);
+                }
             }
         }
 

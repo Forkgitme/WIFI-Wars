@@ -38,7 +38,7 @@ class Server : SpriteGameObject
         base.HandleInput(inputHelper);
         if (makePacket)
         {
-            int rand = GameEnvironment.Random.Next(2);
+            int rand = GameEnvironment.Random.Next(5);
             GameObjectList level = this.parent as GameObjectList;
             SpriteGameObject home = GameWorld.Find("home") as SpriteGameObject;
             GameObjectList TowerList = GameWorld.Find("towerlist") as GameObjectList;
