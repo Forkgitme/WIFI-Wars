@@ -29,6 +29,7 @@ Content\Sprites\Range.xnb
 Content\Sprites\firewall@5.xnb
 Content\Sprites\firewall.xnb
 Content\Sprites\Buffer.xnb
+Content\Sprites\home.xnb
 Content\Levels\1.txt
 Content\Levels\8.txt
 Content\Levels\2.txt

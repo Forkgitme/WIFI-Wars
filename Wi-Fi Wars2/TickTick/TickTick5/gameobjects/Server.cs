@@ -38,11 +38,20 @@ class Server : SpriteGameObject
         base.HandleInput(inputHelper);
         if (makePacket)
         {
+            int rand = GameEnvironment.Random.Next(2);
             GameObjectList level = this.parent as GameObjectList;
             SpriteGameObject home = GameWorld.Find("home") as SpriteGameObject;
             GameObjectList TowerList = GameWorld.Find("towerlist") as GameObjectList;
-            Packet packet = new Packet(this.position + this.Center, serverColor, type, this,  TowerList , home);
-            level.Add(packet);
+            if (rand < 2)
+            {
+                Virus virus = new Virus(this.position + this.Center, this, TowerList, home);
+                level.Add(virus);
+            }
+            else
+            {
+                Packet packet = new Packet(this.position + this.Center, serverColor, type, this, TowerList, home);
+                level.Add(packet);
+            }
             makePacket = false;
         }
     }

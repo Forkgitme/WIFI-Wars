@@ -8,7 +8,8 @@ using Microsoft.Xna.Framework.Input;
     class Firewall : AnimatedGameObject
     {
         bool placed, inCooldown = false;
-        int timer = 300;
+        int timer = 10000;  // cooldown timer
+        float rotation;
 
         public Firewall()
             : base(1, "firewall")
@@ -25,7 +26,7 @@ using Microsoft.Xna.Framework.Input;
             if (!placed && inputHelper.MousePosition.X > 0 && inputHelper.MousePosition.Y > 0 && inputHelper.MousePosition.Y < 825 && inputHelper.MousePosition.X < 1440)
             {
                 this.position = inputHelper.MousePosition;
-                Level level = this.Parent as Level;
+                Level level = this.Parent.Parent as Level;
                 SpriteGameObject background = level.Find("background") as SpriteGameObject;
                 if (background.Sprite.GetPixelColor((int)position.X + (int)Center.X, (int)position.Y + (int)Center.Y).G == 255)
                 {
@@ -42,6 +43,7 @@ using Microsoft.Xna.Framework.Input;
                     this.Sprite.Rotation += 0.01f;
                 if (inputHelper.IsKeyDown(Keys.A))
                     this.Sprite.Rotation -= 0.01f;
+                rotation = Sprite.Rotation;
             }
         }
 
@@ -55,7 +57,7 @@ using Microsoft.Xna.Framework.Input;
                 if (timer < 0)
                 {
                     this.InCooldown = false;
-                    timer = 300;
+                    timer = 10000;
                 }
             }
         }
@@ -68,12 +70,19 @@ using Microsoft.Xna.Framework.Input;
                     {
                         inCooldown = true;
                         this.PlayAnimation("idle");
+                        Sprite.Rotation = rotation;
                     }
                     else
                     {
                         inCooldown = false;
                         this.PlayAnimation("burning");
+                        Sprite.Rotation = rotation;
                     }
                 }
+        }
+
+        public bool Placed
+        {
+            get { return placed; }
         }
     }

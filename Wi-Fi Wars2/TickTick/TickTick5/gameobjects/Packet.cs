@@ -22,8 +22,8 @@ using System.Text;
         static bool holdingPacket;
         int type;
         bool inBuffer, held;
-        public Packet(Vector2 spawnposition, Color c, int t, Server server, GameObjectList TowerList, SpriteGameObject Home)
-            : base("Sprites/Packet", 100, "packet", 0)
+        public Packet(Vector2 spawnposition, Color c, int t, Server server, GameObjectList TowerList, SpriteGameObject Home, string assetname = "Sprites/Packet")
+            : base(assetname, 100, "packet", 0)
         {
             sprite.SpriteColor = c;
             position = spawnposition;
