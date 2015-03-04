@@ -132,6 +132,8 @@
     <Compile Include="gameobjects\Home.cs" />
     <Compile Include="gameobjects\Packet.cs" />
     <Compile Include="gameobjects\Bar.cs" />
+    <Compile Include="gameobjects\PirateShip.cs" />
+    <Compile Include="gameobjects\Hideout.cs" />
     <Compile Include="gameobjects\Tower.cs" />
     <Compile Include="gameobjects\UI.cs" />
     <Compile Include="gameobjects\Virus.cs" />

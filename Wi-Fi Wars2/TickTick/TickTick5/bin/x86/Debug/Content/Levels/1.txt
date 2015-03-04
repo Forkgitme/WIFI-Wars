@@ -1,3 +1,4 @@
 server 100 100 1
 home 600 600
+hideout 200 400
 money 1200

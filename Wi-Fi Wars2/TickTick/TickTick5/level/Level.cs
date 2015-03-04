@@ -5,7 +5,7 @@ partial class Level : GameObjectList
     protected bool locked, solved;
     protected Button quitButton;
     protected UI ui;
-    GameObjectList towerList;
+    protected GameObjectList towerList;
 
     public Level(int levelIndex)
     {

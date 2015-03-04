@@ -50,6 +50,10 @@ using Microsoft.Xna.Framework;
                         Server server3 = GameWorld.Find("server3") as Server;
                         if (server3 != null)
                             server3.CheckConnection();
+                        GameObjectList hideoutList = level.Find("hideoutlist") as GameObjectList;
+                        List<GameObject> hideouts = hideoutList.Objects;
+                        foreach (Hideout hideout in hideouts)
+                            hideout.CheckConnection();
                     }
 
                 }
