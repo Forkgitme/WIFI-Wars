@@ -10,13 +10,24 @@ class PirateShip : SpriteGameObject
 {
     bool inNetwork;
     double randomTimer;
+    bool remove;
+
     public PirateShip(Vector2 pos, int layer, String id)
-        : base("Sprites/spr_button_quit", layer, id)
+        : base("Sprites/Pirateship", layer, id)
     {
         position = pos;
         Vector2 randomVector = new Vector2(WifiWars.Random.Next(-100, 51), WifiWars.Random.Next(-100, 101));
         randomVector.Normalize();
         this.velocity = randomVector * 50;
+    }
+    public override void HandleInput(InputHelper inputHelper)
+    {
+        base.HandleInput(inputHelper);
+        if (remove)
+        {
+            GameObjectList parent = this.parent as GameObjectList;
+            parent.Remove(this);
+        }
     }
     public override void Update(GameTime gameTime)
     {
@@ -49,8 +60,11 @@ class PirateShip : SpriteGameObject
                 direction.Normalize();
                 this.Velocity = direction * 50;
             }
-            if this.CollidesWith(packet)
-                packet
+            if (this.CollidesWith(packet))
+            { 
+                packet.remove = true;
+                remove = true;
+            }
         }
     }
 }

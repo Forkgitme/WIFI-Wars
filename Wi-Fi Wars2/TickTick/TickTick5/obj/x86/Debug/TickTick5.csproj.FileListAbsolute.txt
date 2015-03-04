@@ -241,3 +241,4 @@ C:\Users\Gebruiker\Desktop\Studie\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\obj\x
 C:\Users\Gebruiker\Desktop\Studie\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\obj\x86\Debug\TickTick.pdb
 C:\Users\Gebruiker\Desktop\Studie\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\home.xnb
 C:\Users\Gebruiker\Desktop\Studie\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\Hideout.xnb
+C:\Users\Gebruiker\Desktop\Studie\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\Pirateship.xnb
