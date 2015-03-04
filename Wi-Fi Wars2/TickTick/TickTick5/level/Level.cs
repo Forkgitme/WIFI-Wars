@@ -5,7 +5,7 @@ partial class Level : GameObjectList
     protected bool locked, solved;
     protected Button quitButton;
     protected UI ui;
-    GameObjectList towerList;
+    GameObjectList towerList, firewallList;
 
     public Level(int levelIndex)
     {
@@ -19,6 +19,8 @@ partial class Level : GameObjectList
         this.LoadLevel("Content/Levels/" + levelIndex + ".txt");
         towerList = new GameObjectList(0, "towerlist");
         this.Add(towerList);
+        firewallList = new GameObjectList(0, "firewallList");
+        this.Add(firewallList);
     }
 
     public bool Completed

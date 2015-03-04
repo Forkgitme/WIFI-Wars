@@ -23,7 +23,7 @@ partial class Level : GameObjectList
         if (inputHelper.KeyPressed(Keys.F) && !holding && ui.Money >= 20)
         {
             Firewall firewall = new Firewall();
-            this.Add(firewall);
+            firewallList.Add(firewall);
             holding = true;
             ui.Money -= 20;
         }
