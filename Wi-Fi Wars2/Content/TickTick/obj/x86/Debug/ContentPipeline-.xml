@@ -287,7 +287,34 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\home.xnb</Output>
-      <Time>2015-02-25T11:41:35.3344744+01:00</Time>
+      <Time>2015-03-17T11:35:25.5155373+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Hideout.png</Source>
+      <Name>Sprites\Hideout</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\Hideout.xnb</Output>
+      <Time>2015-03-17T11:35:25.4861195+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Pirateship.png</Source>
+      <Name>Sprites\Pirateship</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\Pirateship.xnb</Output>
+      <Time>2015-03-17T11:35:25.4871203+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Virus.png</Source>
+      <Name>Sprites\Virus</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\Virus.xnb</Output>
+      <Time>2015-03-04T11:14:46.9568923+01:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
