@@ -245,3 +245,9 @@ C:\Users\Gebruiker\Desktop\Studie\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x
 C:\Users\jaswir\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\home.xnb
 C:\Users\jaswir\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\Hideout.xnb
 C:\Users\jaswir\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\Pirateship.xnb
+C:\Users\Carlo\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\firewall@5.xnb
+C:\Users\Carlo\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\firewall.xnb
+C:\Users\Carlo\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\Buffer.xnb
+C:\Users\Carlo\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\home.xnb
+C:\Users\Carlo\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\Hideout.xnb
+C:\Users\Carlo\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\Pirateship.xnb
