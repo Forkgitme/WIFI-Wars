@@ -136,6 +136,7 @@
     <Compile Include="gameobjects\Hideout.cs" />
     <Compile Include="gameobjects\Tower.cs" />
     <Compile Include="gameobjects\UI.cs" />
+    <Compile Include="gameobjects\Trojan.cs" />
     <Compile Include="gameobjects\Virus.cs" />
     <Compile Include="level\Level.cs" />
     <Compile Include="level\LevelGameLoop.cs" />
