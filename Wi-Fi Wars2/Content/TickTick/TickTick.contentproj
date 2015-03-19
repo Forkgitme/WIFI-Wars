@@ -166,7 +166,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Overlays\" />
     <Folder Include="Sounds\" />
   </ItemGroup>
   <ItemGroup>
@@ -301,6 +300,27 @@
   <ItemGroup>
     <Compile Include="Sprites\Pirateship.png">
       <Name>Pirateship</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Sprites\TrojanHorse.png">
+      <Name>TrojanHorse</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Sprites\Virus.png">
+      <Name>Virus</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Overlays\spr_welldone.png">
+      <Name>spr_welldone</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>

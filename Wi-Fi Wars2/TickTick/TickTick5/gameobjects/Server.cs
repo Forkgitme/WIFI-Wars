@@ -44,7 +44,7 @@ class Server : SpriteGameObject
             GameObjectList TowerList = GameWorld.Find("towerlist") as GameObjectList;
             if (rand == 1)
             {
-                Virus virus = new Virus(this.position + this.Center, this, TowerList, home);
+                Trojan virus = new Trojan(this.position + this.Center, this, TowerList, home);
                 level.Add(virus);
             }
             else

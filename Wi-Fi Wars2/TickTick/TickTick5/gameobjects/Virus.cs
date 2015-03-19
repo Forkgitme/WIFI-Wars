@@ -6,9 +6,9 @@ using Microsoft.Xna.Framework;
 
 class Virus : Packet
 {
-    bool delete = false;
+    protected bool delete = false;
     public Virus(Vector2 spawnPosition, Server server, GameObjectList list, SpriteGameObject obj)
-        : base(spawnPosition, Color.White, 4, server, list ,obj, "Sprites/tower")
+        : base(spawnPosition, Color.White, 4, server, list ,obj, "Sprites/Virus")
     {
         
     }
@@ -33,10 +33,15 @@ class Virus : Packet
             if (this.CollidesWith(firewall) && firewall.InCooldown == false && firewall.Placed)
             {
                 firewall.InCooldown = true;
-                delete = true;
+                this.Changes();
             }
                 
         }
+    }
+
+    public virtual void Changes()
+    {
+            delete = true;
     }
 }
 
