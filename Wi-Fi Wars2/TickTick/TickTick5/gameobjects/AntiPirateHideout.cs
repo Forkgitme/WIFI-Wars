@@ -6,12 +6,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-class Hideout : SpriteGameObject
+class AntiPirateHideout : SpriteGameObject
 {
     public bool connected;
     double pirateTimer;
-    bool makePirate;
-    public Hideout(Vector2 pos, int layer, String id)
+    bool makeAntiPirate;
+    public AntiPirateHideout(Vector2 pos, int layer, String id)
         : base("Sprites/Hideout", layer, id)
     {
         position = pos;
@@ -19,13 +19,12 @@ class Hideout : SpriteGameObject
     public override void HandleInput(InputHelper inputHelper)
     {
         base.HandleInput(inputHelper);
-        if (makePirate)
+        if (makeAntiPirate)
         {
             GameObjectList level = this.parent.Parent as GameObjectList;
-            PirateShip pirate = new PirateShip(position, 1010, "pirate");
-            GameObjectList pirateList = level.Find("pirateList") as GameObjectList;
-            pirateList.Add(pirate);
-            makePirate = false;
+            AntiPirate antiPirate = new AntiPirate(position, 1010, "antipirate");
+            level.Add(antiPirate);
+            makeAntiPirate = false;
         }
     }
     public override void Update(GameTime gameTime)
@@ -36,7 +35,7 @@ class Hideout : SpriteGameObject
         if (pirateTimer > 4)
         {
             pirateTimer = 0;
-            makePirate = true;
+            makeAntiPirate = true;
         }
     }
     public void CheckConnection()

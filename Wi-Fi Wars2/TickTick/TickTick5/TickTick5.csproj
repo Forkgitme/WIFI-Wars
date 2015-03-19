@@ -129,9 +129,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="gameobjects\Firewall.cs" />
+    <Compile Include="gameobjects\AntiPirateHideout.cs" />
     <Compile Include="gameobjects\Home.cs" />
     <Compile Include="gameobjects\Packet.cs" />
     <Compile Include="gameobjects\Bar.cs" />
+    <Compile Include="gameobjects\AntiPirate.cs" />
     <Compile Include="gameobjects\PirateShip.cs" />
     <Compile Include="gameobjects\Hideout.cs" />
     <Compile Include="gameobjects\Tower.cs" />

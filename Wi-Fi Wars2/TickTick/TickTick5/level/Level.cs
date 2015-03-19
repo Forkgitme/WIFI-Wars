@@ -5,7 +5,7 @@ partial class Level : GameObjectList
     protected bool locked, solved;
     protected Button quitButton;
     protected UI ui;
-    protected GameObjectList towerList, firewallList, packetList;
+    protected GameObjectList towerList, firewallList, packetList, pirateList;
 
     public Level(int levelIndex)
     {
@@ -23,6 +23,8 @@ partial class Level : GameObjectList
         this.Add(firewallList);
         packetList = new GameObjectList(0, "packetList");
         this.Add(packetList);
+        pirateList = new GameObjectList(0, "pirateList");
+        this.Add(pirateList);
     }
 
     public bool Completed

@@ -4,11 +4,13 @@ using Microsoft.Xna.Framework;
 
 partial class Level : GameObjectList
 {
-    protected GameObjectList hideoutList;
+    protected GameObjectList hideoutList, antihideoutList;
     public void LoadLevel(string path)
     {
         hideoutList = new GameObjectList(11, "hideoutlist");
         this.Add(hideoutList);
+        antihideoutList = new GameObjectList(11, "antihideoutlist");
+        this.Add(antihideoutList);
         Vector2 position = Vector2.Zero;
         List<string> textlines = new List<string>();
         StreamReader fileReader = new StreamReader(path);
@@ -36,7 +38,9 @@ partial class Level : GameObjectList
                 case "hideout": 
                     hideoutList.Add(new Hideout(position, 1, "hideout"));
                     break;
-                case "antipirate": break;
+                case "antipirate":
+                    antihideoutList.Add(new AntiPirateHideout(position, 1, "antihideout"));
+                    break;
                 case "money":
                     ui.Money = int.Parse(obj[1]);
                     break;

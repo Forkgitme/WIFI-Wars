@@ -6,12 +6,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-class PirateShip : SpriteGameObject
+class AntiPirate : SpriteGameObject
 {
     bool inNetwork;
     double randomTimer;
-    public bool remove;
-    public PirateShip(Vector2 pos, int layer, String id)
+    bool remove;
+
+    public AntiPirate(Vector2 pos, int layer, String id)
         : base("Sprites/Pirateship", layer, id)
     {
         position = pos;
@@ -22,11 +23,6 @@ class PirateShip : SpriteGameObject
     public override void HandleInput(InputHelper inputHelper)
     {
         base.HandleInput(inputHelper);
-        if (inputHelper.MousePosition.X < this.Position.X + Center.X + 10 && inputHelper.MousePosition.X > this.Position.X + Center.X - 10 && inputHelper.MousePosition.Y < this.Position.Y + Center.Y + 10 && inputHelper.MousePosition.Y > this.Position.Y + Center.Y - 10)
-                    if (inputHelper.MouseLeftButtonPressed())
-                    {
-                        remove = true;
-                    }     
         if (remove)
         {
             GameObjectList parent = this.parent as GameObjectList;
@@ -43,7 +39,7 @@ class PirateShip : SpriteGameObject
             randomTimer = 0;
             this.Velocity = new Vector2(WifiWars.Random.Next(-50, 51), WifiWars.Random.Next(-50, 51));
         }   
-        GameObjectList level = this.parent.Parent as GameObjectList;
+        GameObjectList level = this.parent as GameObjectList;
         GameObjectList TowerList = level.Find("towerlist") as GameObjectList;
         List<GameObject> Towers = TowerList.Objects;
             foreach (Tower tower in Towers)
@@ -54,19 +50,19 @@ class PirateShip : SpriteGameObject
             }
             if (!inNetwork)
                 velocity = -velocity;
-            GameObjectList packetList = level.Find("packetList") as GameObjectList;
-            List<GameObject> packets = packetList.Objects;
-        foreach (Packet packet in packets)
+            GameObjectList pirateList = level.Find("pirateList") as GameObjectList;
+            List<GameObject> pirates = pirateList.Objects;
+        foreach (PirateShip pirate in pirates)
         {
-            if (Math.Sqrt(Math.Pow((this.position.X - packet.Position.X - packet.Center.X), 2) + Math.Pow((this.position.Y - packet.Position.Y - packet.Center.Y), 2)) < 100)
+            if (Math.Sqrt(Math.Pow((this.position.X - pirate.Position.X - pirate.Center.X), 2) + Math.Pow((this.position.Y - pirate.Position.Y - pirate.Center.Y), 2)) < 100)
             {
-                Vector2 direction = new Vector2(packet.Position.X - this.position.X, packet.Position.Y - this.position.Y);
+                Vector2 direction = new Vector2(pirate.Position.X - this.position.X, pirate.Position.Y - this.position.Y);
                 direction.Normalize();
                 this.Velocity = direction * 50;
             }
-            if (this.CollidesWith(packet))
+            if (this.CollidesWith(pirate))
             {
-                packet.remove = true;
+                pirate.remove = true;
                 remove = true;
             }
         }

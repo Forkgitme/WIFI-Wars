@@ -54,6 +54,10 @@ using Microsoft.Xna.Framework;
                         List<GameObject> hideouts = hideoutList.Objects;
                         foreach (Hideout hideout in hideouts)
                             hideout.CheckConnection();
+                        GameObjectList antihideoutList = level.Find("antihideoutlist") as GameObjectList;
+                        List<GameObject> antihideouts = antihideoutList.Objects;
+                        foreach (AntiPirateHideout antihideout in antihideouts)
+                            antihideout.CheckConnection();
                     }
 
                 }
