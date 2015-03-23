@@ -11,14 +11,32 @@ class AntiPirateHideout : SpriteGameObject
     public bool connected;
     double pirateTimer;
     bool makeAntiPirate;
+    bool active;
     public AntiPirateHideout(Vector2 pos, int layer, String id)
-        : base("Sprites/Hideout", layer, id)
+        : base("Sprites/AntiPirateHideout", layer, id)
     {
         position = pos;
     }
     public override void HandleInput(InputHelper inputHelper)
     {
         base.HandleInput(inputHelper);
+        if (connected)
+        {
+            if (inputHelper.MousePosition.X < this.Position.X + 20 && inputHelper.MousePosition.X > this.Position.X && inputHelper.MousePosition.Y < this.Position.Y + 20 && inputHelper.MousePosition.Y > this.Position.Y)
+                    if (inputHelper.MouseLeftButtonPressed())
+                    {
+                        if (!active)
+                        { 
+                            this.Sprite = new SpriteSheet("Sprites/AntiPirateHideoutActive", 0);
+                            active = true;
+                        }
+                        else
+                        {
+                            this.Sprite = new SpriteSheet("Sprites/AntiPirateHideout", 0);
+                            active = false;
+                        }
+                    }     
+        }
         if (makeAntiPirate)
         {
             GameObjectList level = this.parent.Parent as GameObjectList;
@@ -30,8 +48,13 @@ class AntiPirateHideout : SpriteGameObject
     public override void Update(GameTime gameTime)
     {
         base.Update(gameTime);
-        if (connected)
+        if (active)
+        {
+            GameObjectList level = this.parent.Parent as GameObjectList;
+            UI ui = level.Find("ui") as UI;
+            ui.Money -= 0.01f;
             pirateTimer += gameTime.ElapsedGameTime.TotalSeconds;
+        }
         if (pirateTimer > 4)
         {
             pirateTimer = 0;

@@ -6,7 +6,7 @@ using Microsoft.Xna.Framework;
 
 class UI : GameObjectList
 {
-    int money;
+    float money;
     TextGameObject moneyText;
     public UI(int m, int layer = 0, string id = "ui")
         : base(layer, id)
@@ -26,7 +26,7 @@ class UI : GameObjectList
         base.Update(gameTime);
         moneyText.Text = "Money:" + money + "$";
     }
-    public int Money
+    public float Money
     {
         get { return money; }
         set { money = value; }

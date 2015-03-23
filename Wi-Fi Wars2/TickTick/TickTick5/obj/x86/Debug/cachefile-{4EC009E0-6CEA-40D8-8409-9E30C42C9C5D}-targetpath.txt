@@ -32,7 +32,13 @@ Content\Sprites\Buffer.xnb
 Content\Sprites\home.xnb
 Content\Sprites\Hideout.xnb
 Content\Sprites\Pirateship.xnb
+Content\Sprites\TrojanHorse.xnb
 Content\Sprites\Virus.xnb
+Content\Overlays\spr_welldone.xnb
+Content\Sprites\PirateBreak@10.xnb
+Content\Sprites\AntiPirate.xnb
+Content\Sprites\AntiPirateHideout.xnb
+Content\Sprites\AntiPirateHideoutActive.xnb
 Content\Levels\1.txt
 Content\Levels\8.txt
 Content\Levels\2.txt

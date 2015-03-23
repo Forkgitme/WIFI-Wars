@@ -307,6 +307,69 @@
       <Output>C:\Users\Gebruiker\Desktop\Studie\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\Pirateship.xnb</Output>
       <Time>2015-03-04T12:29:08.030204+01:00</Time>
     </Item>
+    <Item>
+      <Source>Sprites\TrojanHorse.png</Source>
+      <Name>Sprites\TrojanHorse</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Gebruiker\Desktop\Studie\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\TrojanHorse.xnb</Output>
+      <Time>2015-03-19T17:49:26.5773999+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Virus.png</Source>
+      <Name>Sprites\Virus</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Gebruiker\Desktop\Studie\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\Virus.xnb</Output>
+      <Time>2015-03-19T17:49:26.5803803+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Overlays\spr_welldone.png</Source>
+      <Name>Overlays\spr_welldone</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Gebruiker\Desktop\Studie\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Overlays\spr_welldone.xnb</Output>
+      <Time>2015-03-19T17:49:26.5233352+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\PirateBreak@10.png</Source>
+      <Name>Sprites\PirateBreak@10</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Gebruiker\Desktop\Studie\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\PirateBreak@10.xnb</Output>
+      <Time>2015-03-22T18:43:51.6247836+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\AntiPirate.png</Source>
+      <Name>Sprites\AntiPirate</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Gebruiker\Desktop\Studie\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\AntiPirate.xnb</Output>
+      <Time>2015-03-22T21:34:17.0456006+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\AntiPirateHideout.png</Source>
+      <Name>Sprites\AntiPirateHideout</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Gebruiker\Desktop\Studie\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\AntiPirateHideout.xnb</Output>
+      <Time>2015-03-23T12:45:21.6135272+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\AntiPirateHideoutActive.png</Source>
+      <Name>Sprites\AntiPirateHideoutActive</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Gebruiker\Desktop\Studie\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\AntiPirateHideoutActive.xnb</Output>
+      <Time>2015-03-23T12:47:21.8121164+01:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID>{4EC009E0-6CEA-40D8-8409-9E30C42C9C5D}</ContentProjectGUID>
