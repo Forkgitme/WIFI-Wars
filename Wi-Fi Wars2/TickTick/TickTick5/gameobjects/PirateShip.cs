@@ -28,7 +28,7 @@ class PirateShip : AnimatedGameObject
         if (!breaking)
         { 
         base.HandleInput(inputHelper);
-        if (inputHelper.MousePosition.X < this.Position.X + Center.X + 20 && inputHelper.MousePosition.X > this.Position.X + Center.X - 20 && inputHelper.MousePosition.Y < this.Position.Y + 20 && inputHelper.MousePosition.Y > this.Position.Y - 20)
+        if (inputHelper.MousePosition.X < this.Position.X + 13 && inputHelper.MousePosition.X > this.Position.X + Center.X - 13 && inputHelper.MousePosition.Y < this.Position.Y && inputHelper.MousePosition.Y > this.Position.Y - 22)
                     if (inputHelper.MouseLeftButtonPressed())
                     {
                         this.PlayAnimation("breaking");

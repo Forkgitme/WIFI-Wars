@@ -287,7 +287,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Gebruiker\Desktop\Studie\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\home.xnb</Output>
-      <Time>2015-03-04T11:50:49.0488912+01:00</Time>
+      <Time>2015-03-23T13:25:25.765107+01:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Hideout.png</Source>
@@ -369,6 +369,15 @@
       <Options>None</Options>
       <Output>C:\Users\Gebruiker\Desktop\Studie\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\AntiPirateHideoutActive.xnb</Output>
       <Time>2015-03-23T12:47:21.8121164+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\homeActive.png</Source>
+      <Name>Sprites\homeActive</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Gebruiker\Desktop\Studie\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\homeActive.xnb</Output>
+      <Time>2015-03-23T13:26:10.799761+01:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
