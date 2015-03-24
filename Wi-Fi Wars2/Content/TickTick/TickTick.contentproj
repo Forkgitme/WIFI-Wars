@@ -319,13 +319,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Overlays\spr_welldone.png">
-      <Name>spr_welldone</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="Sprites\PirateBreak%4010.png">
       <Name>PirateBreak%4010</Name>
       <Importer>TextureImporter</Importer>
@@ -382,6 +375,13 @@
   <ItemGroup>
     <Compile Include="Sprites\FBIbuilding.png">
       <Name>FBIbuilding</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Overlays\spr_gameover.png">
+      <Name>spr_gameover</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
