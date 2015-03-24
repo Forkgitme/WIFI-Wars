@@ -13,7 +13,7 @@ class AntiPirate : SpriteGameObject
     bool remove;
 
     public AntiPirate(Vector2 pos, int layer, String id)
-        : base("Sprites/AntiPirate", layer, id)
+        : base("Sprites/FBI", layer, id)
     {
         position = pos;
         Vector2 randomVector = new Vector2(WifiWars.Random.Next(-100, 51), WifiWars.Random.Next(-100, 101));

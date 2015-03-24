@@ -40,6 +40,10 @@ Content\Sprites\AntiPirate.xnb
 Content\Sprites\AntiPirateHideout.xnb
 Content\Sprites\AntiPirateHideoutActive.xnb
 Content\Sprites\homeActive.xnb
+Content\Sprites\Star.xnb
+Content\Sprites\Starbackground.xnb
+Content\Sprites\FBI.xnb
+Content\Sprites\FBIbuilding.xnb
 Content\Levels\1.txt
 Content\Levels\8.txt
 Content\Levels\2.txt
