@@ -38,14 +38,19 @@ class Server : SpriteGameObject
         base.HandleInput(inputHelper);
         if (makePacket)
         {
-            int rand = GameEnvironment.Random.Next(5);
+            int rand = GameEnvironment.Random.Next(4);
             GameObjectList level = this.parent as GameObjectList;
             SpriteGameObject home = GameWorld.Find("home") as SpriteGameObject;
             GameObjectList TowerList = GameWorld.Find("towerlist") as GameObjectList;
             if (rand == 1)
             {
-                Trojan virus = new Trojan(this.position + this.Center, this, TowerList, home);
+                Virus virus = new Virus(this.position + this.Center, this, TowerList, home);
                 level.Add(virus);
+            }
+            else if (rand == 2)
+            {
+                Trojan trojan = new Trojan(this.position + this.Center, this, TowerList, home);
+                level.Add(trojan);
             }
             else
             {

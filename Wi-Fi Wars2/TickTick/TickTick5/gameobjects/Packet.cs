@@ -47,7 +47,7 @@ using System.Text;
             
             base.HandleInput(inputHelper);
             Level level = this.Parent.Parent as Level;
-            Home home = GameWorld.Find("home") as Home;
+            Home home = level.Find("home") as Home;
             if (inBuffer)
             {
                 if (inputHelper.MousePosition.X < this.Position.X + 15 && inputHelper.MousePosition.X > this.Position.X && inputHelper.MousePosition.Y < this.Position.Y + 15 && inputHelper.MousePosition.Y > this.Position.Y)
@@ -112,10 +112,10 @@ using System.Text;
                                 
             if (this.CollidesWith(home))
             {
+                Bar bar = GameWorld.Find("police") as Bar;
+                bar.Active = true;
                 if (!home.active)
-                {
-                    Bar bar = GameWorld.Find("police") as Bar;
-                    bar.Active = true;
+                {                    
                     if (bufferAmount < 5)
                     {
                         this.Position = new Vector2(670, 100);
@@ -241,7 +241,9 @@ using System.Text;
             if (inBuffer)
             {      
             SpriteGameObject buffer = GameWorld.Find("buffer") as SpriteGameObject;
-            if (this.CollidesWith(buffer))
+            if (buffer == null)
+                this.remove = true;
+            else if (this.CollidesWith(buffer))
                 this.Velocity = -this.Velocity;               
             }     
             else if(StageIndex != Path.Count-1)

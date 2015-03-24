@@ -18,7 +18,7 @@ using Microsoft.Xna.Framework;
         {
             if (!based)
             {
-                towerBase = new SpriteGameObject("Sprites/tower", 10);
+                towerBase = new SpriteGameObject("Sprites/tower", 20);
                 GameObjectList towerList = this.parent as GameObjectList;
                 Level level = towerList.Parent as Level;
                 level.Add(towerBase);

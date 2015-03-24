@@ -15,12 +15,26 @@ class Virus : Packet
 
     public override void HandleInput(InputHelper inputHelper)
     {
+        Level level = this.Parent as Level;
+        Home home = level.Find("home") as Home;
+        if (this.CollidesWith(home))
+            {
+                delete = true;
+                for (int i = 1; i < 4; i++)
+                {
+                    Bar serverBar = GameWorld.Find("serverbar" + i) as Bar;
+                    if(serverBar != null)
+                    { 
+                        if (serverBar.Resource >= 50)
+                        serverBar.Resource -= 50;
+                    }
+                }
+            }
         if (delete)
         {
-            Level level = this.Parent as Level;
-            level.Remove(this);
+            Level levelu = this.Parent as Level;
+            levelu.Remove(this);
         }
-
     }
     public override void Update(GameTime gameTime)
     {

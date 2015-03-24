@@ -17,13 +17,13 @@ partial class Level : GameObjectList
         ui = new UI(100);
         this.Add(ui);
         this.LoadLevel("Content/Levels/" + levelIndex + ".txt");
-        towerList = new GameObjectList(0, "towerlist");
+        towerList = new GameObjectList(10, "towerlist");
         this.Add(towerList);
-        firewallList = new GameObjectList(0, "firewallList");
+        firewallList = new GameObjectList(12, "firewallList");
         this.Add(firewallList);
-        packetList = new GameObjectList(0, "packetList");
+        packetList = new GameObjectList(20, "packetList");
         this.Add(packetList);
-        pirateList = new GameObjectList(0, "pirateList");
+        pirateList = new GameObjectList(20, "pirateList");
         this.Add(pirateList);
     }
 
