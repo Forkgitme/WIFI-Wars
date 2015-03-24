@@ -46,8 +46,14 @@ class Bar : SpriteGameObject
     public override void Update(GameTime gameTime)
     {
         base.Update(gameTime);
-        if (resource<totalResource && type == 4 && active)
-        resource += 0.2f;
+        if (resource < totalResource && type == 4 && active)
+        {
+            resource += 2.2f;
+        }
+        else if (resource >= totalResource && type == 4 && active)
+        {
+            GameEnvironment.GameStateManager.SwitchTo("gameOverState");
+        }
     }
 
     public float Resource
