@@ -366,20 +366,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Sprites\FBI.png">
-      <Name>FBI</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Sprites\FBIbuilding.png">
-      <Name>FBIbuilding</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="Overlays\spr_gameover.png">
       <Name>spr_gameover</Name>
       <Importer>TextureImporter</Importer>
