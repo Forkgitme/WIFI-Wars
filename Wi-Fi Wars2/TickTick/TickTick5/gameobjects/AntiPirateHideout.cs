@@ -13,7 +13,7 @@ class AntiPirateHideout : SpriteGameObject
     bool makeAntiPirate;
     bool active;
     public AntiPirateHideout(Vector2 pos, int layer, String id)
-        : base("Sprites/FBIbuilding", layer, id)
+        : base("Sprites/AntiPirateHideout", layer, id)
     {
         position = pos;
     }
