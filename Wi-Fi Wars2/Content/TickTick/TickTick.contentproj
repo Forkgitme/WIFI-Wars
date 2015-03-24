@@ -166,7 +166,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Overlays\" />
     <Folder Include="Sounds\" />
   </ItemGroup>
   <ItemGroup>
@@ -327,6 +326,13 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Sprites\AntiPirate.png">
+      <Name>AntiPirate</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
     <Compile Include="Sprites\AntiPirateHideout.png">
       <Name>AntiPirateHideout</Name>
       <Importer>TextureImporter</Importer>
@@ -360,15 +366,22 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Sprites\AntiPirate%402.png">
-      <Name>AntiPirate%402</Name>
+    <Compile Include="Sprites\FBI.png">
+      <Name>FBI</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Sprites\GameOver.png">
-      <Name>GameOver</Name>
+    <Compile Include="Sprites\FBIbuilding.png">
+      <Name>FBIbuilding</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Overlays\spr_gameover.png">
+      <Name>spr_gameover</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>

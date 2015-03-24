@@ -6,23 +6,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-class AntiPirate : AnimatedGameObject
+class AntiPirate : SpriteGameObject
 {
     bool inNetwork;
     double randomTimer;
     bool remove;
 
     public AntiPirate(Vector2 pos, int layer, String id)
-        : base(layer, "antipirate")
+        : base("Sprites/FBI", layer, id)
     {
         position = pos;
         Vector2 randomVector = new Vector2(WifiWars.Random.Next(-100, 51), WifiWars.Random.Next(-100, 101));
         randomVector.Normalize();
         this.velocity = randomVector * 50;
-
-        this.LoadAnimation("Sprites/AntiPirate@2", "sailing", true, 0.1f);
-        this.PlayAnimation("sailing");
-     
     }
     public override void HandleInput(InputHelper inputHelper)
     {

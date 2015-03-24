@@ -287,7 +287,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\jaswir\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\home.xnb</Output>
-      <Time>2015-03-24T14:43:16.0809015+01:00</Time>
+      <Time>2015-03-24T14:18:27.7846164+01:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Hideout.png</Source>
@@ -326,6 +326,15 @@
       <Time>2015-03-17T13:31:55.2470023+01:00</Time>
     </Item>
     <Item>
+      <Source>Overlays\spr_welldone.png</Source>
+      <Name>Overlays\spr_welldone</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\jaswir\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Overlays\spr_welldone.xnb</Output>
+      <Time>2015-03-17T13:31:55.188429+01:00</Time>
+    </Item>
+    <Item>
       <Source>Sprites\PirateBreak@10.png</Source>
       <Name>Sprites\PirateBreak@10</Name>
       <Importer>TextureImporter</Importer>
@@ -335,13 +344,22 @@
       <Time>2015-03-21T14:14:25.5424558+01:00</Time>
     </Item>
     <Item>
+      <Source>Sprites\AntiPirate.png</Source>
+      <Name>Sprites\AntiPirate</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\jaswir\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\AntiPirate.xnb</Output>
+      <Time>2015-03-24T14:18:27.7679979+01:00</Time>
+    </Item>
+    <Item>
       <Source>Sprites\AntiPirateHideout.png</Source>
       <Name>Sprites\AntiPirateHideout</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\jaswir\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\AntiPirateHideout.xnb</Output>
-      <Time>2015-03-24T14:43:16.0758999+01:00</Time>
+      <Time>2015-03-24T14:18:27.7690136+01:00</Time>
     </Item>
     <Item>
       <Source>Sprites\AntiPirateHideoutActive.png</Source>
@@ -350,7 +368,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\jaswir\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\AntiPirateHideoutActive.xnb</Output>
-      <Time>2015-03-24T14:43:16.0769006+01:00</Time>
+      <Time>2015-03-24T14:18:27.7690136+01:00</Time>
     </Item>
     <Item>
       <Source>Sprites\homeActive.png</Source>
@@ -359,7 +377,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\jaswir\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\homeActive.xnb</Output>
-      <Time>2015-03-24T14:43:16.0818296+01:00</Time>
+      <Time>2015-03-24T14:18:27.7846164+01:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Star.png</Source>
@@ -380,22 +398,22 @@
       <Time>2015-03-21T14:14:25.5454595+01:00</Time>
     </Item>
     <Item>
-      <Source>Sprites\AntiPirate@2.png</Source>
-      <Name>Sprites\AntiPirate@2</Name>
+      <Source>Sprites\FBI.png</Source>
+      <Name>Sprites\FBI</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\jaswir\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\AntiPirate@2.xnb</Output>
-      <Time>2015-03-24T14:43:16.0738969+01:00</Time>
+      <Output>C:\Users\jaswir\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\FBI.xnb</Output>
+      <Time>2015-03-24T14:18:27.7706495+01:00</Time>
     </Item>
     <Item>
-      <Source>Sprites\GameOver.png</Source>
-      <Name>Sprites\GameOver</Name>
+      <Source>Sprites\FBIbuilding.png</Source>
+      <Name>Sprites\FBIbuilding</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\jaswir\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\GameOver.xnb</Output>
-      <Time>2015-03-24T14:43:16.079913+01:00</Time>
+      <Output>C:\Users\jaswir\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\FBIbuilding.xnb</Output>
+      <Time>2015-03-24T14:18:27.7715875+01:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
