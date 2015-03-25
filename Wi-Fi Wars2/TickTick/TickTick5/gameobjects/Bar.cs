@@ -48,18 +48,14 @@ class Bar : SpriteGameObject
         base.Update(gameTime);
         if (resource < totalResource && type == 4 && active)
         {
-            resource += 0.2f;
+            resource += 0.5f;
         }
         else if (resource >= totalResource && type == 4 && active)
         {
             GameEnvironment.GameStateManager.SwitchTo("gameOverState");
         }
 
-        if(resource <totalResource && type != 4)
-        {
-            resource += 2.2f;
-        }
-
+   
       
  
     }
