@@ -38,7 +38,7 @@ class Server : SpriteGameObject
         base.HandleInput(inputHelper);
         if (makePacket)
         {
-            int rand = GameEnvironment.Random.Next(4);
+            int rand = GameEnvironment.Random.Next(16);
             GameObjectList level = this.parent as GameObjectList;
             SpriteGameObject home = GameWorld.Find("home") as SpriteGameObject;
             GameObjectList TowerList = GameWorld.Find("towerlist") as GameObjectList;
@@ -65,7 +65,7 @@ class Server : SpriteGameObject
     {
         base.Update(gameTime);
         packetTimer += gameTime.ElapsedGameTime.TotalSeconds;
-        if (packetTimer > 3 && connected)
+        if (packetTimer > 2 && connected)
         {
             packetTimer = 0;
             makePacket = true;
