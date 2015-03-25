@@ -60,6 +60,13 @@ public class SpriteSheet
         get { return spriteColor; }
         set { spriteColor = value; }
     }
+
+    public byte Alpha
+    {
+        get { return spriteColor.A; }
+        set { spriteColor.A = value; }
+    }
+
     public float Rotation
     {
         get { return rotation; }

@@ -26,7 +26,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Backgrounds\spr_levelselect.xnb</Output>
-      <Time>2015-02-25T10:57:45.9182989+01:00</Time>
+      <Time>2015-03-25T12:11:24.9403659+01:00</Time>
     </Item>
     <Item>
       <Source>Sprites\spr_button_help.png</Source>
@@ -35,7 +35,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\spr_button_help.xnb</Output>
-      <Time>2015-02-25T10:57:45.954748+01:00</Time>
+      <Time>2015-03-25T12:11:24.9643648+01:00</Time>
     </Item>
     <Item>
       <Source>Sprites\spr_button_play.png</Source>
@@ -44,7 +44,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\spr_button_play.xnb</Output>
-      <Time>2015-02-25T10:57:45.9557483+01:00</Time>
+      <Time>2015-03-25T12:11:24.966384+01:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\spr_help.jpg</Source>
@@ -62,7 +62,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\spr_button_back.xnb</Output>
-      <Time>2015-02-25T10:57:45.9527454+01:00</Time>
+      <Time>2015-03-25T12:11:24.9633653+01:00</Time>
     </Item>
     <Item>
       <Source>Sprites\spr_level_locked.png</Source>
@@ -71,7 +71,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\spr_level_locked.xnb</Output>
-      <Time>2015-02-25T10:57:45.9577494+01:00</Time>
+      <Time>2015-03-25T12:11:24.9683673+01:00</Time>
     </Item>
     <Item>
       <Source>Sprites\spr_level_solved.png</Source>
@@ -80,7 +80,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\spr_level_solved.xnb</Output>
-      <Time>2015-02-25T10:57:45.9577494+01:00</Time>
+      <Time>2015-03-25T12:11:24.9703715+01:00</Time>
     </Item>
     <Item>
       <Source>Sprites\spr_level_unsolved.png</Source>
@@ -89,7 +89,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\spr_level_unsolved.xnb</Output>
-      <Time>2015-02-25T10:57:45.9587501+01:00</Time>
+      <Time>2015-03-25T12:11:24.9713694+01:00</Time>
     </Item>
     <Item>
       <Source>Sprites\spr_button_quit.png</Source>
@@ -98,7 +98,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\spr_button_quit.xnb</Output>
-      <Time>2015-02-25T10:57:45.9567487+01:00</Time>
+      <Time>2015-03-25T12:11:24.9673851+01:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\spr_title.jpg</Source>
@@ -107,7 +107,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Backgrounds\spr_title.xnb</Output>
-      <Time>2015-02-25T10:57:45.9232863+01:00</Time>
+      <Time>2015-03-25T12:11:24.9453695+01:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\Background1.png</Source>
@@ -287,7 +287,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\home.xnb</Output>
-      <Time>2015-03-17T11:35:25.5155373+01:00</Time>
+      <Time>2015-03-25T12:10:18.3889077+01:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Hideout.png</Source>
@@ -314,7 +314,88 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\Virus.xnb</Output>
-      <Time>2015-03-04T11:14:46.9568923+01:00</Time>
+      <Time>2015-03-17T13:19:12.0557412+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\TrojanHorse.png</Source>
+      <Name>Sprites\TrojanHorse</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\TrojanHorse.xnb</Output>
+      <Time>2015-03-21T12:17:10.8663199+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\PirateBreak@10.png</Source>
+      <Name>Sprites\PirateBreak@10</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\PirateBreak@10.xnb</Output>
+      <Time>2015-03-21T12:17:10.8633173+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\AntiPirateHideout.png</Source>
+      <Name>Sprites\AntiPirateHideout</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\AntiPirateHideout.xnb</Output>
+      <Time>2015-03-25T12:10:18.3458479+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\AntiPirateHideoutActive.png</Source>
+      <Name>Sprites\AntiPirateHideoutActive</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\AntiPirateHideoutActive.xnb</Output>
+      <Time>2015-03-25T12:10:18.3468502+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\homeActive.png</Source>
+      <Name>Sprites\homeActive</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\homeActive.xnb</Output>
+      <Time>2015-03-25T12:10:18.3889077+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Star.png</Source>
+      <Name>Sprites\Star</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\Star.xnb</Output>
+      <Time>2015-03-21T12:17:10.864318+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Starbackground.png</Source>
+      <Name>Sprites\Starbackground</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\Starbackground.xnb</Output>
+      <Time>2015-03-21T12:17:10.8653191+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\AntiPirate@2.png</Source>
+      <Name>Sprites\AntiPirate@2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\AntiPirate@2.xnb</Output>
+      <Time>2015-03-25T12:10:18.3448472+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\GameOver.png</Source>
+      <Name>Sprites\GameOver</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\GameOver.xnb</Output>
+      <Time>2015-03-25T12:10:18.348869+01:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

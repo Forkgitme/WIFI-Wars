@@ -19,18 +19,21 @@ using System.Text;
         float Speed = 100;
 
         static int bufferAmount;
-        static bool holdingPacket;
+        protected static bool holdingPacket;
         int type;
-        bool inBuffer, held;
+        protected bool inBuffer, held;
         public bool remove;
+        protected Server serv;
+        
         public Packet(Vector2 spawnposition, Color c, int t, Server server, GameObjectList TowerList, SpriteGameObject Home, string assetname = "Sprites/Packet")
             : base(assetname, 100, "packet", 0)
         {
             sprite.SpriteColor = c;
             position = spawnposition;
             type = t;
-            
-            
+
+            serv = server;
+ 
             Path = FindPad(server as SpriteGameObject, TowerList, Home);
 
           
