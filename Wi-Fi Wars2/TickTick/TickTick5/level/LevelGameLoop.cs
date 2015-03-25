@@ -10,7 +10,11 @@ partial class Level : GameObjectList
         base.HandleInput(inputHelper);
         if (quitButton.Pressed)
         {
+            IGameLoopObject playingState = GameEnvironment.GameStateManager.CurrentGameState;
+            playingState.Reset();
             this.Reset();
+         
+
             GameEnvironment.GameStateManager.SwitchTo("levelMenu");
         }
         UI ui = this.Find("ui") as UI;

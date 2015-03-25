@@ -13,12 +13,13 @@ class UI : GameObjectList
     {
         money = m;
         moneyText = new TextGameObject("Fonts/Hud");
-        moneyText.Position = new Vector2(50, 50);
+        moneyText.Position = new Vector2(450, 20);
+        moneyText.Color = Color.Black;
         this.Add(moneyText);
         Bar policeBar = new Bar(4, "police");
         this.Add(policeBar);
         SpriteGameObject buffer = new SpriteGameObject("Sprites/Buffer", 10, "buffer");
-        buffer.Position = new Vector2(600, 50);
+        buffer.Position = new Vector2(250, 20);
         this.Add(buffer);
     }
 

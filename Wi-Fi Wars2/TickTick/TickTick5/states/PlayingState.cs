@@ -75,7 +75,7 @@ class PlayingState : IGameLoopObject
 
     public virtual void Reset()
     {
-        //ReloadLevels();
+        ReloadLevels();
     }
 
     public void NextLevel()
@@ -93,9 +93,9 @@ class PlayingState : IGameLoopObject
 
     public void ReloadLevels ()
     {
+        levels = new List<Level>();
         for (int currLevel = 1; currLevel <= 10; currLevel++)
-            levels.RemoveAt(currLevel-1);
-        LoadLevels();
+            levels.Add(new Level(currLevel));
     }
 
     public void LoadLevels()
