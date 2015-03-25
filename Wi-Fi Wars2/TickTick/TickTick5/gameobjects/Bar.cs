@@ -18,7 +18,7 @@ class Bar : SpriteGameObject
         : base("Sprites/bar2", layer, id, sheetIndex)
     {
         type = t;
-        this.Position = new Vector2(300, 30 + 30*t);
+        this.Position = new Vector2(20, 30*t);
         barPart = WifiWars.AssetManager.Content.Load<Texture2D>("Sprites/bar");
         resource = 0;
         totalResource = 1000;
@@ -48,7 +48,7 @@ class Bar : SpriteGameObject
         base.Update(gameTime);
         if (resource < totalResource && type == 4 && active)
         {
-            resource += 0.5f;
+            resource += 0.2777f;
         }
         else if (resource >= totalResource && type == 4 && active)
         {
