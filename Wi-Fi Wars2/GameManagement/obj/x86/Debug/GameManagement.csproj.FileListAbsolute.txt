@@ -18,7 +18,6 @@ C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\GameManagement\obj\x86\Deb
 C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\GameManagement\obj\x86\Debug\GameManagement.pdb
 C:\Users\Carlo\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\GameManagement\bin\x86\Debug\GameManagement.dll
 C:\Users\Carlo\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\GameManagement\bin\x86\Debug\GameManagement.pdb
-C:\Users\Carlo\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\GameManagement\obj\x86\Debug\GameManagement.csprojResolveAssemblyReference.cache
 C:\Users\Carlo\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\GameManagement\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\Carlo\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\GameManagement\obj\x86\Debug\GameManagement.dll
 C:\Users\Carlo\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\GameManagement\obj\x86\Debug\GameManagement.pdb
