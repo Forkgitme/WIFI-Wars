@@ -75,7 +75,7 @@ class PlayingState : IGameLoopObject
 
     public virtual void Reset()
     {
-        ReloadLevels();
+        //ReloadLevels();
     }
 
     public void NextLevel()
@@ -93,14 +93,14 @@ class PlayingState : IGameLoopObject
 
     public void ReloadLevels ()
     {
-        for (int currLevel = 1; currLevel <= 1; currLevel++)
+        for (int currLevel = 1; currLevel <= 10; currLevel++)
             levels.RemoveAt(currLevel-1);
         LoadLevels();
     }
 
     public void LoadLevels()
     {
-        for (int currLevel = 1; currLevel <= 1; currLevel++)
+        for (int currLevel = 1; currLevel <= 10; currLevel++)
             levels.Add(new Level(currLevel));
     }
 
@@ -108,7 +108,7 @@ class PlayingState : IGameLoopObject
     {
         List<string> textlines = new List<string>();
         StreamReader fileReader = new StreamReader(path);
-        for (int i = 0; i < levels.Count; i++)
+        for (int i = 0; i < 10; i++)
         {
             string line = fileReader.ReadLine();
             string[] elems = line.Split(',');

@@ -26,9 +26,7 @@ class UI : GameObjectList
     public override void Update(GameTime gameTime)
     {
         base.Update(gameTime);
-        moneyText.Text = "Money:" + money + "$";
-
-      
+        moneyText.Text = "Money:" + money + "$";    
     }
     public float Money
     {
