@@ -55,11 +55,6 @@ class Bar : SpriteGameObject
             GameEnvironment.GameStateManager.SwitchTo("gameOverState");
         }
 
-        if(resource <totalResource && type != 4)
-        {
-            resource += 2.2f;
-        }
-
       
  
     }
