@@ -15,13 +15,17 @@ class AntiPirate : AnimatedGameObject
     public AntiPirate(Vector2 pos, int layer, String id)
         : base(layer, "antipirate")
     {
+        
         position = pos;
         Vector2 randomVector = new Vector2(WifiWars.Random.Next(-100, 51), WifiWars.Random.Next(-100, 101));
         randomVector.Normalize();
         this.velocity = randomVector * 50;
         this.LoadAnimation("Sprites/AntiPirate@2","sailing",true, 0.1f);
         this.PlayAnimation("sailing");
+      
     }
+
+   
     public override void HandleInput(InputHelper inputHelper)
     {
         base.HandleInput(inputHelper);
@@ -31,8 +35,12 @@ class AntiPirate : AnimatedGameObject
             parent.Remove(this);
         }
     }
+
+  
+
     public override void Update(GameTime gameTime)
     {
+      
         base.Update(gameTime);
         inNetwork = false;
         randomTimer += gameTime.ElapsedGameTime.TotalSeconds;

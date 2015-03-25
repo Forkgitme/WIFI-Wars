@@ -3,6 +3,7 @@ using Microsoft.Xna.Framework.Input;
 
 partial class Level : GameObjectList
 {
+    bool barsfilled;
     bool holding;
     public override void HandleInput(InputHelper inputHelper)
     {
@@ -31,6 +32,21 @@ partial class Level : GameObjectList
 
     public override void Update(GameTime gameTime)
     {
+        barsfilled = true;
+        for (int i = 1; i < 4; i++)
+        {
+            Bar bar = this.Find("serverbar" + i) as Bar;
+
+            if( bar != null)
+                if(bar.Resource < bar.TotalResource)
+                    barsfilled = false;
+            
+             
+        }
+
+        if (barsfilled)
+            GameEnvironment.GameStateManager.SwitchTo("levelFinishedState");
+
         base.Update(gameTime);
     }
 

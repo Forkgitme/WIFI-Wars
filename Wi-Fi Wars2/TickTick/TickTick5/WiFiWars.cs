@@ -27,6 +27,7 @@ class WifiWars : GameEnvironment
         gameStateManager.AddGameState("playingState", new PlayingState(Content));
         gameStateManager.AddGameState("levelMenu", new LevelMenuState());
         gameStateManager.AddGameState("gameOverState", new GameOverState());
+        gameStateManager.AddGameState("levelFinishedState", new LevelFinishedState());
         gameStateManager.SwitchTo("titleMenu");
     }
 }

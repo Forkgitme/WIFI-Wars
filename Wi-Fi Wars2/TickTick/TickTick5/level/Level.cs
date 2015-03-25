@@ -27,6 +27,8 @@ partial class Level : GameObjectList
         this.Add(pirateList);
     }
 
+
+
     public bool Completed
     {
         get

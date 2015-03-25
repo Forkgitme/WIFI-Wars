@@ -21,10 +21,14 @@ class UI : GameObjectList
         buffer.Position = new Vector2(600, 50);
         this.Add(buffer);
     }
+
+
     public override void Update(GameTime gameTime)
     {
         base.Update(gameTime);
         moneyText.Text = "Money:" + money + "$";
+
+      
     }
     public float Money
     {

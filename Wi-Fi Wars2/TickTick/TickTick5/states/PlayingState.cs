@@ -75,7 +75,7 @@ class PlayingState : IGameLoopObject
 
     public virtual void Reset()
     {
-        CurrentLevel.Reset();
+        ReloadLevels();
     }
 
     public void NextLevel()
@@ -89,6 +89,13 @@ class PlayingState : IGameLoopObject
             levels[currentLevelIndex].Locked = false;
         }
         WriteLevelsStatus(Content.RootDirectory + "/Levels/levels_status.txt");
+    }
+
+    public void ReloadLevels ()
+    {
+        for (int currLevel = 1; currLevel <= 1; currLevel++)
+            levels.RemoveAt(currLevel-1);
+        LoadLevels();
     }
 
     public void LoadLevels()
