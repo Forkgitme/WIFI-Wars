@@ -4,14 +4,28 @@ using Microsoft.Xna.Framework.Input;
 
 class LevelFinishedState : GameObjectList
 {
-    protected IGameLoopObject playingState;
+    protected PlayingState playingState;
+    SpriteGameObject star1, star2, star3;
 
     public LevelFinishedState()
     {
-        playingState = GameEnvironment.GameStateManager.GetGameState("playingState");
+        playingState = GameEnvironment.GameStateManager.GetGameState("playingState") as PlayingState;
         SpriteGameObject overlay = new SpriteGameObject("Sprites/Starbackground");
+        star1 = new SpriteGameObject("Sprites/Star");
+        star2 = new SpriteGameObject("Sprites/Star");
+        star3 = new SpriteGameObject("Sprites/Star");
+
         overlay.Position = new Vector2(GameEnvironment.Screen.X, GameEnvironment.Screen.Y) / 2 - overlay.Center;
+        star1.Position = overlay.Position + new Vector2(star1.Width / 2, star1.Height/5);
+        star3.Position = overlay.Position + new Vector2(star2.Width * 3, star1.Height / 5);
+        star2.Position = overlay.Position + new Vector2(overlay.Width/2 -50 , star1.Height / 5);
+
         this.Add(overlay);
+        this.Add(star1);
+        this.Add(star2);
+        this.Add(star3);
+        star2.Visible = false;
+        star3.Visible = false;
     }
 
     public override void HandleInput(InputHelper inputHelper)
@@ -19,12 +33,20 @@ class LevelFinishedState : GameObjectList
         if (!inputHelper.KeyPressed(Keys.Space))
             return;
         GameEnvironment.GameStateManager.SwitchTo("playingState");
+        playingState.Reset();
         (playingState as PlayingState).NextLevel();
     }
 
     public override void Update(GameTime gameTime)
     {
         playingState.Update(gameTime);
+        playingState = GameEnvironment.GameStateManager.GetGameState("playingState") as PlayingState;
+        Level level = playingState.CurrentLevel;
+        UI ui = level.Find("ui") as UI;
+        if (ui.Money > 500)
+            star2.Visible = true;
+        if (ui.Money > 1000)
+            star3.Visible = true;
     }
 
     public override void Draw(GameTime gameTime, SpriteBatch spriteBatch)
