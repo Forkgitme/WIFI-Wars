@@ -1,5 +1,6 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Input;
+using System;
 
 partial class Level : GameObjectList
 {
@@ -18,14 +19,14 @@ partial class Level : GameObjectList
             GameEnvironment.GameStateManager.SwitchTo("levelMenu");
         }
         UI ui = this.Find("ui") as UI;
-        if (inputHelper.KeyPressed(Keys.T) && !holding && ui.Money >= 20)
+        if ((inputHelper.MouseLeftButtonPressed() && (Math.Sqrt((inputHelper.MousePosition.X - 750) * (inputHelper.MousePosition.X - 750) + (inputHelper.MousePosition.Y - 105)*(inputHelper.MousePosition.Y - 105)) < 100) || inputHelper.KeyPressed(Keys.T)) && !holding && ui.Money >= 20)
         {
             Tower tower = new Tower();
             towerList.Add(tower);
             holding = true;
             ui.Money -= 20;
         }
-        if (inputHelper.KeyPressed(Keys.F) && !holding && ui.Money >= 20)
+        if ((inputHelper.MouseLeftButtonPressed() && inputHelper.MousePosition.X > 900 && inputHelper.MousePosition.X <= 1000 && inputHelper.MousePosition.Y > 16 && inputHelper.MousePosition.Y < 190) || inputHelper.KeyPressed(Keys.F) && !holding && ui.Money >= 20)
         {
             Firewall firewall = new Firewall();
             firewallList.Add(firewall);
@@ -49,7 +50,10 @@ partial class Level : GameObjectList
         }
 
         if (barsfilled)
+        {
+            this.solved = true;
             GameEnvironment.GameStateManager.SwitchTo("levelFinishedState");
+        }
 
         base.Update(gameTime);
     }

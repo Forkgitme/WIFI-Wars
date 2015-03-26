@@ -19,15 +19,27 @@ class UI : GameObjectList
         Bar policeBar = new Bar(4, "police");
         this.Add(policeBar);
         SpriteGameObject buffer = new SpriteGameObject("Sprites/Buffer", 10, "buffer");
-        buffer.Position = new Vector2(250, 20);
+        buffer.Position = new Vector2(250, 15);
         this.Add(buffer);
+        SpriteGameObject towerBase = new SpriteGameObject("Sprites/tower", 10);
+        towerBase.Position = new Vector2(750 - towerBase.Width/2, 105 - towerBase.Height/2);
+        this.Add(towerBase);
+        SpriteGameObject towerRange = new SpriteGameObject("Sprites/Range", 9);
+        towerRange.Position = new Vector2(750 - towerRange.Width/2, 105 - towerRange.Height/2);
+        this.Add(towerRange);
+        for (int i = 0; i < 6; i++)
+        {
+            SpriteGameObject fireWall = new SpriteGameObject("Sprites/firewall");
+            fireWall.Position = new Vector2(900, 30+i*30 - fireWall.Height / 2);
+            this.Add(fireWall);
+        }
     }
 
 
     public override void Update(GameTime gameTime)
     {
         base.Update(gameTime);
-        moneyText.Text = "Money:" + money + "$";    
+        moneyText.Text = "Money:" + (int)money + "$";    
     }
     public float Money
     {

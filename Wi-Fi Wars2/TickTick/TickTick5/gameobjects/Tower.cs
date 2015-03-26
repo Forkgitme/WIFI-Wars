@@ -63,6 +63,14 @@ using Microsoft.Xna.Framework;
                 }
                 else 
                     this.Sprite.SpriteColor = Color.Red;
+                if (inputHelper.MouseRightButtonPressed())
+                {
+                    level.Holding = false;
+                    level.Remove(towerBase);
+                    towerList.Remove(this);
+                    UI ui = level.Find("ui") as UI;
+                    ui.Money += 20;
+                }
             }
         }
         public void CheckConnection()

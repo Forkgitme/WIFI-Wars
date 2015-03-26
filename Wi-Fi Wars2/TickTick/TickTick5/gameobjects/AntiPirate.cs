@@ -11,6 +11,7 @@ class AntiPirate : AnimatedGameObject
     bool inNetwork;
     double randomTimer; 
     bool remove;
+    int outsidetimeout;
 
     public AntiPirate(Vector2 pos, int layer, String id)
         : base(layer, "antipirate")
@@ -59,7 +60,12 @@ class AntiPirate : AnimatedGameObject
 
             }
             if (!inNetwork)
+            {
                 velocity = -velocity;
+                outsidetimeout += 1;
+            }
+            if (outsidetimeout >= 5)
+                remove = true;
             GameObjectList pirateList = level.Find("pirateList") as GameObjectList;
             List<GameObject> pirates = pirateList.Objects;
         foreach (PirateShip pirate in pirates)

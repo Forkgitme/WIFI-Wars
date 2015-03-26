@@ -22,7 +22,7 @@ class AntiPirateHideout : SpriteGameObject
         base.HandleInput(inputHelper);
         if (connected)
         {
-            if (inputHelper.MousePosition.X < this.Position.X + 20 && inputHelper.MousePosition.X > this.Position.X && inputHelper.MousePosition.Y < this.Position.Y + 20 && inputHelper.MousePosition.Y > this.Position.Y)
+            if (inputHelper.MousePosition.X < this.Position.X + 64 && inputHelper.MousePosition.X > this.Position.X + 28 && inputHelper.MousePosition.Y < this.Position.Y + 15 && inputHelper.MousePosition.Y > this.Position.Y)
                     if (inputHelper.MouseLeftButtonPressed())
                     {
                         if (!active)
@@ -40,7 +40,7 @@ class AntiPirateHideout : SpriteGameObject
         if (makeAntiPirate)
         {
             GameObjectList level = this.parent.Parent as GameObjectList;
-            AntiPirate antiPirate = new AntiPirate(position, 1010, "antipirate");
+            AntiPirate antiPirate = new AntiPirate(position + new Vector2(45,40), 1010, "antipirate");
             level.Add(antiPirate);
             makeAntiPirate = false;
         }
@@ -52,7 +52,14 @@ class AntiPirateHideout : SpriteGameObject
         {
             GameObjectList level = this.parent.Parent as GameObjectList;
             UI ui = level.Find("ui") as UI;
+            if (ui.Money >= 0.01)
             ui.Money -= 0.01f;
+            else
+            {
+                this.Sprite = new SpriteSheet("Sprites/AntiPirateHideout", 0);
+                active = false;
+                GameEnvironment.AssetManager.PlaySound("Sounds/snd_switch");
+            }
             pirateTimer += gameTime.ElapsedGameTime.TotalSeconds;
         }
         if (pirateTimer > 4)

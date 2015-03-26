@@ -44,6 +44,14 @@ using Microsoft.Xna.Framework.Input;
                 if (inputHelper.IsKeyDown(Keys.A))
                     this.Sprite.Rotation -= 0.01f;
                 rotation = Sprite.Rotation;
+                if (inputHelper.MouseRightButtonPressed())
+                {
+                    level.Holding = false;
+                    UI ui = level.Find("ui") as UI;
+                    ui.Money += 20;
+                    GameObjectList firewallList = this.parent as GameObjectList;
+                    firewallList.Remove(this);
+                }
             }
         }
 

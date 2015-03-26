@@ -167,7 +167,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Overlays\" />
-    <Folder Include="Sounds\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Backgrounds\Background1.png">
@@ -371,6 +370,20 @@
       <Name>GameOver</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Sounds\snd_switch.wav">
+      <Name>snd_switch</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Sounds\snd_crack.wav">
+      <Name>snd_crack</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
     </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\$(XnaFrameworkVersion)\Microsoft.Xna.GameStudio.ContentPipeline.targets" />
