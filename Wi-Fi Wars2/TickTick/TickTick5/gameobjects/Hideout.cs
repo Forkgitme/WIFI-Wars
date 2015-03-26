@@ -22,7 +22,7 @@ class Hideout : SpriteGameObject
         if (makePirate)
         {
             GameObjectList level = this.parent.Parent as GameObjectList;
-            PirateShip pirate = new PirateShip(position, 1010, "pirate");
+            PirateShip pirate = new PirateShip(position + new Vector2(70,50), 1010, "pirate");
             GameObjectList pirateList = level.Find("pirateList") as GameObjectList;
             pirateList.Add(pirate);
             makePirate = false;

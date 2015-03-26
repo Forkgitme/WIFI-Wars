@@ -16,10 +16,12 @@ class GameOverState : GameObjectList
 
     public override void HandleInput(InputHelper inputHelper)
     {
-        if (!inputHelper.KeyPressed(Keys.Space))
-            return;
-        playingState.Reset();
-        GameEnvironment.GameStateManager.SwitchTo("playingState");
+        if (inputHelper.KeyPressed(Keys.Space))
+        {
+            GameEnvironment.GameStateManager.SwitchTo("playingState");
+            IGameLoopObject playingState = GameEnvironment.GameStateManager.CurrentGameState;
+            playingState.Reset();
+        }
     }
 
     public override void Update(GameTime gameTime)

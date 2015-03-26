@@ -121,7 +121,7 @@ using System.Text;
                 {                    
                     if (bufferAmount < 5)
                     {
-                        this.Position = new Vector2(670, 100);
+                        this.Position = new Vector2(342, 107);
                         this.Velocity = new Vector2(WifiWars.Random.Next(-50, 51), WifiWars.Random.Next(-50, 51));
                         inBuffer = true;
                         bufferAmount += 1;
@@ -244,8 +244,11 @@ using System.Text;
             if (inBuffer)
             {      
             SpriteGameObject buffer = GameWorld.Find("buffer") as SpriteGameObject;
-            if (buffer == null)
+            if (!buffer.Visible)
+            {
                 this.remove = true;
+                bufferAmount = 0;
+            }
             else if (this.CollidesWith(buffer))
                 this.Velocity = -this.Velocity;               
             }     

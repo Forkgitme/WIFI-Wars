@@ -12,6 +12,7 @@ class PirateShip : AnimatedGameObject
     double randomTimer;
     public bool remove;
     bool breaking;
+    int outsidetimeout;
     public PirateShip(Vector2 pos, int layer, String id)
         : base(layer, "pirateship")
     {
@@ -32,6 +33,7 @@ class PirateShip : AnimatedGameObject
                     if (inputHelper.MouseLeftButtonPressed())
                     {
                         this.PlayAnimation("breaking");
+                        GameEnvironment.AssetManager.PlaySound("Sounds/snd_crack");
                         this.velocity = Vector2.Zero;
                         breaking = true;
                     }     
@@ -64,7 +66,12 @@ class PirateShip : AnimatedGameObject
 
             }
             if (!inNetwork)
+            { 
                 velocity = -velocity;
+                outsidetimeout += 1;
+            }
+            if (outsidetimeout >= 5)
+                remove = true;
             GameObjectList packetList = level.Find("packetList") as GameObjectList;
             List<GameObject> packets = packetList.Objects;
             foreach (Packet packet in packets)

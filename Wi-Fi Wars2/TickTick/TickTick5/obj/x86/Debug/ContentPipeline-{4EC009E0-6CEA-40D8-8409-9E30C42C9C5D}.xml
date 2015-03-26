@@ -116,7 +116,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Gebruiker\Desktop\Studie\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Backgrounds\Background1.xnb</Output>
-      <Time>2015-02-25T10:56:00.6459495+01:00</Time>
+      <Time>2015-03-26T00:07:22.9811962+01:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\Background10.png</Source>
@@ -233,7 +233,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Gebruiker\Desktop\Studie\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\Server.xnb</Output>
-      <Time>2015-02-25T10:56:00.7280057+01:00</Time>
+      <Time>2015-03-25T13:24:59.8149624+01:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Packet.png</Source>
@@ -287,7 +287,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Gebruiker\Desktop\Studie\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\home.xnb</Output>
-      <Time>2015-03-24T15:39:32.5047769+01:00</Time>
+      <Time>2015-03-26T01:38:34.4532797+01:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Hideout.png</Source>
@@ -341,7 +341,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Gebruiker\Desktop\Studie\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\AntiPirateHideout.xnb</Output>
-      <Time>2015-03-24T15:39:32.489741+01:00</Time>
+      <Time>2015-03-26T02:24:44.3711883+01:00</Time>
     </Item>
     <Item>
       <Source>Sprites\AntiPirateHideoutActive.png</Source>
@@ -350,7 +350,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Gebruiker\Desktop\Studie\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\AntiPirateHideoutActive.xnb</Output>
-      <Time>2015-03-24T15:39:32.4937691+01:00</Time>
+      <Time>2015-03-26T02:25:02.7918618+01:00</Time>
     </Item>
     <Item>
       <Source>Sprites\homeActive.png</Source>
@@ -359,7 +359,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Gebruiker\Desktop\Studie\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\homeActive.xnb</Output>
-      <Time>2015-03-24T15:39:32.5077495+01:00</Time>
+      <Time>2015-03-26T01:38:59.9042007+01:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Star.png</Source>
@@ -396,6 +396,24 @@
       <Options>None</Options>
       <Output>C:\Users\Gebruiker\Desktop\Studie\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\GameOver.xnb</Output>
       <Time>2015-03-24T15:39:32.5017453+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\snd_switch.wav</Source>
+      <Name>Sounds\snd_switch</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Gebruiker\Desktop\Studie\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sounds\snd_switch.xnb</Output>
+      <Time>2015-03-26T02:44:35.6386396+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\snd_crack.wav</Source>
+      <Name>Sounds\snd_crack</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Gebruiker\Desktop\Studie\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sounds\snd_crack.xnb</Output>
+      <Time>2015-03-26T02:48:18.0254728+01:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

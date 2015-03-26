@@ -32,8 +32,8 @@ Content\Sprites\Buffer.xnb
 Content\Sprites\home.xnb
 Content\Sprites\Hideout.xnb
 Content\Sprites\Pirateship.xnb
-Content\Sprites\Virus.xnb
 Content\Sprites\TrojanHorse.xnb
+Content\Sprites\Virus.xnb
 Content\Sprites\PirateBreak@10.xnb
 Content\Sprites\AntiPirateHideout.xnb
 Content\Sprites\AntiPirateHideoutActive.xnb
@@ -42,6 +42,8 @@ Content\Sprites\Star.xnb
 Content\Sprites\Starbackground.xnb
 Content\Sprites\AntiPirate@2.xnb
 Content\Sprites\GameOver.xnb
+Content\Sounds\snd_switch.xnb
+Content\Sounds\snd_crack.xnb
 Content\Levels\1.txt
 Content\Levels\8.txt
 Content\Levels\2.txt

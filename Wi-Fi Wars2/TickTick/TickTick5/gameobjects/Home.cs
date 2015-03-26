@@ -17,18 +17,46 @@ class Home : SpriteGameObject
     public override void HandleInput(InputHelper inputHelper)
     {
         base.HandleInput(inputHelper);
-        if (inputHelper.MousePosition.X < this.Position.X + 20 && inputHelper.MousePosition.X > this.Position.X && inputHelper.MousePosition.Y < this.Position.Y + 20 && inputHelper.MousePosition.Y > this.Position.Y)
+        if (inputHelper.MousePosition.X < this.Position.X + 58 && inputHelper.MousePosition.X > this.Position.X + 22 && inputHelper.MousePosition.Y < this.Position.Y + 15 && inputHelper.MousePosition.Y > this.Position.Y)
             if (inputHelper.MouseLeftButtonPressed())
             {
                 GameObjectList level = this.parent as GameObjectList;
                 UI ui = level.Find("ui") as UI;
-                if (!active && ui.Money >= 100)
+                if (!active)
                 {
                     this.Sprite = new SpriteSheet("Sprites/homeActive", 0);
                     active = true;
-                    ui.Money -= 100;
-                    ui.Remove(ui.Find("buffer"));
+                    SpriteGameObject buffer = ui.Find("buffer") as SpriteGameObject;
+                    buffer.Visible = false;
+                    GameEnvironment.AssetManager.PlaySound("Sounds/snd_switch");
+                }
+                else
+                {
+                    this.Sprite = new SpriteSheet("Sprites/home", 0);
+                    active = false;
+                    SpriteGameObject buffer = ui.Find("buffer") as SpriteGameObject;
+                    buffer.Visible = true;
+                    GameEnvironment.AssetManager.PlaySound("Sounds/snd_switch");
                 }
             }
+    }
+    public override void Update(GameTime gameTime)
+    {
+        base.Update(gameTime);
+        if (active)
+        {
+            GameObjectList level = this.Parent as GameObjectList;
+            UI ui = level.Find("ui") as UI;
+            if (ui.Money >= 0.02)
+            ui.Money -= 0.02f;
+            else
+            {
+                this.Sprite = new SpriteSheet("Sprites/home", 0);
+                active = false;
+                SpriteGameObject buffer = ui.Find("buffer") as SpriteGameObject;
+                buffer.Visible = true;
+                GameEnvironment.AssetManager.PlaySound("Sounds/snd_switch");
+            }
+        }
     }
 }
