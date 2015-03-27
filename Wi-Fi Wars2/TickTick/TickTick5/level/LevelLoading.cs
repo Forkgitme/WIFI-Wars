@@ -37,7 +37,7 @@ partial class Level : GameObjectList
                     else throw new IOException("Server objects needs 4 values, name, coords and colorcode(1-3)");
                     break;
                 case "home":
-                    this.Add(new Home(position, 1, "home"));
+                    this.Add(new Home(position, 20, "home"));
                     break;
                 case "hideout": 
                     hideoutList.Add(new Hideout(position, 1, "hideout"));
