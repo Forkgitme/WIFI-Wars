@@ -341,7 +341,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Gebruiker\Desktop\Studie\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\AntiPirateHideout.xnb</Output>
-      <Time>2015-03-27T15:24:34.0754712+01:00</Time>
+      <Time>2015-03-27T16:43:41.6798094+01:00</Time>
     </Item>
     <Item>
       <Source>Sprites\AntiPirateHideoutActive.png</Source>
@@ -350,7 +350,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Gebruiker\Desktop\Studie\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\AntiPirateHideoutActive.xnb</Output>
-      <Time>2015-03-27T15:24:34.0754712+01:00</Time>
+      <Time>2015-03-27T16:43:41.6817993+01:00</Time>
     </Item>
     <Item>
       <Source>Sprites\homeActive.png</Source>
@@ -486,6 +486,15 @@
       <Options>None</Options>
       <Output>C:\Users\Gebruiker\Desktop\Studie\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\spr_button_retry.xnb</Output>
       <Time>2015-03-27T15:24:34.0911118+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\spr_button_next.png</Source>
+      <Name>Sprites\spr_button_next</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Gebruiker\Desktop\Studie\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\spr_button_next.xnb</Output>
+      <Time>2015-03-27T16:43:41.7018131+01:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
