@@ -17,14 +17,14 @@ class GameOverState : GameObjectList
         quitButton.Position = new Vector2(GameEnvironment.Screen.X - quitButton.Width - 10, 10);
         this.Add(quitButton);
         retryButton = new Button("Sprites/spr_button_retry", 100);
-        retryButton.Position = new Vector2((GameEnvironment.Screen.X - retryButton.Width) / 2, 625);
+        retryButton.Position = new Vector2(GameEnvironment.Screen.X - quitButton.Width - 10, 70);
         this.Add(retryButton);
     }
 
     public override void HandleInput(InputHelper inputHelper)
     {
         base.HandleInput(inputHelper);
-        if (inputHelper.KeyPressed(Keys.Space) || retryButton.Pressed)
+        if (retryButton.Pressed)
         {
             GameEnvironment.GameStateManager.SwitchTo("playingState");
             IGameLoopObject playingState = GameEnvironment.GameStateManager.CurrentGameState;

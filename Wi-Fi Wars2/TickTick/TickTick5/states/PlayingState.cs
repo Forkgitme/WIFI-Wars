@@ -95,13 +95,13 @@ class PlayingState : IGameLoopObject
     public void ReloadLevels ()
     {
         levels = new List<Level>();
-        for (int currLevel = 1; currLevel <= 10; currLevel++)
+        for (int currLevel = 1; currLevel <= 6; currLevel++)
             levels.Add(new Level(currLevel));
     }
 
     public void LoadLevels()
     {
-        for (int currLevel = 1; currLevel <= 10; currLevel++)
+        for (int currLevel = 1; currLevel <= 6; currLevel++)
             levels.Add(new Level(currLevel));
     }
 
@@ -109,7 +109,7 @@ class PlayingState : IGameLoopObject
     {
         List<string> textlines = new List<string>();
         StreamReader fileReader = new StreamReader(path);
-        for (int i = 0; i < 10; i++)
+        for (int i = 0; i < 6; i++)
         {
             string line = fileReader.ReadLine();
             string[] elems = line.Split(',');
