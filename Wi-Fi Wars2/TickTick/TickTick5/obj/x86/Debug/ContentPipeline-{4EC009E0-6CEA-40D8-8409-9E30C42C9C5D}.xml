@@ -469,6 +469,24 @@
       <Output>C:\Users\Gebruiker\Desktop\Studie\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sounds\Roger Beep.xnb</Output>
       <Time>2015-03-26T19:57:56.3660881+01:00</Time>
     </Item>
+    <Item>
+      <Source>Sprites\Police@2.png</Source>
+      <Name>Sprites\Police@2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Gebruiker\Desktop\Studie\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\Police@2.xnb</Output>
+      <Time>2015-03-27T15:24:34.0754712+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\spr_button_retry.png</Source>
+      <Name>Sprites\spr_button_retry</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Gebruiker\Desktop\Studie\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\spr_button_retry.xnb</Output>
+      <Time>2015-03-27T15:24:34.0911118+01:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID>{4EC009E0-6CEA-40D8-8409-9E30C42C9C5D}</ContentProjectGUID>
