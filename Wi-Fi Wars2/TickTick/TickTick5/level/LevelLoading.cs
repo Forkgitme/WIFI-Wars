@@ -24,9 +24,11 @@ partial class Level : GameObjectList
             switch (obj[0])
             {
                 case "server":
-                    if (obj[3] != null)
+                    if (obj[3] != null && obj[4] != null)
                     {
-                        this.Add(new Server(int.Parse(obj[3]), position, 1, "server" + obj[3]));
+                        if (int.Parse(obj[4]) < 0 || int.Parse(obj[4]) > 2)
+                            throw new IOException("virusLevel should be either 0,1 or 2");
+                        this.Add(new Server(int.Parse(obj[3]), position, 1, "server" + obj[3], int.Parse(obj[4])));
                         Bar serverBar = new Bar(int.Parse(obj[3]), "serverbar" + obj[3]);
                         ui.Add(serverBar);
                     }

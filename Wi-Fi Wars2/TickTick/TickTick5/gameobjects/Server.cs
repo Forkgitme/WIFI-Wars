@@ -10,11 +10,24 @@ class Server : SpriteGameObject
     bool makePacket;
     public bool connected;
     int type;
+    public bool spawnVirus, spawnTrojan;
     
 
-    public Server(int color, Vector2 pos, int layer, String id)
+    public Server(int color, Vector2 pos, int layer, String id, int virusLevel)
         : base("Sprites/Server", layer, id)
     {
+        if (virusLevel > 0)
+        {
+            spawnVirus = true;
+            if (virusLevel > 1)
+                spawnTrojan = true;
+        }
+        else
+        {
+            spawnVirus = false;
+            spawnTrojan = false;
+        }
+
         position = pos;
         type = color;
         switch(color)
@@ -42,12 +55,12 @@ class Server : SpriteGameObject
             GameObjectList level = this.parent as GameObjectList;
             SpriteGameObject home = GameWorld.Find("home") as SpriteGameObject;
             GameObjectList TowerList = GameWorld.Find("towerlist") as GameObjectList;
-            if (rand == 1)
+            if (rand == 1 && spawnVirus == true)
             {
                 Virus virus = new Virus(this.position + this.Center, this, TowerList, home);
                 level.Add(virus);
             }
-            else if (rand == 2)
+            else if (rand == 2 && spawnTrojan == true)
             {
                 Trojan trojan = new Trojan(this.position + this.Center, this, TowerList, home);
                 level.Add(trojan);
