@@ -24,10 +24,6 @@ class GameOverState : GameObjectList
         }
     }
 
-    public override void Update(GameTime gameTime)
-    {
-        playingState.Update(gameTime);
-    }
 
     public override void Draw(GameTime gameTime, SpriteBatch spriteBatch)
     {
