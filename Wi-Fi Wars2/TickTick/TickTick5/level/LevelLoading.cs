@@ -31,8 +31,6 @@ partial class Level : GameObjectList
                         this.Add(new Server(int.Parse(obj[3]), position, 1, "server" + obj[3], int.Parse(obj[4])));
                         Bar serverBar = new Bar(int.Parse(obj[3]), "serverbar" + obj[3]);
                         ui.Add(serverBar);
-                        if (int.Parse(obj[4]) > 0)
-                            ui.spawnVirus = true;
                     }
                     else throw new IOException("Server objects needs 4 values, name, coords and colorcode(1-3)");
                     break;
