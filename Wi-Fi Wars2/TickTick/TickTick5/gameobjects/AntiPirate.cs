@@ -70,11 +70,11 @@ class AntiPirate : AnimatedGameObject
             List<GameObject> pirates = pirateList.Objects;
         foreach (PirateShip pirate in pirates)
         {
-            if (Math.Sqrt(Math.Pow((this.position.X - pirate.Position.X - pirate.Center.X), 2) + Math.Pow((this.position.Y - pirate.Position.Y - pirate.Center.Y), 2)) < 100)
+            if (Math.Sqrt(Math.Pow((this.position.X - pirate.Position.X - pirate.Center.X), 2) + Math.Pow((this.position.Y - pirate.Position.Y - pirate.Center.Y), 2)) < 150)
             {
                 Vector2 direction = new Vector2(pirate.Position.X - this.position.X, pirate.Position.Y - this.position.Y);
                 direction.Normalize();
-                this.Velocity = direction * 50;
+                this.Velocity = direction * 75;
             }
             if (this.CollidesWith(pirate))
             {

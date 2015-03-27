@@ -16,16 +16,13 @@ class Server : SpriteGameObject
     public Server(int color, Vector2 pos, int layer, String id, int virusLevel)
         : base("Sprites/Server", layer, id)
     {
+        spawnVirus = false;
+        spawnTrojan = false;
         if (virusLevel > 0)
         {
             spawnVirus = true;
-            if (virusLevel > 1)
+            if (virusLevel >= 2)
                 spawnTrojan = true;
-        }
-        else
-        {
-            spawnVirus = false;
-            spawnTrojan = false;
         }
 
         position = pos;
