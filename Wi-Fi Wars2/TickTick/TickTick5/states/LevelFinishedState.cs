@@ -39,6 +39,7 @@ class LevelFinishedState : GameObjectList
 
     public override void Update(GameTime gameTime)
     {
+        playingState.Update(gameTime);
         playingState = GameEnvironment.GameStateManager.GetGameState("playingState") as PlayingState;
         Level level = playingState.CurrentLevel;
         UI ui = level.Find("ui") as UI;
