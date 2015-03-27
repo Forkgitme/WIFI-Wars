@@ -134,7 +134,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Backgrounds\Background2.xnb</Output>
-      <Time>2015-03-27T14:48:57.7701054+01:00</Time>
+      <Time>2015-03-27T17:09:02.0436139+01:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\Background3.png</Source>
@@ -143,7 +143,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Backgrounds\Background3.xnb</Output>
-      <Time>2015-03-27T14:48:57.7731079+01:00</Time>
+      <Time>2015-03-27T17:09:02.0456165+01:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\Background4.png</Source>
@@ -152,7 +152,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Backgrounds\Background4.xnb</Output>
-      <Time>2015-03-27T15:27:09.4634841+01:00</Time>
+      <Time>2015-03-27T17:09:02.0496185+01:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\Background5.png</Source>
@@ -161,7 +161,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Backgrounds\Background5.xnb</Output>
-      <Time>2015-03-27T15:27:09.4791082+01:00</Time>
+      <Time>2015-03-27T17:09:02.0536218+01:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\Background6.png</Source>
@@ -170,7 +170,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Backgrounds\Background6.xnb</Output>
-      <Time>2015-03-27T15:27:09.4791082+01:00</Time>
+      <Time>2015-03-27T17:21:35.2012678+01:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\Background7.png</Source>
@@ -179,7 +179,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Backgrounds\Background7.xnb</Output>
-      <Time>2015-03-27T14:48:57.7881186+01:00</Time>
+      <Time>2015-03-27T17:09:02.0746375+01:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\Background8.png</Source>
@@ -341,7 +341,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\AntiPirateHideout.xnb</Output>
-      <Time>2015-03-27T14:48:57.830148+01:00</Time>
+      <Time>2015-03-27T17:09:02.0836427+01:00</Time>
     </Item>
     <Item>
       <Source>Sprites\AntiPirateHideoutActive.png</Source>
@@ -350,7 +350,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\AntiPirateHideoutActive.xnb</Output>
-      <Time>2015-03-27T14:48:57.8321491+01:00</Time>
+      <Time>2015-03-27T17:09:02.0856437+01:00</Time>
     </Item>
     <Item>
       <Source>Sprites\homeActive.png</Source>
@@ -494,7 +494,7 @@
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sounds\badbleep.xnb</Output>
-      <Time>2015-03-27T16:54:10.0975248+01:00</Time>
+      <Time>2015-03-27T17:09:00.6286103+01:00</Time>
     </Item>
     <Item>
       <Source>Sounds\goodbleep.wav</Source>
@@ -503,7 +503,17 @@
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sounds\goodbleep.xnb</Output>
-      <Time>2015-03-27T16:53:42.0993604+01:00</Time>
+      <Time>2015-03-27T17:09:00.6366148+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\BGM_Synapse.mp3</Source>
+      <Name>Sounds\BGM_Synapse</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sounds\BGM_Synapse.xnb</Output>
+      <Extra>C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sounds\BGM_Synapse.wma</Extra>
+      <Time>2015-03-27T17:21:23.7571359+01:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

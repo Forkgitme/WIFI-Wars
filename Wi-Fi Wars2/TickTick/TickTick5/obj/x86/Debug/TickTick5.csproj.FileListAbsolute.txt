@@ -360,3 +360,5 @@ C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86
 C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\spr_button_retry.xnb
 C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sounds\badbleep.xnb
 C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sounds\goodbleep.xnb
+C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sounds\BGM_Synapse.xnb
+C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sounds\BGM_Synapse.wma

@@ -12,6 +12,7 @@ class PlayingState : IGameLoopObject
 
     public PlayingState(ContentManager Content)
     {
+        WifiWars.AssetManager.PlayMusic("Sounds/BGM_Synapse", true);
         this.Content = Content;
         currentLevelIndex = -1;
         levels = new List<Level>();
