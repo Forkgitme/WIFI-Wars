@@ -1,10 +1,4 @@
-server 100 200 3 2
-hideout 220 350
-hideout 300 400
-hideout 300 500
-hideout 160 300
-hideout 400 550
-hideout 500 580
-hideout 600 600
-home 900 400
-money 1200
+server 900 400 3 2
+server 180 550 2 0
+home 450 600
+money 500
