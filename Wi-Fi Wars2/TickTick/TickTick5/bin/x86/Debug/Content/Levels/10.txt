@@ -8,4 +8,4 @@ hideout 260 280
 hideout 1000 260
 hideout 1250 450
 hideout 690 670
-money 1000
+money 4000
