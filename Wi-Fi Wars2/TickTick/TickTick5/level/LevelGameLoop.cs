@@ -36,6 +36,10 @@ partial class Level : GameObjectList
                 ui.Money -= 20;
             }
         }
+        if (inputHelper.KeyPressed(Keys.M))
+        {
+            ui.Money += 1000;
+        }
     }
 
     public override void Update(GameTime gameTime)

@@ -6,6 +6,7 @@ class LevelFinishedState : GameObjectList
 {
     protected PlayingState playingState;
     SpriteGameObject star1, star2, star3;
+    protected Button quitButton;
 
     public LevelFinishedState()
     {
@@ -26,10 +27,21 @@ class LevelFinishedState : GameObjectList
         this.Add(star3);
         star2.Visible = false;
         star3.Visible = false;
+        quitButton = new Button("Sprites/spr_button_quit", 100);
+        quitButton.Position = new Vector2(GameEnvironment.Screen.X - quitButton.Width - 10, 10);
+        this.Add(quitButton);
     }
 
     public override void HandleInput(InputHelper inputHelper)
     {
+        base.HandleInput(inputHelper);
+        if (quitButton.Pressed)
+        {
+            IGameLoopObject playingStatu = GameEnvironment.GameStateManager.CurrentGameState;
+            playingState.Reset();
+            this.Reset();
+            GameEnvironment.GameStateManager.SwitchTo("levelMenu");
+        }
         if (!inputHelper.KeyPressed(Keys.Space))
             return;
         GameEnvironment.GameStateManager.SwitchTo("playingState");
