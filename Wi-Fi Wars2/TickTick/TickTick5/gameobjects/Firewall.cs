@@ -28,7 +28,7 @@ using Microsoft.Xna.Framework.Input;
                 this.position = inputHelper.MousePosition;
                 Level level = this.Parent.Parent as Level;
                 SpriteGameObject background = level.Find("background") as SpriteGameObject;
-                if (background.Sprite.GetPixelColor((int)position.X + (int)Center.X, (int)position.Y + (int)Center.Y).G == 255)
+                if (background.Sprite.GetPixelColor((int)position.X + (int)Center.X, (int)position.Y + (int)Center.Y).G >= 250)
                 {
                     this.Sprite.SpriteColor = Color.White;
                     if (inputHelper.MouseLeftButtonPressed())

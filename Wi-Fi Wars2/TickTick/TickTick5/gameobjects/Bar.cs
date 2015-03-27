@@ -79,7 +79,7 @@ class Bar : SpriteGameObject
         base.Update(gameTime);
         if (resource < totalResource && type == 4 && active)
         {
-            resource += 0.2777777f;
+            resource += 0.2f;
         }
         else if (resource >= totalResource && type == 4 && active)
         {
