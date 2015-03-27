@@ -47,8 +47,8 @@ class Home : SpriteGameObject
         {
             Level level = this.Parent as Level;
             UI ui = level.Find("ui") as UI;
-            if (ui.Money >= 0.02f*level.serverTotal)        
-                ui.Money -= 0.02f*level.serverTotal;
+            if (ui.Money >= 0.04f*level.serverTotal)        
+                ui.Money -= 0.04f*level.serverTotal;
             else
             {
                 this.Sprite = new SpriteSheet("Sprites/home", 0);

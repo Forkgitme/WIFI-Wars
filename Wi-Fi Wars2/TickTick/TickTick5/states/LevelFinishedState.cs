@@ -58,10 +58,10 @@ class LevelFinishedState : GameObjectList
         playingState = GameEnvironment.GameStateManager.GetGameState("playingState") as PlayingState;
         Level level = playingState.CurrentLevel;
         UI ui = level.Find("ui") as UI;
-        if (ui.Money > 100)
+        if (ui.Money >= 50)
             star2.Visible = true;
         if (ui.Money >=
-            300)
+            100)
             star3.Visible = true;
     }
 
