@@ -7,4 +7,4 @@ hideout 800 680
 hideout 1050 720
 antipirate 850 300
 antipirate 450 600
-money 1200
+money 2000

@@ -1,7 +1,8 @@
 server 1200 300 1 2
+server 1300 700 2 2
 antipirate 620 280
 antipirate 560 420
-home 300 600
+home 100 600
 hideout 750 250
 hideout 670 400
 hideout 850 530

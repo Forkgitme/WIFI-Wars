@@ -116,7 +116,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Gebruiker\Desktop\Studie\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Backgrounds\Background1.xnb</Output>
-      <Time>2015-03-27T19:45:11.1588916+01:00</Time>
+      <Time>2015-03-27T20:09:26.3933575+01:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\Background10.png</Source>
@@ -125,7 +125,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Gebruiker\Desktop\Studie\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Backgrounds\Background10.xnb</Output>
-      <Time>2015-03-27T17:29:08.8286472+01:00</Time>
+      <Time>2015-03-27T20:09:28.1521402+01:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\Background2.png</Source>
@@ -134,7 +134,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Gebruiker\Desktop\Studie\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Backgrounds\Background2.xnb</Output>
-      <Time>2015-03-27T19:49:05.2480773+01:00</Time>
+      <Time>2015-03-27T20:09:26.3953602+01:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\Background3.png</Source>
@@ -143,7 +143,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Gebruiker\Desktop\Studie\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Backgrounds\Background3.xnb</Output>
-      <Time>2015-03-27T16:55:15.148124+01:00</Time>
+      <Time>2015-03-27T20:09:26.3983615+01:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\Background4.png</Source>
@@ -152,7 +152,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Gebruiker\Desktop\Studie\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Backgrounds\Background4.xnb</Output>
-      <Time>2015-03-27T19:59:53.1997869+01:00</Time>
+      <Time>2015-03-27T20:09:26.4003761+01:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\Background5.png</Source>
@@ -161,7 +161,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Gebruiker\Desktop\Studie\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Backgrounds\Background5.xnb</Output>
-      <Time>2015-03-27T16:55:15.1541202+01:00</Time>
+      <Time>2015-03-27T20:09:26.4023639+01:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\Background6.png</Source>
@@ -179,7 +179,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Gebruiker\Desktop\Studie\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Backgrounds\Background7.xnb</Output>
-      <Time>2015-03-27T19:17:37.3626575+01:00</Time>
+      <Time>2015-03-27T20:09:28.1531431+01:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\Background8.png</Source>
@@ -188,7 +188,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Gebruiker\Desktop\Studie\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Backgrounds\Background8.xnb</Output>
-      <Time>2015-03-27T19:17:37.3636582+01:00</Time>
+      <Time>2015-03-27T20:09:28.1541433+01:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\Background9.png</Source>
@@ -197,7 +197,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Gebruiker\Desktop\Studie\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Backgrounds\Background9.xnb</Output>
-      <Time>2015-03-27T19:17:37.3646709+01:00</Time>
+      <Time>2015-03-27T20:09:28.1551423+01:00</Time>
     </Item>
     <Item>
       <Source>Sprites\tower.png</Source>
