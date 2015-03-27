@@ -92,7 +92,11 @@ class Server : SpriteGameObject
             List<GameObject> towers = towerList.Objects;
             foreach (Tower tower in towers)
                 if (this.CollidesWith(tower) && tower.Connected)
+                {
+                    GameEnvironment.AssetManager.PlaySound("Sounds/Lift Bleep");
                     this.connected = true;
+                }
+
         }
     }
 }

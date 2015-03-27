@@ -26,12 +26,15 @@ partial class Level : GameObjectList
             holding = true;
             ui.Money -= 20;
         }
-        if ((inputHelper.MouseLeftButtonPressed() && inputHelper.MousePosition.X > 900 && inputHelper.MousePosition.X <= 1000 && inputHelper.MousePosition.Y > 16 && inputHelper.MousePosition.Y < 190) || inputHelper.KeyPressed(Keys.F) && !holding && ui.Money >= 20)
+        if (ui.spawnVirus)
         {
-            Firewall firewall = new Firewall();
-            firewallList.Add(firewall);
-            holding = true;
-            ui.Money -= 20;
+            if ((inputHelper.MouseLeftButtonPressed() && inputHelper.MousePosition.X > 900 && inputHelper.MousePosition.X <= 1000 && inputHelper.MousePosition.Y > 16 && inputHelper.MousePosition.Y < 190) || inputHelper.KeyPressed(Keys.F) && !holding && ui.Money >= 20)
+            {
+                Firewall firewall = new Firewall();
+                firewallList.Add(firewall);
+                holding = true;
+                ui.Money -= 20;
+            }
         }
     }
 

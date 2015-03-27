@@ -36,6 +36,7 @@ using Microsoft.Xna.Framework;
                     this.Sprite.SpriteColor = Color.White;
                     if (inputHelper.MouseLeftButtonPressed())
                     {
+                        GameEnvironment.AssetManager.PlaySound("Sounds/CD Drive");
                         this.placed = true;
                         level.Holding = false;
                         List<GameObject> towers = towerList.Objects;
