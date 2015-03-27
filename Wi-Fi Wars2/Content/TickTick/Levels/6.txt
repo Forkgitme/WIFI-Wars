@@ -1,4 +1,4 @@
-server 300 350 2
+server 300 350 2 2
 home 1200 600
 hideout 400 580
 antipirate 1100 400

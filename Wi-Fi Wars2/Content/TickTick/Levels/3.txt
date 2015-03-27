@@ -1,4 +1,4 @@
-server 1000 100 1
+server 1000 100 1 2
 home 100 600
 hideout 1000 400
 antipirate 1250 900
