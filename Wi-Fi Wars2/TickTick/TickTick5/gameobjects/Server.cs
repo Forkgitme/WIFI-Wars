@@ -51,7 +51,7 @@ class Server : SpriteGameObject
         base.HandleInput(inputHelper);
         if (makePacket)
         {
-            int rand = GameEnvironment.Random.Next(16);
+            int rand = GameEnvironment.Random.Next(8);
             GameObjectList level = this.parent as GameObjectList;
             SpriteGameObject home = GameWorld.Find("home") as SpriteGameObject;
             GameObjectList TowerList = GameWorld.Find("towerlist") as GameObjectList;
@@ -92,7 +92,11 @@ class Server : SpriteGameObject
             List<GameObject> towers = towerList.Objects;
             foreach (Tower tower in towers)
                 if (this.CollidesWith(tower) && tower.Connected)
+                {
+                    GameEnvironment.AssetManager.PlaySound("Sounds/Lift Bleep");
                     this.connected = true;
+                }
+
         }
     }
 }

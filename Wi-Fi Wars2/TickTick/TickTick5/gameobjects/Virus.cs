@@ -55,6 +55,7 @@ class Virus : Packet
         {
             if ((this.CollidesWith(firewall) && firewall.InCooldown == false && firewall.Placed))
             {
+                GameEnvironment.AssetManager.PlaySound("Sounds/Flare");
                 firewall.InCooldown = true;
                 this.Changes();
             }

@@ -33,6 +33,7 @@ using Microsoft.Xna.Framework.Input;
                     this.Sprite.SpriteColor = Color.White;
                     if (inputHelper.MouseLeftButtonPressed())
                     {
+                        GameEnvironment.AssetManager.PlaySound("Sounds/CD Drive");
                         this.placed = true;
                         level.Holding = false;                    
                     }

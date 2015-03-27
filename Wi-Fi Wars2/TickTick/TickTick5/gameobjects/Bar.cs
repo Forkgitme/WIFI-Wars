@@ -12,11 +12,12 @@ class Bar : SpriteGameObject
     int totalResource;      
     Texture2D barPart;
     int type;
-    bool active;
+    bool active, playsound;
 
     public Bar(int t, string id, int layer = 9, int sheetIndex = 1)
         : base("Sprites/bar2", layer, id, sheetIndex)
     {
+        playsound = true;
         type = t;
         this.Position = new Vector2(20, 30*t);
         barPart = WifiWars.AssetManager.Content.Load<Texture2D>("Sprites/bar");
@@ -60,10 +61,15 @@ class Bar : SpriteGameObject
         base.Update(gameTime);
         if (resource < totalResource && type == 4 && active)
         {
-            resource += 0.2777f;
+            resource += 0.1388888888f;
         }
         else if (resource >= totalResource && type == 4 && active)
         {
+            if (playsound)
+            {
+                GameEnvironment.AssetManager.PlaySound("Sounds/Police");
+                playsound = false;
+            }
             GameEnvironment.GameStateManager.SwitchTo("gameOverState");
         }
 
