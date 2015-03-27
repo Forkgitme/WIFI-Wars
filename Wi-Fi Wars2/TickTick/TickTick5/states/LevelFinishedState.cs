@@ -56,7 +56,8 @@ class LevelFinishedState : GameObjectList
         UI ui = level.Find("ui") as UI;
         if (ui.Money > 100)
             star2.Visible = true;
-        if (ui.Money > 300)
+        if (ui.Money >=
+            300)
             star3.Visible = true;
     }
 

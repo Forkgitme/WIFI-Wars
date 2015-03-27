@@ -16,7 +16,7 @@ class Virus : Packet
     public override void HandleInput(InputHelper inputHelper)
     {
         if((inputHelper.MousePosition.X > this.Position.X && inputHelper.MousePosition.X < this.Position.X + 15)&&(inputHelper.MousePosition.Y > this.Position.Y && inputHelper.MousePosition.Y < this.Position.Y + 15))
-            if (inputHelper.MouseLeftButtonDown())
+            if (!inputHelper.MouseLeftButtonDown())
             {
                 this.Fades();
             }
