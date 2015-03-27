@@ -1,4 +1,4 @@
-server 200 400 3
+server 200 400 3 2
 home 1300 600
 hideout 500 700
 hideout 400 600

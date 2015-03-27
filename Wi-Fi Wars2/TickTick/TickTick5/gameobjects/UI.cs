@@ -6,6 +6,7 @@ using Microsoft.Xna.Framework;
 
 class UI : GameObjectList
 {
+    public bool spawnVirus;
     float money;
     TextGameObject moneyText;
     public UI(int m, int layer = 0, string id = "ui")
@@ -27,6 +28,7 @@ class UI : GameObjectList
         SpriteGameObject towerRange = new SpriteGameObject("Sprites/Range", 9);
         towerRange.Position = new Vector2(750 - towerRange.Width/2, 105 - towerRange.Height/2);
         this.Add(towerRange);
+        if(spawnVirus)
         for (int i = 0; i < 6; i++)
         {
             SpriteGameObject fireWall = new SpriteGameObject("Sprites/firewall");

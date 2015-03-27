@@ -96,7 +96,6 @@ using System.Text;
                 if (serverBar2 != null)
                     if (this.CollidesWith(serverBar2))
                     {
-                        level.Remove(this);
                         bufferAmount -= 1;
                         holdingPacket = false;
                         remove = true;
@@ -104,7 +103,6 @@ using System.Text;
                 if (serverBar3 != null)
                     if (this.CollidesWith(serverBar3))
                     {
-                        level.Remove(this);
                         bufferAmount -= 1;
                         holdingPacket = false;
                         remove = true;
@@ -208,7 +206,7 @@ using System.Text;
                 n++;
             }
 
-            Path.Add(home.Position);
+            Path.Add(new Vector2(home.Position.X,home.Position.Y+home.Height/2));
 
             return Path;
 

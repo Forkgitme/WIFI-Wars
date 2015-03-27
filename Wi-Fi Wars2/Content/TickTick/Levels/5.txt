@@ -1,4 +1,4 @@
-server 1000 100 1
+server 1000 100 1 2
 home 1200 600
 hideout 1100 400
 hideout 1200 100

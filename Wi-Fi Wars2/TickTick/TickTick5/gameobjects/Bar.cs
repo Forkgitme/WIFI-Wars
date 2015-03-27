@@ -28,13 +28,25 @@ class Bar : SpriteGameObject
     {
         Color barColor = Color.White;
         if (type == 1)
+        {
             barColor = Color.Red;
+            this.Sprite.SpriteColor = Color.Red;
+        }
         else if (type == 2)
+        {
             barColor = Color.Purple;
+            this.Sprite.SpriteColor = Color.Purple;
+        }
         else if (type == 3)
+        {
             barColor = Color.Yellow;
+            this.Sprite.SpriteColor = Color.Yellow;
+        }
         else if (type == 4)
-            barColor = Color.Blue;       
+        { 
+            barColor = Color.Blue;
+            this.Sprite.SpriteColor = Color.Blue;
+        }
             base.Draw(gameTime, spriteBatch);
             spriteBatch.Draw(barPart,
                              new Rectangle((int)Position.X,
@@ -63,7 +75,7 @@ class Bar : SpriteGameObject
     public float Resource
     {
         get { return resource; }
-        set { resource = value; }
+        set { if (value <= totalResource) resource = value; }
     }
 
     public bool Active
