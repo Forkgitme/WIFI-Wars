@@ -5,6 +5,7 @@ using Microsoft.Xna.Framework.Input;
 class GameOverState : GameObjectList
 {
     protected IGameLoopObject playingState;
+    protected Button retryButton;
 
     public GameOverState()
     {
@@ -12,11 +13,16 @@ class GameOverState : GameObjectList
         SpriteGameObject overlay = new SpriteGameObject("Sprites/GameOver");
         overlay.Position = new Vector2(GameEnvironment.Screen.X, GameEnvironment.Screen.Y) / 2 - overlay.Center;
         this.Add(overlay);
+
+        retryButton = new Button("Sprites/spr_button_retry", 3);
+        retryButton.Position = new Vector2((GameEnvironment.Screen.X - retryButton.Width) / 2, 625);
+        this.Add(retryButton);
     }
 
     public override void HandleInput(InputHelper inputHelper)
     {
-        if (inputHelper.KeyPressed(Keys.Space))
+        base.HandleInput(inputHelper);
+        if (inputHelper.KeyPressed(Keys.Space) || retryButton.Pressed)
         {
             GameEnvironment.GameStateManager.SwitchTo("playingState");
             IGameLoopObject playingState = GameEnvironment.GameStateManager.CurrentGameState;

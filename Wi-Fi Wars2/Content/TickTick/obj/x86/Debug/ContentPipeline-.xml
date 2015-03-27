@@ -478,6 +478,15 @@
       <Output>C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\Police@2.xnb</Output>
       <Time>2015-03-27T15:27:09.51036+01:00</Time>
     </Item>
+    <Item>
+      <Source>Sprites\spr_button_retry.png</Source>
+      <Name>Sprites\spr_button_retry</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\spr_button_retry.xnb</Output>
+      <Time>2015-03-27T14:19:36.3870082+01:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID Null="true" />
