@@ -487,6 +487,24 @@
       <Output>C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\spr_button_retry.xnb</Output>
       <Time>2015-03-27T14:19:36.3870082+01:00</Time>
     </Item>
+    <Item>
+      <Source>Sounds\badbleep.wav</Source>
+      <Name>Sounds\badbleep</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sounds\badbleep.xnb</Output>
+      <Time>2015-03-27T16:54:10.0975248+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\goodbleep.wav</Source>
+      <Name>Sounds\goodbleep</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sounds\goodbleep.xnb</Output>
+      <Time>2015-03-27T16:53:42.0993604+01:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID Null="true" />

@@ -25,6 +25,7 @@ class Virus : Packet
         Home home = level.Find("home") as Home;
         if (this.CollidesWith(home))
         {
+            WifiWars.AssetManager.PlaySound("Sounds/badbleep");
             delete = true;
             for (int i = 1; i < 4; i++)
             {

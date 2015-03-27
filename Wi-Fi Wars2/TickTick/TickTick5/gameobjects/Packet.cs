@@ -87,7 +87,8 @@ using System.Text;
                     serverBar3 = GameWorld.Find("serverbar" + 2) as Bar;
                 }
                 if (this.CollidesWith(serverBar))
-                { 
+                {
+                    WifiWars.AssetManager.PlaySound("Sounds/goodbleep");
                     serverBar.Resource += 50;
                     bufferAmount -= 1;
                     holdingPacket = false;
@@ -96,6 +97,7 @@ using System.Text;
                 if (serverBar2 != null)
                     if (this.CollidesWith(serverBar2))
                     {
+                        WifiWars.AssetManager.PlaySound("Sounds/badbleep");
                         bufferAmount -= 1;
                         holdingPacket = false;
                         remove = true;
@@ -103,6 +105,7 @@ using System.Text;
                 if (serverBar3 != null)
                     if (this.CollidesWith(serverBar3))
                     {
+                        WifiWars.AssetManager.PlaySound("Sounds/badbleep");
                         bufferAmount -= 1;
                         holdingPacket = false;
                         remove = true;
@@ -131,6 +134,7 @@ using System.Text;
                 }
                 else
                 {
+                    WifiWars.AssetManager.PlaySound("Sounds/goodbleep");
                     Bar serverBar = GameWorld.Find("serverbar" + type) as Bar;
                     serverBar.Resource += 50;
                     remove = true;
