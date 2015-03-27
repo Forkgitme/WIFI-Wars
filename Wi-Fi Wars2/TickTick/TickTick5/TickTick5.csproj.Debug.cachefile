@@ -44,6 +44,7 @@ Content\Sprites\AntiPirate@2.xnb
 Content\Sprites\GameOver.xnb
 Content\Sprites\Police@2.xnb
 Content\Sprites\spr_button_retry.xnb
+Content\Sprites\spr_button_next.xnb
 Content\Sounds\snd_switch.xnb
 Content\Sounds\snd_crack.xnb
 Content\Sounds\CD Drive.xnb
@@ -55,7 +56,6 @@ Content\Sounds\Roger Beep.xnb
 Content\Sounds\badbleep.xnb
 Content\Sounds\goodbleep.xnb
 Content\Sounds\BGM_Synapse.xnb
-Content\Sprites\spr_button_next.xnb
 Content\Sounds\BGM_Synapse.wma
 Content\Levels\1.txt
 Content\Levels\2.txt
