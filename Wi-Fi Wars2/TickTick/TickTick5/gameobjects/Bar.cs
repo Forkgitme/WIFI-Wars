@@ -75,7 +75,7 @@ class Bar : SpriteGameObject
     public float Resource
     {
         get { return resource; }
-        set { resource = value; }
+        set { if (value <= totalResource) resource = value; }
     }
 
     public bool Active
