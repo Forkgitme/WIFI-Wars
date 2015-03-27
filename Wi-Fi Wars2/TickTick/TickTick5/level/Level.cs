@@ -6,6 +6,7 @@ partial class Level : GameObjectList
     protected Button quitButton, retryButton;
     protected UI ui;
     protected GameObjectList towerList, firewallList, packetList, pirateList;
+    public int serverTotal;
 
     public Level(int levelIndex)
     {

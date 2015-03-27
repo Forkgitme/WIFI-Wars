@@ -42,6 +42,8 @@ Content\Sprites\Star.xnb
 Content\Sprites\Starbackground.xnb
 Content\Sprites\AntiPirate@2.xnb
 Content\Sprites\GameOver.xnb
+Content\Sprites\Police@2.xnb
+Content\Sprites\spr_button_retry.xnb
 Content\Sounds\snd_switch.xnb
 Content\Sounds\snd_crack.xnb
 Content\Sounds\CD Drive.xnb
@@ -50,20 +52,15 @@ Content\Sounds\Helicopter.xnb
 Content\Sounds\Lift Bleep.xnb
 Content\Sounds\Police.xnb
 Content\Sounds\Roger Beep.xnb
-Content\Sprites\Police@2.xnb
-Content\Sprites\spr_button_retry.xnb
 Content\Sounds\badbleep.xnb
 Content\Sounds\goodbleep.xnb
 Content\Sounds\BGM_Synapse.xnb
 Content\Sounds\BGM_Synapse.wma
+Content\Sprites\spr_button_next.xnb
 Content\Levels\1.txt
-Content\Levels\8.txt
 Content\Levels\2.txt
-Content\Levels\10.txt
 Content\Levels\3.txt
 Content\Levels\5.txt
 Content\Levels\4.txt
 Content\Levels\6.txt
-Content\Levels\7.txt
-Content\Levels\9.txt
 Content\Levels\levels_status.txt

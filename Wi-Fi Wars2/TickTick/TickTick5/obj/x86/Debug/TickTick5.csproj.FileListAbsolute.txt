@@ -221,15 +221,11 @@ C:\Users\Gebruiker\Desktop\Studie\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x
 C:\Users\Gebruiker\Desktop\Studie\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\firewall.xnb
 C:\Users\Gebruiker\Desktop\Studie\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\Buffer.xnb
 C:\Users\Gebruiker\Desktop\Studie\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Levels\1.txt
-C:\Users\Gebruiker\Desktop\Studie\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Levels\8.txt
 C:\Users\Gebruiker\Desktop\Studie\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Levels\2.txt
-C:\Users\Gebruiker\Desktop\Studie\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Levels\10.txt
 C:\Users\Gebruiker\Desktop\Studie\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Levels\3.txt
 C:\Users\Gebruiker\Desktop\Studie\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Levels\5.txt
 C:\Users\Gebruiker\Desktop\Studie\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Levels\4.txt
 C:\Users\Gebruiker\Desktop\Studie\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Levels\6.txt
-C:\Users\Gebruiker\Desktop\Studie\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Levels\7.txt
-C:\Users\Gebruiker\Desktop\Studie\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Levels\9.txt
 C:\Users\Gebruiker\Desktop\Studie\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Levels\levels_status.txt
 C:\Users\Gebruiker\Desktop\Studie\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\TickTick.exe
 C:\Users\Gebruiker\Desktop\Studie\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\TickTick.pdb
@@ -362,3 +358,16 @@ C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86
 C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sounds\goodbleep.xnb
 C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sounds\BGM_Synapse.xnb
 C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sounds\BGM_Synapse.wma
+C:\Users\Gebruiker\Desktop\Studie\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\Police@2.xnb
+C:\Users\Gebruiker\Desktop\Studie\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\spr_button_retry.xnb
+C:\Users\Gebruiker\Desktop\Studie\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sounds\CD Drive.xnb
+C:\Users\Gebruiker\Desktop\Studie\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sounds\Flare.xnb
+C:\Users\Gebruiker\Desktop\Studie\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sounds\Helicopter.xnb
+C:\Users\Gebruiker\Desktop\Studie\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sounds\Lift Bleep.xnb
+C:\Users\Gebruiker\Desktop\Studie\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sounds\Police.xnb
+C:\Users\Gebruiker\Desktop\Studie\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sounds\Roger Beep.xnb
+C:\Users\Gebruiker\Desktop\Studie\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sounds\badbleep.xnb
+C:\Users\Gebruiker\Desktop\Studie\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sounds\goodbleep.xnb
+C:\Users\Gebruiker\Desktop\Studie\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sounds\BGM_Synapse.xnb
+C:\Users\Gebruiker\Desktop\Studie\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sounds\BGM_Synapse.wma
+C:\Users\Gebruiker\Desktop\Studie\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\spr_button_next.xnb

@@ -45,10 +45,10 @@ class Home : SpriteGameObject
         base.Update(gameTime);
         if (active)
         {
-            GameObjectList level = this.Parent as GameObjectList;
+            Level level = this.Parent as Level;
             UI ui = level.Find("ui") as UI;
-            if (ui.Money >= 0.02)
-            ui.Money -= 0.02f;
+            if (ui.Money >= 0.02f*level.serverTotal)        
+                ui.Money -= 0.02f*level.serverTotal;
             else
             {
                 this.Sprite = new SpriteSheet("Sprites/home", 0);

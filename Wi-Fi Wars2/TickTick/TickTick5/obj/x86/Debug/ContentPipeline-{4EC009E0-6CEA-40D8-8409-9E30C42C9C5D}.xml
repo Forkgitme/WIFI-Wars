@@ -125,7 +125,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Gebruiker\Desktop\Studie\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Backgrounds\Background10.xnb</Output>
-      <Time>2015-03-27T15:24:33.8879793+01:00</Time>
+      <Time>2015-03-27T17:29:08.8286472+01:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\Background2.png</Source>
@@ -161,7 +161,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Gebruiker\Desktop\Studie\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Backgrounds\Background5.xnb</Output>
-      <Time>2015-03-27T16:55:15.1571223+01:00</Time>
+      <Time>2015-03-27T17:29:08.8256446+01:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\Background6.png</Source>
@@ -170,7 +170,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Gebruiker\Desktop\Studie\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Backgrounds\Background6.xnb</Output>
-      <Time>2015-03-27T16:55:15.18014+01:00</Time>
+      <Time>2015-03-27T17:29:08.8286472+01:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\Background7.png</Source>
@@ -179,7 +179,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Gebruiker\Desktop\Studie\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Backgrounds\Background7.xnb</Output>
-      <Time>2015-03-27T16:55:15.1841462+01:00</Time>
+      <Time>2015-03-27T17:29:08.8286472+01:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\Background8.png</Source>
@@ -188,7 +188,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Gebruiker\Desktop\Studie\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Backgrounds\Background8.xnb</Output>
-      <Time>2015-03-27T15:24:33.9505238+01:00</Time>
+      <Time>2015-03-27T17:29:08.8286472+01:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\Background9.png</Source>
@@ -197,7 +197,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Gebruiker\Desktop\Studie\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Backgrounds\Background9.xnb</Output>
-      <Time>2015-03-27T15:24:33.9505238+01:00</Time>
+      <Time>2015-03-27T17:29:08.8286472+01:00</Time>
     </Item>
     <Item>
       <Source>Sprites\tower.png</Source>
@@ -398,6 +398,24 @@
       <Time>2015-03-24T15:39:32.5017453+01:00</Time>
     </Item>
     <Item>
+      <Source>Sprites\Police@2.png</Source>
+      <Name>Sprites\Police@2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Gebruiker\Desktop\Studie\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\Police@2.xnb</Output>
+      <Time>2015-03-27T15:24:34.0754712+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\spr_button_retry.png</Source>
+      <Name>Sprites\spr_button_retry</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Gebruiker\Desktop\Studie\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\spr_button_retry.xnb</Output>
+      <Time>2015-03-27T15:24:34.0911118+01:00</Time>
+    </Item>
+    <Item>
       <Source>Sounds\snd_switch.wav</Source>
       <Name>Sounds\snd_switch</Name>
       <Importer>WavImporter</Importer>
@@ -470,22 +488,32 @@
       <Time>2015-03-26T19:57:56.3660881+01:00</Time>
     </Item>
     <Item>
-      <Source>Sprites\Police@2.png</Source>
-      <Name>Sprites\Police@2</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
+      <Source>Sounds\badbleep.wav</Source>
+      <Name>Sounds\badbleep</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Gebruiker\Desktop\Studie\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\Police@2.xnb</Output>
-      <Time>2015-03-27T15:24:34.0754712+01:00</Time>
+      <Output>C:\Users\Gebruiker\Desktop\Studie\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sounds\badbleep.xnb</Output>
+      <Time>2015-03-27T17:24:02.0749164+01:00</Time>
     </Item>
     <Item>
-      <Source>Sprites\spr_button_retry.png</Source>
-      <Name>Sprites\spr_button_retry</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
+      <Source>Sounds\goodbleep.wav</Source>
+      <Name>Sounds\goodbleep</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Gebruiker\Desktop\Studie\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\spr_button_retry.xnb</Output>
-      <Time>2015-03-27T15:24:34.0911118+01:00</Time>
+      <Output>C:\Users\Gebruiker\Desktop\Studie\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sounds\goodbleep.xnb</Output>
+      <Time>2015-03-27T17:24:02.078932+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\BGM_Synapse.mp3</Source>
+      <Name>Sounds\BGM_Synapse</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Gebruiker\Desktop\Studie\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sounds\BGM_Synapse.xnb</Output>
+      <Extra>C:\Users\Gebruiker\Desktop\Studie\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sounds\BGM_Synapse.wma</Extra>
+      <Time>2015-03-27T17:29:08.9097326+01:00</Time>
     </Item>
     <Item>
       <Source>Sprites\spr_button_next.png</Source>
