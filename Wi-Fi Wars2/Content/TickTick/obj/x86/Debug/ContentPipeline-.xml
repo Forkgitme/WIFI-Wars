@@ -53,7 +53,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Backgrounds\spr_help.xnb</Output>
-      <Time>2015-02-25T10:57:45.9142771+01:00</Time>
+      <Time>2015-03-27T13:38:19.9487407+01:00</Time>
     </Item>
     <Item>
       <Source>Sprites\spr_button_back.png</Source>
@@ -215,7 +215,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\bar.xnb</Output>
-      <Time>2015-03-01T13:13:49.7114475+01:00</Time>
+      <Time>2015-03-27T13:38:19.9978194+01:00</Time>
     </Item>
     <Item>
       <Source>Sprites\bar2.png</Source>
