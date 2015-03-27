@@ -11,8 +11,9 @@ class Bar : SpriteGameObject
     float resource;         
     int totalResource;      
     Texture2D barPart;
+    AnimatedGameObject car;
     int type;
-    bool active, playsound;
+    bool active, playsound, done;
 
     public Bar(int t, string id, int layer = 9, int sheetIndex = 1)
         : base("Sprites/bar2", layer, id, sheetIndex)
@@ -20,9 +21,25 @@ class Bar : SpriteGameObject
         playsound = true;
         type = t;
         this.Position = new Vector2(20, 30*t);
+        if (type == 4)
+            this.position += new Vector2(0, 20);
         barPart = WifiWars.AssetManager.Content.Load<Texture2D>("Sprites/bar");
+        car = new AnimatedGameObject();
+        car.LoadAnimation("Sprites/Police@2", "car", true);
         resource = 0;
         totalResource = 1000;
+        car.PlayAnimation("car");
+    }
+
+    public override void HandleInput(InputHelper inputHelper)
+    {
+        if (!done)
+        {
+            GameObjectList level = this.parent as GameObjectList;
+            level.Add(car);
+            done = true;
+        }
+
     }
 
     public override void Draw(GameTime gameTime, Microsoft.Xna.Framework.Graphics.SpriteBatch spriteBatch)
@@ -47,6 +64,7 @@ class Bar : SpriteGameObject
         { 
             barColor = Color.Blue;
             this.Sprite.SpriteColor = Color.Blue;
+            car.Position = new Vector2((float)(this.Position.X + this.sprite.Width * ((double)resource / totalResource)), this.Position.Y);
         }
             base.Draw(gameTime, spriteBatch);
             spriteBatch.Draw(barPart,
