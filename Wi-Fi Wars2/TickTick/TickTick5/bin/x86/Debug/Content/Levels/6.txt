@@ -1,6 +1,6 @@
-server 300 350 2 2
-home 1200 600
+server 200 250 1 2
+home 1300 600
+antipirate 800 400
 hideout 400 580
-antipirate 1100 400
-hideout 600 660
+hideout 500 250
 money 400
