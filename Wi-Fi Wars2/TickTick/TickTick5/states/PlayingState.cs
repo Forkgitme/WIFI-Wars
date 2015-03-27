@@ -95,13 +95,13 @@ class PlayingState : IGameLoopObject
     public void ReloadLevels ()
     {
         levels = new List<Level>();
-        for (int currLevel = 1; currLevel <= 6; currLevel++)
+        for (int currLevel = 1; currLevel <= 10; currLevel++)
             levels.Add(new Level(currLevel));
     }
 
     public void LoadLevels()
     {
-        for (int currLevel = 1; currLevel <= 6; currLevel++)
+        for (int currLevel = 1; currLevel <= 10; currLevel++)
             levels.Add(new Level(currLevel));
     }
 

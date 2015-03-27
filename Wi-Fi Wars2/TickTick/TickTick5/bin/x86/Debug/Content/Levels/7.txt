@@ -1,0 +1,10 @@
+server 1305 400 1 2
+server 1200 750 2 2
+home 80 230
+hideout 580 700
+hideout 600 400
+hideout 800 680
+hideout 1050 720
+antipirate 850 300
+antipirate 450 600
+money 1200
