@@ -3,7 +3,7 @@
 partial class Level : GameObjectList
 {
     protected bool locked, solved;
-    protected Button quitButton;
+    protected Button quitButton, retryButton;
     protected UI ui;
     protected GameObjectList towerList, firewallList, packetList, pirateList;
 
@@ -12,6 +12,9 @@ partial class Level : GameObjectList
         quitButton = new Button("Sprites/spr_button_quit", 100);
         quitButton.Position = new Vector2(GameEnvironment.Screen.X - quitButton.Width - 10, 10);
         this.Add(quitButton);
+        retryButton = new Button("Sprites/spr_button_retry", 100);
+        retryButton.Position = new Vector2(GameEnvironment.Screen.X - quitButton.Width - 10, 70);
+        this.Add(retryButton);
         SpriteGameObject background = new SpriteGameObject("Backgrounds/Background" + levelIndex, 0, "background");
         this.Add(background);
         ui = new UI(100);

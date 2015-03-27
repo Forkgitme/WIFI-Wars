@@ -31,7 +31,7 @@ class LevelFinishedState : GameObjectList
         quitButton.Position = new Vector2(GameEnvironment.Screen.X - quitButton.Width - 10, 10);
         this.Add(quitButton);
         nextButton = new Button("Sprites/spr_button_next", 100);
-        nextButton.Position = new Vector2((GameEnvironment.Screen.X - nextButton.Width) / 2, 625);
+        nextButton.Position = new Vector2(GameEnvironment.Screen.X - quitButton.Width - 10, 130);
         this.Add(nextButton);
     }
 
@@ -45,7 +45,7 @@ class LevelFinishedState : GameObjectList
             this.Reset();
             GameEnvironment.GameStateManager.SwitchTo("levelMenu");
         }
-        if (inputHelper.KeyPressed(Keys.Space) || nextButton.Pressed)
+        if (nextButton.Pressed)
         {
             GameEnvironment.GameStateManager.SwitchTo("playingState");
             playingState.Reset();

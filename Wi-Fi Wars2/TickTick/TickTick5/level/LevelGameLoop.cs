@@ -14,9 +14,13 @@ partial class Level : GameObjectList
             IGameLoopObject playingState = GameEnvironment.GameStateManager.CurrentGameState;
             playingState.Reset();
             this.Reset();
-         
-
             GameEnvironment.GameStateManager.SwitchTo("levelMenu");
+        }
+        if (retryButton.Pressed)
+        {
+            GameEnvironment.GameStateManager.SwitchTo("playingState");
+            IGameLoopObject playingState = GameEnvironment.GameStateManager.CurrentGameState;
+            playingState.Reset();
         }
         UI ui = this.Find("ui") as UI;
         if ((inputHelper.MouseLeftButtonPressed() && (Math.Sqrt((inputHelper.MousePosition.X - 750) * (inputHelper.MousePosition.X - 750) + (inputHelper.MousePosition.Y - 105)*(inputHelper.MousePosition.Y - 105)) < 100) || inputHelper.KeyPressed(Keys.T)) && !holding && ui.Money >= 20)
