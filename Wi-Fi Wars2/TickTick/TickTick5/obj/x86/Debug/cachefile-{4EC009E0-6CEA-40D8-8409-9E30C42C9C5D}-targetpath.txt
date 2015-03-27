@@ -32,8 +32,8 @@ Content\Sprites\Buffer.xnb
 Content\Sprites\home.xnb
 Content\Sprites\Hideout.xnb
 Content\Sprites\Pirateship.xnb
-Content\Sprites\Virus.xnb
 Content\Sprites\TrojanHorse.xnb
+Content\Sprites\Virus.xnb
 Content\Sprites\PirateBreak@10.xnb
 Content\Sprites\AntiPirateHideout.xnb
 Content\Sprites\AntiPirateHideoutActive.xnb
