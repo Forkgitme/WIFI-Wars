@@ -39,6 +39,7 @@ class AntiPirateHideout : SpriteGameObject
         }
         if (makeAntiPirate)
         {
+            GameEnvironment.AssetManager.PlaySound("Sounds/Helicopter");
             GameObjectList level = this.parent.Parent as GameObjectList;
             AntiPirate antiPirate = new AntiPirate(position + new Vector2(45,40), 1010, "antipirate");
             level.Add(antiPirate);

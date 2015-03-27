@@ -251,7 +251,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\Range.xnb</Output>
-      <Time>2015-02-25T13:51:07.4285234+01:00</Time>
+      <Time>2015-03-27T14:19:36.3599882+01:00</Time>
     </Item>
     <Item>
       <Source>Sprites\firewall@5.png</Source>
@@ -308,15 +308,6 @@
       <Time>2015-03-17T11:35:25.4871203+01:00</Time>
     </Item>
     <Item>
-      <Source>Sprites\Virus.png</Source>
-      <Name>Sprites\Virus</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\Virus.xnb</Output>
-      <Time>2015-03-17T13:19:12.0557412+01:00</Time>
-    </Item>
-    <Item>
       <Source>Sprites\TrojanHorse.png</Source>
       <Name>Sprites\TrojanHorse</Name>
       <Importer>TextureImporter</Importer>
@@ -324,6 +315,15 @@
       <Options>None</Options>
       <Output>C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\TrojanHorse.xnb</Output>
       <Time>2015-03-21T12:17:10.8663199+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Virus.png</Source>
+      <Name>Sprites\Virus</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sprites\Virus.xnb</Output>
+      <Time>2015-03-17T13:19:12.0557412+01:00</Time>
     </Item>
     <Item>
       <Source>Sprites\PirateBreak@10.png</Source>
@@ -414,6 +414,60 @@
       <Options>None</Options>
       <Output>C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sounds\snd_crack.xnb</Output>
       <Time>2015-03-26T18:46:24.5027288+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\CD Drive.wav</Source>
+      <Name>Sounds\CD Drive</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sounds\CD Drive.xnb</Output>
+      <Time>2015-03-27T14:29:19.4781743+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\Flare.wav</Source>
+      <Name>Sounds\Flare</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sounds\Flare.xnb</Output>
+      <Time>2015-03-26T18:46:22.8872468+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\Helicopter.wav</Source>
+      <Name>Sounds\Helicopter</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sounds\Helicopter.xnb</Output>
+      <Time>2015-03-26T18:46:22.8952525+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\Lift Bleep.wav</Source>
+      <Name>Sounds\Lift Bleep</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sounds\Lift Bleep.xnb</Output>
+      <Time>2015-03-26T18:46:22.9032582+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\Police.wav</Source>
+      <Name>Sounds\Police</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sounds\Police.xnb</Output>
+      <Time>2015-03-26T18:46:22.9192703+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\Roger Beep.wav</Source>
+      <Name>Sounds\Roger Beep</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Robin\Documents\GitHub\WIFI-Wars\Wi-Fi Wars2\TickTick\TickTick5\bin\x86\Debug\Content\Sounds\Roger Beep.xnb</Output>
+      <Time>2015-03-26T18:46:22.9312781+01:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
