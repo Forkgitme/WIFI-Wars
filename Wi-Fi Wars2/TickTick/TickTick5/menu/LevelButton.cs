@@ -23,7 +23,7 @@ class LevelButton : GameObjectList
 
         text = new TextGameObject("Fonts/Hud", 1);
         text.Text = levelIndex.ToString();
-        text.Position = new Vector2(spr_lock.Width - text.Size.X - 10, 5);
+        text.Position = new Vector2(spr_lock.Width - text.Size.X - 60, 45);
         this.Add(text);
     }
 

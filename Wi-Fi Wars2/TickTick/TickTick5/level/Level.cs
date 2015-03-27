@@ -47,13 +47,13 @@ partial class Level : GameObjectList
 
     public bool Locked
     {
-        get { return locked; }
+        get { return false; }
         set { locked = value; }
     }
 
     public bool Solved
     {
-        get { return solved; }
+        get { return true; }
         set { solved = value; }
     }
 }
