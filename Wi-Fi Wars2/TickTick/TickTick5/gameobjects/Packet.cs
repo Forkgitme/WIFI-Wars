@@ -113,7 +113,6 @@ using System.Text;
                                 
             if (this.CollidesWith(home))
             {
-                GameEnvironment.AssetManager.PlaySound("Sounds/Roger Beep");
                 Bar bar = GameWorld.Find("police") as Bar;
                 bar.Active = true;
                 if (!home.active)

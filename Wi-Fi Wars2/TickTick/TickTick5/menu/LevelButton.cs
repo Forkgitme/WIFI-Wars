@@ -31,6 +31,8 @@ class LevelButton : GameObjectList
     {
         pressed = inputHelper.MouseLeftButtonPressed() && !level.Locked &&
             levels_solved.BoundingBox.Contains((int)inputHelper.MousePosition.X, (int)inputHelper.MousePosition.Y);
+        if(pressed)
+            GameEnvironment.AssetManager.PlaySound("Sounds/Roger Beep");
     }
 
     public override void Update(GameTime gameTime)

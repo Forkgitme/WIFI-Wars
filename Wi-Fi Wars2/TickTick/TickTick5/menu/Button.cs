@@ -14,6 +14,8 @@ class Button : SpriteGameObject
     {
         pressed = inputHelper.MouseLeftButtonPressed() &&
             BoundingBox.Contains((int)inputHelper.MousePosition.X, (int)inputHelper.MousePosition.Y);
+        if(pressed)
+            GameEnvironment.AssetManager.PlaySound("Sounds/Roger Beep");
     }
 
     public override void Reset()
