@@ -18,7 +18,7 @@ using System.Text;
         float StagePos;
         float Speed = 100;
 
-        static int bufferAmount;
+        public static int bufferAmount;
         protected static bool holdingPacket;
         int type;
         protected bool inBuffer, held;

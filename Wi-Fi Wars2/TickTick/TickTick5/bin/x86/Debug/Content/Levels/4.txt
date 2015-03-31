@@ -2,4 +2,4 @@ server 1200 500 1 2
 home 100 600
 hideout 685 565
 hideout 830 680
-money 320
+money 340

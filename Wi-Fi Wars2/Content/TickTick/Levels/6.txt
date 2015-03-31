@@ -1,5 +1,5 @@
 server 1200 300 1 2
-server 1300 700 2 2
+server 1250 600 2 2
 antipirate 620 280
 antipirate 560 420
 antipirate 800 600
@@ -10,4 +10,4 @@ hideout 850 530
 hideout 900 740
 hideout 670 725
 hideout 600 600
-money 600
+money 500

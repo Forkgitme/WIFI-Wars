@@ -1,4 +1,4 @@
 server 900 400 3 2
 server 180 550 2 2
 home 450 600
-money 220
+money 240

@@ -29,5 +29,7 @@ class WifiWars : GameEnvironment
         gameStateManager.AddGameState("gameOverState", new GameOverState());
         gameStateManager.AddGameState("levelFinishedState", new LevelFinishedState());
         gameStateManager.SwitchTo("titleMenu");
+        WifiWars.AssetManager.PlayMusic("Sounds/BGM_Synapse", true);
+        MediaPlayer.Volume = 0.05f;
     }
 }
